@@ -17,6 +17,7 @@ class Book(models.Model):
     genre_category = models.ForeignKey('Genre', null=True, blank=True, on_delete=models.SET_NULL)
     release_date = models.DateField()
     image_url = models.URLField(null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     offer = models.BooleanField(default=False)
 
     def __str__(self):
