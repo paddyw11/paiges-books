@@ -1,0 +1,93 @@
+[
+    {
+        "model": "books.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Fiction"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 2,
+        "fields": {
+            "name": "Fantasy"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 3,
+        "fields": {
+            "name": "Science Fiction"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 4,
+        "fields": {
+            "name": "Young Adult"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 5,
+        "fields": {
+            "name": "Historical Fiction"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 6,
+        "fields": {
+            "name": "Thriller"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 7,
+        "fields": {
+            "name": "Horror"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 8,
+        "fields": {
+            "name": "Magical Realism"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 9,
+        "fields": {
+            "name": "Nonfiction"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 10,
+        "fields": {
+            "name": "Mystery"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 11,
+        "fields": {
+            "name": "Gothic"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 12,
+        "fields": {
+            "name": "Memoir"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 13,
+        "fields": {
+            "name": "Dystopian"
+        }
+    }
+]

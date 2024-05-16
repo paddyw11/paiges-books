@@ -1,0 +1,482 @@
+[
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields": {
+            "sku": "B001",
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "price": 10.99,
+            "short_description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
+            "number_of_pages": 336,
+            "genre_category": 1,
+            "release_date": "1960-07-11",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 2,
+        "fields": {
+            "sku": "B002",
+            "title": "1984",
+            "author": "George Orwell",
+            "price": 9.99,
+            "short_description": "A dystopian novel set in a totalitarian regime, where Big Brother is always watching.",
+            "number_of_pages": 328,
+            "genre_category": 1,
+            "release_date": "1949-06-08",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 3,
+        "fields": {
+            "sku": "B003",
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "price": 8.49,
+            "short_description": "A timeless romance novel exploring themes of class, marriage, and love.",
+            "number_of_pages": 279,
+            "genre_category": 1,
+            "release_date": "1813-01-28",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 4,
+        "fields": {
+            "sku": "B004",
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "price": 11.99,
+            "short_description": "A tale of wealth, love, and the American Dream set in the prosperous Jazz Age.",
+            "number_of_pages": 180,
+            "genre_category": 1,
+            "release_date": "1925-04-10",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 5,
+        "fields": {
+            "sku": "B005",
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "price": 12.49,
+            "short_description": "The first installment in the beloved fantasy series chronicling the adventures of a young wizard.",
+            "number_of_pages": 320,
+            "genre_category": 2,
+            "release_date": "1997-06-26",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 6,
+        "fields": {
+            "sku": "B006",
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "price": 9.99,
+            "short_description": "A classic novel following the disillusioned teenager Holden Caulfield as he navigates life and adulthood.",
+            "number_of_pages": 277,
+            "genre_category": 1,
+            "release_date": "1951-07-16",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 7,
+        "fields": {
+            "sku": "B007",
+            "title": "Lord of the Flies",
+            "author": "William Golding",
+            "price": 8.99,
+            "short_description": "A gripping tale of survival and human nature, following a group of boys stranded on an uninhabited island.",
+            "number_of_pages": 224,
+            "genre_category": 1,
+            "release_date": "1954-09-17",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 8,
+        "fields": {
+            "sku": "B008",
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "price": 10.99,
+            "short_description": "A classic fantasy novel following the adventures of Bilbo Baggins as he embarks on a quest to reclaim a treasure guarded by a dragon.",
+            "number_of_pages": 310,
+            "genre_category": 2,
+            "release_date": "1937-09-21",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 9,
+        "fields": {
+            "sku": "B009",
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "price": 9.49,
+            "short_description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
+            "number_of_pages": 336,
+            "genre_category": 1,
+            "release_date": "1960-07-11",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 10,
+        "fields": {
+            "sku": "B010",
+            "title": "The Lord of the Rings",
+            "author": "J.R.R. Tolkien",
+            "price": 18.99,
+            "short_description": "An epic high-fantasy trilogy chronicling the quest to destroy the One Ring and defeat the Dark Lord Sauron.",
+            "number_of_pages": 1178,
+            "genre_category": 2,
+            "release_date": "1954-07-29",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 11,
+        "fields": {
+            "sku": "B011",
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "price": 7.99,
+            "short_description": "A dystopian novel exploring a futuristic society controlled by technology and genetic engineering.",
+            "number_of_pages": 288,
+            "genre_category": 1,
+            "release_date": "1932-10-19",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 12,
+        "fields": {
+            "sku": "B012",
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "price": 11.99,
+            "short_description": "A philosophical novel following the journey of an Andalusian shepherd boy named Santiago as he travels to Egypt in search of treasure.",
+            "number_of_pages": 197,
+            "genre_category": 1,
+            "release_date": "1988-01-01",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 13,
+        "fields": {
+            "sku": "B013",
+            "title": "The Chronicles of Narnia",
+            "author": "C.S. Lewis",
+            "price": 22.99,
+            "short_description": "A series of seven high-fantasy novels set in the 1al realm of Narnia, exploring themes of good versus evil and Christian allegory.",
+            "number_of_pages": 767,
+            "genre_category": 2,
+            "release_date": "1950-01-01",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 14,
+        "fields": {
+            "sku": "B014",
+            "title": "Moby-Dick; or, The Whale",
+            "author": "Herman Melville",
+            "price": 15.49,
+            "short_description": "A novel depicting the obsessive quest of Captain Ahab for revenge on a giant white sperm whale.",
+            "number_of_pages": 720,
+            "genre_category": 1,
+            "release_date": "1951-10-18",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 15,
+        "fields": {
+            "sku": "B015",
+            "title": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "price": 8.99,
+            "short_description": "A Gothic novel exploring the themes of aestheticism, narcissism, and the consequences of vanity.",
+            "number_of_pages": 254,
+            "genre_category": 1,
+            "release_date": "1980-01-20",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 16,
+        "fields": {
+            "sku": "B016",
+            "title": "Frankenstein; or, The Modern Prometheus",
+            "author": "Mary Shelley",
+            "price": 10.49,
+            "short_description": "A novel depicting the story of Victor Frankenstein, a young scientist who creates a grotesque creature in an unorthodox scientific experiment.",
+            "number_of_pages": 280,
+            "genre_category": 11,
+            "release_date": "1818-01-01",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 17,
+        "fields": {
+            "sku": "B017",
+            "title": "The Hitchhiker's Guide to the Galaxy",
+            "author": "Douglas Adams",
+            "price": 9.99,
+            "short_description": "A humorous science 1 series following the misadventures of Arthur Dent, an unwitting Earthling.",
+            "number_of_pages": 216,
+            "genre_category": 3,
+            "release_date": "1979-10-12",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 18,
+        "fields": {
+            "sku": "B018",
+            "title": "The Road",
+            "author": "Cormac McCarthy",
+            "price": 13.99,
+            "short_description": "A post-apocalyptic novel following a father and son's journey across a ravaged landscape.",
+            "number_of_pages": 241,
+            "genre_category": 1,
+            "release_date": "2006-09-26",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 19,
+        "fields": {
+            "sku": "B019",
+            "title": "The Kite Runner",
+            "author": "Khaled Hosseini",
+            "price": 11.49,
+            "short_description": "A novel depicting the friendship between two young boys in Afghanistan and the consequences of betrayal.",
+            "number_of_pages": 372,
+            "genre_category": 1,
+            "release_date": "2003-05-29",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 20,
+        "fields": {
+            "sku": "B020",
+            "title": "One Hundred Years of Solitude",
+            "author": "Gabriel García Márquez",
+            "price": 14.99,
+            "short_description": "A landmark novel chronicling the Buendía family's generations in the 1al town of Macondo.",
+            "number_of_pages": 417,
+            "genre_category": 8,
+            "release_date": "1967-05-30",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 21,
+        "fields": {
+            "sku": "B021",
+            "title": "Sapiens: A Brief History of Humankind",
+            "author": "Yuval Noah Harari",
+            "price": 16.99,
+            "short_description": "An exploration of the history of Homo sapiens from the emergence of archaic human species to the present day.",
+            "number_of_pages": 443,
+            "genre_category": 9,
+            "release_date": "2011-02-10",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 22,
+        "fields": {
+            "sku": "B022",
+            "title": "The Girl with the Dragon Tattoo",
+            "author": "Stieg Larsson",
+            "price": 10.99,
+            "short_description": "A psychological thriller following journalist Mikael Blomkvist and hacker Lisbeth Salander as they investigate a disappearance.",
+            "number_of_pages": 590,
+            "genre_category": 10,
+            "release_date": "2005-08-01",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 23,
+        "fields": {
+            "sku": "B023",
+            "title": "Gone with the Wind",
+            "author": "Margaret Mitchell",
+            "price": 13.49,
+            "short_description": "A historical romance set during the American Civil War and Reconstruction era, following the life of Scarlett O'Hara.",
+            "number_of_pages": 1037,
+            "genre_category": 5,
+            "release_date": "1936-06-30",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 24,
+        "fields": {
+            "sku": "B024",
+            "title": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "price": 9.99,
+            "short_description": "A mystery thriller following symbologist Robert Langdon as he investigates a murder in the Louvre Museum.",
+            "number_of_pages": 593,
+            "genre_category": 6,
+            "release_date": "2003-03-18",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 25,
+        "fields": {
+            "sku": "B025",
+            "title": "The Bell Jar",
+            "author": "Sylvia Plath",
+            "price": 8.49,
+            "short_description": "A semi-autobiographical novel detailing a young woman's descent into mental illness.",
+            "number_of_pages": 244,
+            "genre_category": 1,
+            "release_date": "1963-01-14",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 26,
+        "fields": {
+            "sku": "B026",
+            "title": "The Shining",
+            "author": "Stephen King",
+            "price": 11.49,
+            "short_description": "A horror novel following the Torrance family as they become caretakers of the isolated Overlook Hotel during the winter season.",
+            "number_of_pages": 447,
+            "genre_category": 7,
+            "release_date": "1977-01-28",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 27,
+        "fields": {
+            "sku": "B027",
+            "title": "The Hunger Games",
+            "author": "Suzanne Collins",
+            "price": 10.99,
+            "short_description": "The first installment in a dystopian trilogy, where teenagers are forced to fight to the death in a televised event.",
+            "number_of_pages": 374,
+            "genre_category": 4,
+            "release_date": "2008-09-14",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 28,
+        "fields": {
+            "sku": "B028",
+            "title": "A Game of Thrones",
+            "author": "George R.R. Martin",
+            "price": 14.99,
+            "short_description": "The first book in the epic fantasy series 'A Song of Ice and Fire', following the power struggles among noble families vying for control of the Iron Throne.",
+            "number_of_pages": 694,
+            "genre_category": 2,
+            "release_date": "1996-09-06",
+            "image_url": "",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 29,
+        "fields": {
+            "sku": "B029",
+            "title": "The Handmaid's Tale",
+            "author": "Margaret Atwood",
+            "price": 12.49,
+            "short_description": "A dystopian novel set in a future America where women's rights have been severely restricted.",
+            "number_of_pages": 311,
+            "genre_category": 1,
+            "release_date": "1985-09-01",
+            "image_url": "",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 30,
+        "fields": {
+            "sku": "B030",
+            "title": "The Stand",
+            "author": "Stephen King",
+            "price": 13.99,
+            "short_description": "A post-apocalyptic horror novel following the survivors of a deadly pandemic.",
+            "number_of_pages": 1439,
+            "genre_category": 7,
+            "release_date": "1978-10-03",
+            "image_url": "",
+            "offer": false
+        }
+    }
+]
