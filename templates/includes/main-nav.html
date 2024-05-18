@@ -5,9 +5,9 @@
                 All Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href=""class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">By Author</a>
-                <a href="" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?sort=genres&direction=asc"class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?sort=author&direction=asc" class="dropdown-item">By Author</a>
+                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
@@ -34,14 +34,9 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="special-offers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?sort=offer&direction=asc" id="special-offers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Offers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Offers</a>
-            </div>
         </li>
     </ul>
 </div>
