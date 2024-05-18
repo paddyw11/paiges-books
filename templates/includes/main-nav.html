@@ -1,14 +1,31 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Category</a>
+                <a href=""class="dropdown-item">By Category</a>
                 <a href="" class="dropdown-item">By Author</a>
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="genre-books" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                By Genre
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="genre-books">
+                <a href="{% url 'books' %}?genre=Science_Fiction" class="dropdown-item">Science Fiction</a>
+                <a href="{% url 'books' %}?genre=Horror" class="dropdown-item">Horror</a>
+                <a href="{% url 'books' %}?genre=Dystopian" class="dropdown-item">Dystopian</a>
+                <a href="{% url 'books' %}?genre=Memoir" class="dropdown-item">Memoir</a>
+                <a href="{% url 'books' %}?genre=Nonfiction" class="dropdown-item">Non Fiction</a>
+                <a href="{% url 'books' %}?genre=Gothic" class="dropdown-item">Gothic</a>
+                <a href="{% url 'books' %}?genre=Young_Adult" class="dropdown-item">Young Adult</a>
+                <a href="{% url 'books' %}?genre=Mystery" class="dropdown-item">Mystery</a>
+                <a href="{% url 'books' %}?genre=Fiction" class="dropdown-item">Fiction</a>
+                <a href="{% url 'books' %}?genre=Magical_Realism" class="dropdown-item">Magical Realism</a>
             </div>
         </li>
         <li class="nav-item dropdown">

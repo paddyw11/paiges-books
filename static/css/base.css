@@ -192,15 +192,15 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 180px;
     }
 }
 
 @media (max-width: 991px) {
 	.header-container {
-		padding-top: 116px;
+		padding-top: 120px;
 	}
 	body {
-		height: calc(100vh - 116px);
+		height: calc(100vh - 150px);
 	}
 }

@@ -2,6 +2,10 @@ from django.db import models
 
 # Create your models here.
 class Genre(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Genres'
+
     name = models.CharField(max_length=254)
     
     def __str__(self):
@@ -14,7 +18,7 @@ class Book(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     short_description = models.TextField()
     number_of_pages = models.IntegerField()
-    genre_category = models.ForeignKey('Genre', null=True, blank=True, on_delete=models.SET_NULL)
+    genres = models.ManyToManyField('Genre')
     release_date = models.DateField()
     image_url = models.URLField(null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
