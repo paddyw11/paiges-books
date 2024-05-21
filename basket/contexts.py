@@ -2,6 +2,7 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from books.models import Book
+import logging
 
 def basket_contents(request):
 
@@ -11,14 +12,14 @@ def basket_contents(request):
     basket = request.session.get('basket', {})
 
     for item_id, quantity in basket.items():
+  
         book = get_object_or_404(Book, pk=item_id)
         total += quantity * book.price
-        book_count =+ quantity
+        book_count += quantity
         basket_items.append({
             'item_id': item_id,
             'quantity': quantity,
             'book': book,
-
         })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
@@ -40,4 +41,9 @@ def basket_contents(request):
         'grand_total': grand_total,
     }
 
+   # logger.debug(f"Basket Contents: {basket_items}") 
+
     return context
+
+
+
