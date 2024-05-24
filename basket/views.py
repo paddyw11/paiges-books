@@ -53,6 +53,7 @@ def update_quantity(request, item_id):
         basket[item_id] = quantity
     else:
         basket.pop(item_id, None)
+        messages.success(request, f'Removed {book.title} from your basket')
 
     request.session['basket'] = basket
     return redirect('view_basket')  
@@ -75,7 +76,6 @@ def my_view(request):
 
     
     return render(request, 'basket.html', context={'basket_items': basket_items})
-
 
 def remove_from_basket(request, item_id):
     """ Removes the item from the shopping basket """
