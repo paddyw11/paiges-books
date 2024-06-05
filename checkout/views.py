@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -13,9 +13,9 @@ import json
 # Create your views here.
 
 @require_POST
-def cache_checkoput_data(request):
+def cache_checkout_data(request):
     try:
-        pid = request.POST.get('client_secret'.split('_secret')[0])
+        pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
             'basket': json.dumps(request.session.get('basket', {})),
@@ -51,7 +51,11 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_bag = json.dumps(basket)
+            order.save()
             for item_id, item_data in basket.items():
                 try:
                     book = Book.objects.get(id=item_id)
