@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import dj_database_url
 from pathlib import Path
 
 if os.path.exists("env.py"):
@@ -28,7 +29,7 @@ SECRET_KEY = 'django-insecure-%&p1xfec07=i0igco@hydej29n73@u72d8_(^lzsu(=jq7!w7o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu111.gitpod.io', '8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu111.gitpod.io', '8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu114.gitpod.io', 'paiges-books.herokuapp.com']
 
 
 
@@ -112,7 +113,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
@@ -124,12 +125,18 @@ WSGI_APPLICATION = 'paiges_books.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 
 
 # Password validation
