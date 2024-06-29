@@ -29,7 +29,13 @@ SECRET_KEY = 'django-insecure-%&p1xfec07=i0igco@hydej29n73@u72d8_(^lzsu(=jq7!w7o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu111.gitpod.io', '8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu114.gitpod.io', 'paiges-books.herokuapp.com', 'paiges-books-9655906010a2.herokuapp.com' 'localhost']
+ALLOWED_HOSTS = [
+    '8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu111.gitpod.io',
+    '8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu114.gitpod.io',
+    'paiges-books.herokuapp.com',
+    'paiges-books-9655906010a2.herokuapp.com',
+    'localhost'
+]
 
 
 
