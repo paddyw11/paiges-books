@@ -1,1 +1,1 @@
-web: gunicorn paiges-books.wsgi:application
+web: gunicorn paiges_books.wsgi:application
