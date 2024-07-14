@@ -59,7 +59,9 @@ INSTALLED_APPS = [
     'profiles',
 
     #other
-    'crispy_forms'
+    'crispy_forms',
+    'django_countries',
+    'psycopg'
 ]
 
 MIDDLEWARE = [
@@ -70,6 +72,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware'
 ]
 
 ROOT_URLCONF = 'paiges_books.urls'
