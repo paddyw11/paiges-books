@@ -7,7 +7,7 @@ django-crispy-forms==1.14.0
 gunicorn==22.0.0
 oauthlib==3.2.2
 pillow==10.3.0
-psycopg2==2.9.9
+psycopg2==3.2.1
 python3-openid==3.2.0
 pytz==2024.1
 requests-oauthlib==2.0.0
