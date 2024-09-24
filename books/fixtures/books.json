@@ -29,7 +29,7 @@
             "genres": [1],
             "release_date": "1949-06-08",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
