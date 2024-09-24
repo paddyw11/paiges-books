@@ -12,7 +12,7 @@
             "genres": [1],
             "release_date": "1960-07-11",
             "image_url": "",
-            "image": "/",
+            "image": "book.jpg",
             "offer": true
         }
     },
@@ -46,7 +46,7 @@
             "genres": [1],
             "release_date": "1813-01-28",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -63,7 +63,7 @@
             "genres": [1],
             "release_date": "1925-04-10",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -80,7 +80,7 @@
             "genres": [2],
             "release_date": "1997-06-26",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -97,7 +97,7 @@
             "genres": [1],
             "release_date": "1951-07-16",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -114,7 +114,7 @@
             "genres": [1],
             "release_date": "1954-09-17",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -131,7 +131,7 @@
             "genres": [2],
             "release_date": "1937-09-21",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -148,7 +148,7 @@
             "genres": [1],
             "release_date": "1960-07-11",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -165,7 +165,7 @@
             "genres": [2],
             "release_date": "1954-07-29",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -182,7 +182,7 @@
             "genres": [1],
             "release_date": "1932-10-19",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -199,7 +199,7 @@
             "genres": [1],
             "release_date": "1988-01-01",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -216,7 +216,7 @@
             "genres": [2],
             "release_date": "1950-01-01",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -233,7 +233,7 @@
             "genres": [1],
             "release_date": "1951-10-18",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -250,7 +250,7 @@
             "genres": [1],
             "release_date": "1980-01-20",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -267,7 +267,7 @@
             "genres": [11],
             "release_date": "1818-01-01",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -284,7 +284,7 @@
             "genres": [3],
             "release_date": "1979-10-12",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -301,7 +301,7 @@
             "genres": [1],
             "release_date": "2006-09-26",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -318,7 +318,7 @@
             "genres": [1],
             "release_date": "2003-05-29",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -335,7 +335,7 @@
             "genres": [8],
             "release_date": "1967-05-30",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -352,7 +352,7 @@
             "genres": [9],
             "release_date": "2011-02-10",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -369,7 +369,7 @@
             "genres": [10],
             "release_date": "2005-08-01",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -386,7 +386,7 @@
             "genres": [5],
             "release_date": "1936-06-30",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -403,7 +403,7 @@
             "genres": [6],
             "release_date": "2003-03-18",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -437,7 +437,7 @@
             "genres": [7],
             "release_date": "1977-01-28",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -454,7 +454,7 @@
             "genres": [4],
             "release_date": "2008-09-14",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -471,7 +471,7 @@
             "genres": [2],
             "release_date": "1996-09-06",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     },
@@ -488,7 +488,7 @@
             "genres": [1],
             "release_date": "1985-09-01",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
@@ -505,7 +505,7 @@
             "genres": [7],
             "release_date": "1978-10-03",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": false
         }
     }

@@ -35,11 +35,13 @@ ALLOWED_HOSTS = [
     'paiges-books-9655906010a2.herokuapp.com',
     '8000-paddyw11-paigesbooks-93w9jtnhyn3.ws.codeinstitute-ide.net',
     'localhost',
-    'https://8000-paddyw11-paigesbooks-93w9jtnhyn3.ws.codeinstitute-ide.net'
+    'https://8000-paddyw11-paigesbooks-93w9jtnhyn3.ws.codeinstitute-ide.net',
+    '8000-paddyw11-paigesbooks-ctu9dz443ai.ws.codeinstitute-ide.net'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-paddyw11-paigesbooks-93w9jtnhyn3.ws.codeinstitute-ide.net',
+    'https://8000-paddyw11-paigesbooks-ctu9dz443ai.ws.codeinstitute-ide.net'
 ]
 
 

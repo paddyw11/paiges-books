@@ -51,7 +51,7 @@
                             {% if book.image %}
                                 <!--<div class="bookWrap">-->
                                 <a href="{% url 'book_detail' book.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ book.image.url }}" alt="{{ book.name }}">
+                                    <img class="card-img-top img-fluid" src="{{ book.image }}" alt="{{ book.name }}">
                                 <!--<div class="book">
                                     <img class="cover" src="/media/the_bell_jar.webp">
                                     <div class="spine">
@@ -60,7 +60,7 @@
                         </div>--></a>
                             {% else %}    
                             <a href="{% url 'book_detail' book.id %}">
-                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ book.title }}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.title }}">
                             </a>
                             {% endif %}
                             
