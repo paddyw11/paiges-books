@@ -33,10 +33,14 @@ ALLOWED_HOSTS = [
     '8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu114.gitpod.io',
     'paiges-books.herokuapp.com',
     'paiges-books-9655906010a2.herokuapp.com',
-
-    'localhost'
+    '8000-paddyw11-paigesbooks-93w9jtnhyn3.ws.codeinstitute-ide.net',
+    'localhost',
+    'https://8000-paddyw11-paigesbooks-93w9jtnhyn3.ws.codeinstitute-ide.net'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-paddyw11-paigesbooks-93w9jtnhyn3.ws.codeinstitute-ide.net',
+]
 
 
 # Application definition
@@ -60,9 +64,10 @@ INSTALLED_APPS = [
 
     #other
     'crispy_forms',
-    'django-countries',
+    'crispy_bootstrap4',
+    'django_countries',
     'psycopg', 
-    'django-storages'
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -72,6 +77,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware'
 ]
@@ -191,8 +197,18 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Bucket Config
+
+    
+    
+
 if 'USE_AWS' in os.environ:
+    # cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+    
+    # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'paiges-books'
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
