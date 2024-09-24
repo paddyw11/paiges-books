@@ -12,7 +12,7 @@
             "genres": [1],
             "release_date": "1960-07-11",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "/",
             "offer": true
         }
     },
@@ -420,7 +420,7 @@
             "genres": [1],
             "release_date": "1963-01-14",
             "image_url": "",
-            "image": "/workspace/paiges-books/media/the_bell_jar.webp",
+            "image": "the_bell_jar.webp",
             "offer": true
         }
     },
