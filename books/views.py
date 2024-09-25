@@ -14,6 +14,8 @@ def all_books(request):
     sort = None
     direction = None
 
+    print("GET parameters:", request.GET)
+
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -47,6 +49,10 @@ def all_books(request):
             
             queries = Q(title__icontains=query) | Q(short_description__icontains=query) | Q(author__icontains=query)
             books = books.filter(queries)
+
+        if 'offer' in request.GET and request.GET['offer'] == 'true':
+            books = books.filter(offer=True)
+            print("Offer filter applied")
 
     current_sorting = f'{sort}_{direction}'
 
