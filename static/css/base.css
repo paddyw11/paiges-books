@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/book.jpg');
+    background: url('book.jpg');
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -124,7 +124,22 @@ body {
 	   -moz-perspective: 1200px;
 	        perspective: 1200px;
 }
+.image-container {
+    max-width: 400px;
+    width: 100%; 
+    margin: 0 auto; 
+}
 
+.book-image {
+    .book-image {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+        width: auto;
+        object-fit: contain;
+    }
+    
+}
 .bookIntro {
 	-webkit-transform: rotateY(30deg);
      -moz-transform: rotateY(30deg);
