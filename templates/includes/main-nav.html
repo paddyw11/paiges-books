@@ -4,7 +4,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Books
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
                 <a href="{% url 'books' %}?sort=genres&direction=asc"class="dropdown-item">By Genre</a>
                 <a href="{% url 'books' %}?sort=author&direction=asc" class="dropdown-item">By Author</a>
                 <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -28,13 +28,8 @@
                 <a href="{% url 'books' %}?genre=Magical_Realism" class="dropdown-item">Magical Realism</a>
             </div>
         </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="new-releases-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                New Releases
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?sort=offer&direction=asc" id="special-offers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?offer=true" id="special-offers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Offers
             </a>
         </li>
