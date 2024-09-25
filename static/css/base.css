@@ -129,17 +129,19 @@ body {
     width: 100%; 
     margin: 0 auto; 
 }
+.book-details-container {
+    text-align: left;
+
+}
 
 .book-image {
-    .book-image {
         max-width: 100%;
         height: auto;
         max-height: 200px;
         width: auto;
         object-fit: contain;
-    }
-    
 }
+
 .bookIntro {
 	-webkit-transform: rotateY(30deg);
      -moz-transform: rotateY(30deg);
