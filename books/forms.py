@@ -10,8 +10,8 @@ class BookForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         genre = Genre.objects.all()
-        friendly_names = [(g.id, g.get_friendly_name()) for g in genres]
+        
 
-        self.fields['genre'].choices = friendly_names
+        self.fields['genres'].queryset = Genre.objects.all()
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
