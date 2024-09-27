@@ -15,7 +15,7 @@ class Book(models.Model):
     sku = models.CharField(max_length=100)
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=255)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     short_description = models.TextField()
     number_of_pages = models.IntegerField()
     genres = models.ManyToManyField('Genre')
