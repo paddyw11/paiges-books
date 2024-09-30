@@ -15,6 +15,7 @@ def all_books(request):
     genres = None
     sort = None
     direction = None
+    
 
     print("GET parameters:", request.GET)
 
@@ -62,11 +63,40 @@ def all_books(request):
         'books': books,
         'search_term': query,
         'current_genres': genres,
-        'current_sorting': current_sorting
+        'current_sorting': current_sorting,
+        
     }
     
     return render(request, 'books/books.html', context)
 
+def books_on_offer(request):
+    """ A view to display books that are on offer"""
+    offer_books = Book.objects.filter(offer=True)
+
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                offer_books = offer_books.annotate(lower_name=Lower('name'))
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            offer_books = offer_books.order_by(sortkey)
+
+    current_sorting = f'{sort}_{direction}'
+
+    context = {
+        'offer_books': offer_books,  # Only books with offers
+        'current_sorting': current_sorting
+    }
+    
+    return render(request, 'books/offers.html', context)
 
 def book_detail(request, book_id):
     """ A view to return individual book details """ 
