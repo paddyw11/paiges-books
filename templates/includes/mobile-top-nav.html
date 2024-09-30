@@ -1,5 +1,5 @@
-<li class="list-inline-item ">
-  <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<li class="list-inline-item">
+  <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <div class="text-center">
           <div><i class="fas fa-search fa-lg"></i></div>
           <p class="my-0">Search</p>
@@ -32,7 +32,7 @@
       {% if request.user.is_superuser %}
           <a href="{% url 'add_book' %}" class="dropdown-item">Book Management</a>
       {% endif %}
-        <a href="" class="dropdown-item">My Profile</a>
+        <a href=" {% url 'profile' %}" class="dropdown-item">My Profile</a>
         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
       {% else %}
         <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -41,7 +41,7 @@
   </div>
 </li>
 <li class="list-inline-item">
-  <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket' %}">
+  <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_basket' %}">
     <div class="text-center">
         <div><i class="fas fa-shopping-bag fa-lg"></i></div>
         <p class="my-0">
