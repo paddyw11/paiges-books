@@ -48,23 +48,21 @@
                     {% for book in books %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
-                            {% if book.image %}
-                                <!--<div class="bookWrap">-->
-                                <a href="{% url 'book_detail' book.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ book.image }}" alt="{{ book.name }}">
-                                <!--<div class="book">
-                                    <img class="cover" src="/media/the_bell_jar.webp">
-                                    <div class="spine">
-
-                            </div>
-                        </div>--></a>
-                            {% else %}    
-                            <a href="{% url 'book_detail' book.id %}">
-                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.title }}">
-                            </a>
-                            {% endif %}
-                            
-                                                      
+                            <div class="bookWrap">
+                                <div class="book">                         
+                                    {% if book.image %}
+                                        <a href="{% url 'book_detail' book.id %}">
+                                            <img class="cover" src="{{ book.image.url }}" alt="{{ book.title }}">
+                                        </a>
+                                        <div class="spine"></div>
+                                    {% else %}    
+                                        <a href="{% url 'book_detail' book.id %}">
+                                            <img class="cover" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.title }}">
+                                        </a>
+                                        <div class="spine"></div>
+                                    {% endif %}
+                                </div>
+                            </div>              
                             <div class="card-body pb-0">
                                 <p class="mb-0">{{ book.title }}</p>
                             </div>
@@ -137,6 +135,19 @@
 		})
 	</script>
     
+    <script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            var $book = $('.book');
+            $book.addClass('bookIntro');
+            setTimeout(function() {
+                $book.removeClass('bookIntro');
+            }, 2000);
+        }, 1000);
+    });
+    </script>
+    
+
     <script type="text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);
