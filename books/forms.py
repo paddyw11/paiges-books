@@ -17,4 +17,4 @@ class BookForm(forms.ModelForm):
 
         self.fields['genres'].queryset = Genre.objects.all()
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-0'
+            field.widget.attrs['class'] = 'border-black rounded-10'

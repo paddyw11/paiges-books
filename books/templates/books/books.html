@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-right">
                         <div class="sort-select-wrapper d-inline-block">
-                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-10 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -81,6 +81,7 @@
                                                     {{ genre.name }}{% if not forloop.last %}, {% endif %}
                                                 </a>
                                             </p>
+                                            <a href="{% url 'book_detail' book.id %}" class="btn btn-black border border-black rounded-10 mt-2">View Details</a>
                                         {% endfor %}
                                         {% if request.user.is_superuser %}
                                             <small class="ml-3">
@@ -120,7 +121,7 @@
             </div>
         </div>
     </div>
-    <div class="btt-button shadow-sm rounded-0 border border-black">
+    <div class="btt-button shadow-sm rounded-10 border border-black">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
