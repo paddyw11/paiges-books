@@ -102,9 +102,11 @@ def book_detail(request, book_id):
     """ A view to return individual book details """ 
 
     book = get_object_or_404(Book, pk=book_id)
+    recommended_books = book.get_recommended_books()
 
     context = {
     'book': book,
+    'recommended_books': recommended_books,
     }
 
     return render(request, 'books/book_detail.html', context)

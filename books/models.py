@@ -26,3 +26,7 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_recommended_books(self):
+        # Get all books that share the same genre(s)
+        return Book.objects.filter(genres__in=self.genres.all()).exclude(id=self.id).distinct()[:3]
