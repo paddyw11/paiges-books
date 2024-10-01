@@ -81,8 +81,8 @@
                                                     {{ genre.name }}{% if not forloop.last %}, {% endif %}
                                                 </a>
                                             </p>
-                                            <a href="{% url 'book_detail' book.id %}" class="btn btn-black border border-black rounded-10 mt-2">View Details</a>
                                         {% endfor %}
+                                        <a href="{% url 'book_detail' book.id %}" class="btn btn-black border border-black rounded-10 mt-2">View Details</a>
                                         {% if request.user.is_superuser %}
                                             <small class="ml-3">
                                                 <a href="{% url 'edit_book' book.id %}">Edit</a>
