@@ -1,6 +1,26 @@
 
 # Paige Turner's Books Shop
 
+## Project Goals
+
+### Overview
+
+### Goals
+
+## User Experience Design
+
+### Strategy Design
+
+#### Target Audience
+
+#### User Requirements and Expectations
+
+#### User Stories
+
+### Structure Plane
+
+#### Website Structure
+
 
 
 
