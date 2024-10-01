@@ -16,24 +16,18 @@
             <div class="col-12 col-md-8 col-lg-6 text-center">
                 <div class="image-container my-5">
                     {% if book.image %}
-                        <!--<div class="bookWrap">-->
+                        
                         <a href="{{ book.image.url }}" target="_blank" >
                             <img class="card-img-top img-fluid book-image mx-auto d-block" 
                                 src="{{ book.image.url }}" 
                                 alt="Cover image of {{ book.title }}">
-                        <!--<div class="book">
-                            <img class="cover" src="/media/the_bell_jar.webp">
-                            <div class="spine">
-
-                        </div>
-                        </div>-->
                         </a>
-                        {% else %}    
-                            <a href="#">
-                                <img class="card-img-top img-fluid book-image mx-auto d-block" 
-                                    src="{{ MEDIA_URL }}noimage.png" 
-                                    alt="No image available for {{ book.title }}">
-                            </a>
+                    {% else %}    
+                        <a href="#">
+                            <img class="card-img-top img-fluid book-image mx-auto d-block" 
+                                src="{{ MEDIA_URL }}noimage.png" 
+                                alt="No image available for {{ book.title }}">
+                        </a>
                     {% endif %}
                 </div>
             </div>
@@ -43,6 +37,9 @@
                     <h4 class="mb-0">{{ book.author }}</h4>
                     <p class="lead mb-0 text-left font-weight-bold mt-3">&pound{{ book.price }}</p>
                     <p class="mt-3">{{ book.short_description }}</p>
+                    <button type="button" class="btn btn-black btn-rounded-10 btn-info btn-outline-black btn-sm" data-toggle="modal" data-target="#bookModal_{{ item.book.id }}">
+                        Read More
+                    </button>
                     <p class="mt-3">Number of Pages: {{ book.number_of_pages }} </p>
                     {% for genre in book.genres.all %}
                     <p class="lead mb-0 text-left font-weight-bold">
@@ -51,6 +48,27 @@
                             {{ genre.name }}{% if not forloop.last %}, {% endif %}
                         </a>
                     </p>
+                    
+
+                    <!-- blurb modal -->
+                    <div class="modal fade" id="bookModal_{{ item.book.id }}" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel_{{ item.book.id }}" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="bookModalLabel_{{ item.book.id }}">{{ item.book.title }}</h5>
+                            <button type="button" class="close btn-black btn-sm" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <p>{{ item.book.blurb }}</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-black btn-rounded-10 btn-outline-black" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                     {% endfor %}
                     <form class="form" action="{% url 'add_to_basket' book.id %}" method="POST">
                         {% csrf_token %}
@@ -106,7 +124,7 @@
         </div>  
         <div class="row justify-content-center">
             <div class="col-12">
-                <h3 class="mt-5">Recommended Books</h3>
+                <h3 class="mt-5">Similar Books</h3>
                 <div class="row">
                     {% for recommended_book in recommended_books %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">

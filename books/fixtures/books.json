@@ -13,7 +13,8 @@
             "release_date": "1960-07-11",
             "image_url": "",
             "image": "to_kill_a_mockingbird.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "In the deeply segregated American South, young Scout Finch grows up in a world filled with racial tension, societal expectations, and the complexities of moral integrity. Through the eyes of Scout, the novel sheds light on the harsh realities of racism, as her father, Atticus Finch, defends a black man unjustly accused of raping a white woman. \n\nLee's poignant storytelling immerses readers in a timeless exploration of justice, empathy, and the human condition. 'To Kill a Mockingbird' remains a powerful narrative on the social issues that still resonate with audiences today."
         }
     },
     {
@@ -30,7 +31,8 @@
             "release_date": "1949-06-08",
             "image_url": "",
             "image": "1984.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'1984' presents a chilling vision of a future where individuality is suppressed and truth is manipulated. In this dystopian world, Winston Smith grapples with the oppressive control of Big Brother, questioning the very nature of reality as he seeks personal freedom. Orwell masterfully explores themes of surveillance, propaganda, and the manipulation of language, which resonate in modern discussions of government power and privacy. \n\nThrough vivid and unnerving imagery, Orwell illustrates a world of conformity where rebellion is met with swift and brutal consequences. The novel's stark portrayal of totalitarianism remains a profound cautionary tale against unchecked political authority."
         }
     },
     {
@@ -47,7 +49,8 @@
             "release_date": "1813-01-28",
             "image_url": "",
             "image": "pride_and_prejudice.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Set in the British countryside, 'Pride and Prejudice' tells the story of Elizabeth Bennet, an intelligent young woman navigating the societal pressures of marriage, class, and wealth. Her encounters with the enigmatic Mr. Darcy lead to a tumultuous romance that defies the rigid social norms of the day. \n\nAusten's sharp wit and keen observations bring to life the intricate dance of courtship and the challenges women face in a patriarchal society. With its memorable characters and timeless themes, 'Pride and Prejudice' continues to enchant readers as a definitive work on love and human relationships."
         }
     },
     {
@@ -63,8 +66,9 @@
             "genres": [1],
             "release_date": "1925-04-10",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": false
+            "image": "the_great_gatsby.webp",
+            "offer": false,
+            "blurb": "In the glittering world of the 1920s Jazz Age, 'The Great Gatsby' paints a picture of ambition, decadence, and the elusive pursuit of the American Dream. Jay Gatsby, a mysterious millionaire, throws lavish parties in the hope of rekindling his lost romance with Daisy Buchanan. Yet behind the opulence, Fitzgerald reveals the hollowness of wealth and the deep moral corruption that underpins the society. \n\nFitzgerald’s novel delves into themes of love, obsession, and disillusionment, presenting a poignant critique of the American Dream and the lengths people will go to chase happiness. The story’s tragic end remains a powerful reminder of the cost of dreams unfulfilled."
         }
     },
     {
@@ -80,8 +84,9 @@
             "genres": [2],
             "release_date": "1997-06-26",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": true
+            "image": "harry_potter_1.webp",
+            "offer": true,
+            "blurb": "In 'Harry Potter and the Sorcerer’s Stone,' readers are introduced to Harry, an orphaned boy living with his cruel relatives, unaware of his magical heritage. Everything changes when Harry receives an invitation to attend Hogwarts School of Witchcraft and Wizardry, opening the door to a world of magic, friendship, and adventure. \n\nRowling masterfully creates a richly imaginative world, filled with spells, mythical creatures, and timeless lessons about bravery, loyalty, and self-discovery. This first book sets the stage for Harry’s epic battle against the dark wizard, Lord Voldemort, and is beloved by readers of all ages."
         }
     },
     {
@@ -97,8 +102,9 @@
             "genres": [1],
             "release_date": "1951-07-16",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": true
+            "image": "the_catcher_in_the_rye.webp",
+            "offer": true,
+            "blurb": "'The Catcher in the Rye' follows the rebellious and disillusioned Holden Caulfield as he leaves his boarding school and roams New York City, struggling with the transition from adolescence to adulthood. Holden’s cynical worldview and his disdain for the “phoniness” of the adult world resonate with many readers, especially those grappling with identity and alienation. \n\nSalinger’s portrayal of Holden is both poignant and raw, capturing the confusion and emotional turbulence of youth. The novel’s enduring appeal lies in its deep exploration of individualism, mental health, and the desire for meaning in an indifferent world."
         }
     },
     {
@@ -114,8 +120,9 @@
             "genres": [1],
             "release_date": "1954-09-17",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": false
+            "image": "lord_of_the_flies.webp",
+            "offer": false,
+            "blurb": "In 'Lord of the Flies,' a group of boys crash-lands on a deserted island, and what begins as a struggle for survival quickly devolves into a brutal power struggle. As the veneer of civilization fades, Golding explores the darker side of human nature, revealing the primal instincts that emerge when order collapses. \n\nThrough his stark prose and intense narrative, Golding raises unsettling questions about morality, leadership, and the thin line between civilization and chaos. This haunting allegory remains a powerful exploration of the human psyche and the forces that drive societal collapse."
         }
     },
     {
@@ -131,8 +138,9 @@
             "genres": [2],
             "release_date": "1937-09-21",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": true
+            "image": "the_hobbit.webp",
+            "offer": true,
+            "blurb": "'The Hobbit' takes readers on an unforgettable adventure through Middle-earth, following the reluctant hero Bilbo Baggins as he joins a group of dwarves on a quest to reclaim their homeland from the dragon Smaug. Along the way, Bilbo encounters trolls, elves, and the creature Gollum, whose mysterious ring holds untold power. \n\nTolkien’s richly imagined world and lyrical prose create a timeless story of courage, friendship, and self-discovery. 'The Hobbit' remains a beloved tale that has inspired countless readers and laid the groundwork for Tolkien’s later works, including 'The Lord of the Rings.'"
         }
     },
     {
@@ -148,8 +156,9 @@
             "genres": [1],
             "release_date": "1960-07-11",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": false
+            "image": "to_kill_a_mockingbird.webp",
+            "offer": false,
+            "blurb": "In Harper Lee’s timeless classic, 'To Kill a Mockingbird,' the young Scout Finch witnesses the racial injustices that pervade her town of Maycomb, Alabama. As her father, Atticus Finch, defends an innocent black man accused of rape, Scout learns about the complexities of morality and human nature. \n\nThe novel is an exploration of social issues such as racism and inequality, delivered through the poignant and innocent voice of a child. It stands as one of the most influential works of American literature, celebrated for its powerful depiction of justice and empathy."
         }
     },
     {
@@ -165,8 +174,9 @@
             "genres": [2],
             "release_date": "1954-07-29",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": true
+            "image": "the_lord_of_the_rings.webp",
+            "offer": true,
+            "blurb": "'The Lord of the Rings' is an epic fantasy trilogy that transports readers to Middle-earth, a world filled with diverse creatures, ancient lore, and the looming shadow of the Dark Lord Sauron. The story follows Frodo Baggins, a humble hobbit tasked with the monumental responsibility of destroying the One Ring, a powerful artifact capable of enslaving the world. \n\nTolkien’s masterful world-building, richly developed characters, and themes of friendship, sacrifice, and heroism make this a cornerstone of modern fantasy literature. The trilogy’s sweeping narrative and deep mythology have captivated generations, setting the standard for epic tales of good versus evil."
         }
     },
     {
@@ -182,8 +192,9 @@
             "genres": [1],
             "release_date": "1932-10-19",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": false
+            "image": "a_brave_new_world.webp",
+            "offer": false,
+            "blurb": "'Brave New World' presents a future society where technology, consumerism, and genetic manipulation have eradicated individuality and freedom. In this world, emotions are regulated by drugs, and people are engineered to accept their predetermined roles in a rigid caste system. The novel follows Bernard Marx, a disillusioned member of this society, as he begins to question the purpose of his existence. \n\nHuxley’s prophetic vision of a world where humanity is sacrificed in the name of efficiency and control is both captivating and unsettling. It offers a profound critique of the potential dangers of technological advancement and the loss of human connection."
         }
     },
     {
@@ -199,8 +210,9 @@
             "genres": [1],
             "release_date": "1988-01-01",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": true
+            "image": "the_alchemist.webp",
+            "offer": true,
+            "blurb": "'The Alchemist' tells the enchanting story of Santiago, an Andalusian shepherd boy who dreams of discovering treasure in the Egyptian pyramids. Along the way, he learns valuable lessons about following one's dreams, listening to the heart, and understanding the soul of the world. \n\nPaulo Coelho’s philosophical novel weaves together themes of destiny, spirituality, and personal transformation, inspiring readers to reflect on their own journeys. It has become an international bestseller, beloved for its message of hope and its timeless wisdom about the pursuit of happiness and fulfillment."
         }
     },
     {
@@ -211,13 +223,14 @@
             "title": "The Chronicles of Narnia",
             "author": "C.S. Lewis",
             "price": 22.99,
-            "short_description": "A series of seven high-fantasy novels set in the 1al realm of Narnia, exploring themes of good versus evil and Christian allegory.",
+            "short_description": "A series of seven high-fantasy novels set in the magical realm of Narnia, exploring themes of good versus evil and Christian allegory.",
             "number_of_pages": 767,
             "genres": [2],
             "release_date": "1950-01-01",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": true
+            "image": "the_chronicles_of_narnia.webp",
+            "offer": true,
+            "blurb": "C.S. Lewis’s 'The Chronicles of Narnia' transports readers to a magical world where animals talk, children become kings and queens, and the battle between good and evil unfolds in a richly imagined landscape. Through seven books, readers follow the Pevensie siblings and others as they encounter Aslan, the great lion, and embark on journeys filled with danger, wonder, and redemption. \n\nFilled with Christian allegory and profound moral lessons, 'The Chronicles of Narnia' has enchanted readers of all ages for decades. Lewis’s timeless stories explore themes of faith, courage, and the power of love in a way that resonates across generations."
         }
     },
     {
@@ -233,8 +246,9 @@
             "genres": [1],
             "release_date": "1951-10-18",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": false
+            "image": "moby_dick.webp",
+            "offer": false,
+            "blurb": "'Moby-Dick' is Herman Melville's monumental tale of obsession and vengeance. Captain Ahab’s relentless pursuit of the great white whale, Moby Dick, becomes a metaphor for humanity’s futile struggle against the forces of nature and fate. Through the eyes of the young sailor Ishmael, the novel explores themes of isolation, madness, and the destructive power of obsession. \n\nMelville’s rich symbolism and philosophical depth have made 'Moby-Dick' one of the most studied and revered works of American literature. Its epic scope and profound themes continue to captivate readers and challenge their perceptions of existence and the human condition."
         }
     },
     {
@@ -250,8 +264,9 @@
             "genres": [1],
             "release_date": "1980-01-20",
             "image_url": "",
-            "image": "the_bell_jar.webp",
-            "offer": true
+            "image": "the_picture_of_dorian_gray.webp",
+            "offer": true,
+            "blurb": "Oscar Wilde’s 'The Picture of Dorian Gray' is a Gothic exploration of vanity, corruption, and the dark consequences of a life devoted to pleasure. Dorian Gray, a young man of stunning beauty, makes a Faustian bargain, allowing his portrait to age while he remains forever youthful. As Dorian indulges in a hedonistic lifestyle, his portrait grows increasingly grotesque, reflecting the decay of his soul. \n\nWilde’s novel is a scathing critique of the aestheticism movement and the dangers of living without moral consequence. Its haunting themes of self-destruction and the pursuit of eternal beauty continue to resonate with readers today."
         }
     },
     {
@@ -267,7 +282,7 @@
             "genres": [11],
             "release_date": "1818-01-01",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "frakenstein.webp",
             "offer": false
         }
     },
@@ -284,7 +299,7 @@
             "genres": [3],
             "release_date": "1979-10-12",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_hitchhikers_guide_to_the_galaxy.webp",
             "offer": true
         }
     },
@@ -298,10 +313,10 @@
             "price": 13.99,
             "short_description": "A post-apocalyptic novel following a father and son's journey across a ravaged landscape.",
             "number_of_pages": 241,
-            "genres": [1],
+            "genres": [1, 13],
             "release_date": "2006-09-26",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_road.webp",
             "offer": false
         }
     },
@@ -318,7 +333,7 @@
             "genres": [1],
             "release_date": "2003-05-29",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_kite_runner.webp",
             "offer": true
         }
     },
@@ -335,7 +350,7 @@
             "genres": [8],
             "release_date": "1967-05-30",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "one_hundred_years_of_solitude.webp",
             "offer": false
         }
     },
@@ -352,7 +367,7 @@
             "genres": [9],
             "release_date": "2011-02-10",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "sapiens.webp",
             "offer": true
         }
     },
@@ -369,7 +384,7 @@
             "genres": [10],
             "release_date": "2005-08-01",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_girl_with_the_dragons_tattoo.webp",
             "offer": false
         }
     },
@@ -386,7 +401,7 @@
             "genres": [5],
             "release_date": "1936-06-30",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "gone_with_the_wind.webp",
             "offer": true
         }
     },
@@ -403,7 +418,7 @@
             "genres": [6],
             "release_date": "2003-03-18",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_da_vinci_code.webp",
             "offer": false
         }
     },
@@ -437,7 +452,7 @@
             "genres": [7],
             "release_date": "1977-01-28",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_shining.webp",
             "offer": false
         }
     },
@@ -454,7 +469,7 @@
             "genres": [4],
             "release_date": "2008-09-14",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_hunger_games.webp",
             "offer": true
         }
     },
@@ -471,7 +486,7 @@
             "genres": [2],
             "release_date": "1996-09-06",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "a_game_of_thrones.webp",
             "offer": false
         }
     },
@@ -488,7 +503,7 @@
             "genres": [1],
             "release_date": "1985-09-01",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_handmaids_tale.webp",
             "offer": true
         }
     },
@@ -505,8 +520,518 @@
             "genres": [7],
             "release_date": "1978-10-03",
             "image_url": "",
-            "image": "the_bell_jar.webp",
+            "image": "the_stand.webp",
             "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 31,
+        "fields": {
+            "sku": "B031",
+            "title": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "price": 13.99,
+            "short_description": "A psychological thriller about a woman who stops speaking after being accused of murdering her husband, and the therapist determined to uncover the truth.",
+            "number_of_pages": 336,
+            "genres": [7, 4],
+            "release_date": "2019-02-05",
+            "image_url": "",
+            "image": "the_silent_patient.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 32,
+        "fields": {
+            "sku": "B032",
+            "title": "The Book Thief",
+            "author": "Markus Zusak",
+            "price": 14.99,
+            "short_description": "The story of a young girl in Nazi Germany who steals books and shares them during the war.",
+            "number_of_pages": 552,
+            "genres": [5, 1],
+            "release_date": "2005-03-14",
+            "image_url": "",
+            "image": "the_book_thief.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 33,
+        "fields": {
+            "sku": "B033",
+            "title": "Catch-22",
+            "author": "Joseph Heller",
+            "price": 10.99,
+            "short_description": "A satirical novel that explores the absurdity of war and bureaucracy.",
+            "number_of_pages": 453,
+            "genres": [9, 13],
+            "release_date": "1961-10-10",
+            "image_url": "",
+            "image": "catch_22.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 34,
+        "fields": {
+            "sku": "B0034",
+            "title": "The Road",
+            "author": "Cormac McCarthy",
+            "price": 12.50,
+            "short_description": "A post-apocalyptic tale of survival and the bond between a father and son.",
+            "number_of_pages": 287,
+            "genres": [1, 13],
+            "release_date": "2006-09-26",
+            "image_url": "",
+            "image": "the_road.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 35,
+        "fields": {
+            "sku": "B035",
+            "title": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "price": 14.99,
+            "short_description": "A psychological thriller about a woman's silence after she is accused of murder.",
+            "number_of_pages": 336,
+            "genres": [6, 10],
+            "release_date": "2019-02-05",
+            "image_url": "",
+            "image": "the_silent_patient.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 36,
+        "fields": {
+            "sku": "B0036",
+            "title": "Educated",
+            "author": "Tara Westover",
+            "price": 16.99,
+            "short_description": "A memoir of a woman who grows up in a strict survivalist family and pursues education against all odds.",
+            "number_of_pages": 334,
+            "genres": [12, 9],
+            "release_date": "2018-02-20",
+            "image_url": "",
+            "image": "educated.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 37,
+        "fields": {
+            "sku": "B037",
+            "title": "The Invisible Man",
+            "author": "H.G. Wells",
+            "price": 9.99,
+            "short_description": "A science fiction novel about a scientist who becomes invisible and the consequences that follow.",
+            "number_of_pages": 208,
+            "genres": [3, 7],
+            "release_date": "1897-06-12",
+            "image_url": "",
+            "image": "the_invisible_man.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 38,
+        "fields": {
+            "sku": "B038",
+            "title": "American Gods",
+            "author": "Neil Gaiman",
+            "price": 13.99,
+            "short_description": "A novel where gods of ancient mythology exist in modern America, waging a battle for survival.",
+            "number_of_pages": 465,
+            "genres": [1, 2],
+            "release_date": "2001-06-19",
+            "image_url": "",
+            "image": "american_gods.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 39,
+        "fields": {
+            "sku": "B0039",
+            "title": "Rebecca",
+            "author": "Daphne du Maurier",
+            "price": 11.99,
+            "short_description": "A gothic mystery about a woman haunted by the memory of her husband's first wife.",
+            "number_of_pages": 448,
+            "genres": [11, 10],
+            "release_date": "1938-08-01",
+            "image_url": "",
+            "image": "rebecca.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 40,
+        "fields": {
+            "sku": "B040",
+            "title": "The Shadow of the Wind",
+            "author": "Carlos Ruiz Zafón",
+            "price": 13.99,
+            "short_description": "A young boy discovers a mysterious book in post-war Barcelona, leading him into a web of intrigue.",
+            "number_of_pages": 487,
+            "genres": [5, 10],
+            "release_date": "2001-06-05",
+            "image_url": "",
+            "image": "the_shadow_of_the_wind.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 41,
+        "fields": {
+            "sku": "B041",
+            "title": "The Fault in Our Stars",
+            "author": "John Green",
+            "price": 10.99,
+            "short_description": "A heart-wrenching love story between two teenagers living with cancer.",
+            "number_of_pages": 313,
+            "genres": [4, 1],
+            "release_date": "2012-01-10",
+            "image_url": "",
+            "image": "the_fault_in_our_stars.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 42,
+        "fields": {
+            "sku": "B042",
+            "title": "The Power of Habit",
+            "author": "Charles Duhigg",
+            "price": 16.99,
+            "short_description": "An exploration of the science behind habit formation and how we can change our lives by changing habits.",
+            "number_of_pages": 400,
+            "genres": [5],
+            "release_date": "2012-02-28",
+            "image_url": "",
+            "image": "the_power_of_habit.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 43,
+        "fields": {
+            "sku": "B043",
+            "title": "The Underground Railroad",
+            "author": "Colson Whitehead",
+            "price": 14.99,
+            "short_description": "A gripping novel that reimagines the Underground Railroad as an actual underground railway system.",
+            "number_of_pages": 320,
+            "genres": [5, 8],
+            "release_date": "2016-08-02",
+            "image_url": "",
+            "image": "the_underground_railroad.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 44,
+        "fields": {
+            "sku": "B044",
+            "title": "Dracula",
+            "author": "Bram Stoker",
+            "price": 9.99,
+            "short_description": "The classic gothic horror novel that introduced the world to the infamous Count Dracula.",
+            "number_of_pages": 418,
+            "genres": [11, 7],
+            "release_date": "1897-05-26",
+            "image_url": "",
+            "image": "dracula.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 45,
+        "fields": {
+            "sku": "B045",
+            "title": "Never Let Me Go",
+            "author": "Kazuo Ishiguro",
+            "price": 12.99,
+            "short_description": "A dystopian novel about a group of students who discover the dark purpose of their existence.",
+            "number_of_pages": 288,
+            "genres": [13, 3],
+            "release_date": "2005-03-03",
+            "image_url": "",
+            "image": "never_let_me_go.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 46,
+        "fields": {
+            "sku": "B016",
+            "title": "American Gods",
+            "author": "Neil Gaiman",
+            "price": 13.99,
+            "short_description": "A novel where gods of ancient mythology exist in modern America, waging a battle for survival.",
+            "number_of_pages": 465,
+            "genres": [2, 1],
+            "release_date": "2001-06-19",
+            "image_url": "",
+            "image": "american_gods.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 47,
+        "fields": {
+            "sku": "B047",
+            "title": "The Martian",
+            "author": "Andy Weir",
+            "price": 11.99,
+            "short_description": "An astronaut stranded on Mars fights to survive and find a way to communicate with Earth.",
+            "number_of_pages": 384,
+            "genres": [3, 1],
+            "release_date": "2011-02-11",
+            "image_url": "",
+            "image": "the_martian.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 48,
+        "fields": {
+            "sku": "B048",
+            "title": "Sharp Objects",
+            "author": "Gillian Flynn",
+            "price": 12.99,
+            "short_description": "A psychological thriller about a reporter who returns to her hometown to investigate a series of brutal murders.",
+            "number_of_pages": 254,
+            "genres": [6, 10],
+            "release_date": "2006-09-26",
+            "image_url": "",
+            "image": "sharp_objects.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 49,
+        "fields": {
+            "sku": "B049",
+            "title": "Beloved",
+            "author": "Toni Morrison",
+            "price": 10.99,
+            "short_description": "A haunting novel about slavery, freedom, and a mother's traumatic past, set after the American Civil War.",
+            "number_of_pages": 324,
+            "genres": [5, 1],
+            "release_date": "1987-09-16",
+            "image_url": "",
+            "image": "beloved.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 50,
+        "fields": {
+            "sku": "B050",
+            "title": "Fahrenheit 451",
+            "author": "Ray Bradbury",
+            "price": 9.99,
+            "short_description": "A dystopian novel set in a future where books are banned and 'firemen' burn any they find.",
+            "number_of_pages": 194,
+            "genres": [13, 3],
+            "release_date": "1953-10-19",
+            "image_url": "",
+            "image": "fahrenheit_451.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 51,
+        "fields": {
+            "sku": "B051",
+            "title": "The Color Purple",
+            "author": "Alice Walker",
+            "price": 11.99,
+            "short_description": "A powerful novel about the lives of African American women in the early 20th century South.",
+            "number_of_pages": 295,
+            "genres": [5, 1],
+            "release_date": "1982-10-18",
+            "image_url": "",
+            "image": "the_color_purple.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 52,
+        "fields": {
+            "sku": "B052",
+            "title": "Animal Farm",
+            "author": "George Orwell",
+            "price": 8.99,
+            "short_description": "A political allegory in which a group of farm animals overthrow their human owner, only to be ruled by tyranny.",
+            "number_of_pages": 112,
+            "genres": [1, 13],
+            "release_date": "1945-08-17",
+            "image_url": "",
+            "image": "animal_farm.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 53,
+        "fields": {
+            "sku": "B053",
+            "title": "The Outsiders",
+            "author": "S.E. Hinton",
+            "price": 9.50,
+            "short_description": "A young adult novel that explores class conflict, friendship, and coming of age in the 1960s.",
+            "number_of_pages": 192,
+            "genres": [4, 1],
+            "release_date": "1967-04-24",
+            "image_url": "",
+            "image": "the_outsiders.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 54,
+        "fields": {
+            "sku": "B054",
+            "title": "The House of the Spirits",
+            "author": "Isabel Allende",
+            "price": 13.99,
+            "short_description": "A novel about four generations of a family in Chile, blending magical realism with history and politics.",
+            "number_of_pages": 448,
+            "genres": [8, 5],
+            "release_date": "1982-05-26",
+            "image_url": "",
+            "image": "the_house_of_the_spirits.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 55,
+        "fields": {
+            "sku": "B055",
+            "title": "Room",
+            "author": "Emma Donoghue",
+            "price": 12.99,
+            "short_description": "A thrilling and emotional story of a boy and his mother, held captive in a small room for years.",
+            "number_of_pages": 321,
+            "genres": [6, 1],
+            "release_date": "2010-09-13",
+            "image_url": "",
+            "image": "room.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 56,
+        "fields": {
+            "sku": "B056",
+            "title": "The Haunting of Hill House",
+            "author": "Shirley Jackson",
+            "price": 11.99,
+            "short_description": "A gothic horror novel about four people investigating the mysterious and haunted Hill House.",
+            "number_of_pages": 246,
+            "genres": [7, 11],
+            "release_date": "1959-10-16",
+            "image_url": "",
+            "image": "the_haunting_of_hill_house.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 57,
+        "fields": {
+            "sku": "B057",
+            "title": "Life of Pi",
+            "author": "Yann Martel",
+            "price": 10.99,
+            "short_description": "A tale of survival where a young boy stranded at sea shares his boat with a Bengal tiger.",
+            "number_of_pages": 319,
+            "genres": [1, 8],
+            "release_date": "2001-09-11",
+            "image_url": "",
+            "image": "life_of_pi.webp",
+            "offer": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 58,
+        "fields": {
+            "sku": "B058",
+            "title": "Big Little Lies",
+            "author": "Liane Moriarty",
+            "price": 13.99,
+            "short_description": "A thriller about the lives of three women, leading up to a shocking murder in their community.",
+            "number_of_pages": 460,
+            "genres": [6, 1],
+            "release_date": "2014-07-29",
+            "image_url": "",
+            "image": "big_little_lies.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 59,
+        "fields": {
+            "sku": "B059",
+            "title": "Gone Girl",
+            "author": "Gillian Flynn",
+            "price": 14.99,
+            "short_description": "A psychological thriller about the disappearance of a woman and the unraveling of her marriage.",
+            "number_of_pages": 432,
+            "genres": [6, 10],
+            "release_date": "2012-06-05",
+            "image_url": "",
+            "image": "gone_girl.webp",
+            "offer": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 60,
+        "fields": {
+            "sku": "B060",
+            "title": "The Help",
+            "author": "Kathryn Stockett",
+            "price": 12.99,
+            "short_description": "A story of three women in 1960s Mississippi who form an unlikely friendship while challenging societal norms.",
+            "number_of_pages": 451,
+            "genres": [5, 1],
+            "release_date": "2009-02-10",
+            "image_url": "",
+            "image": "the_help.webp",
+            "offer": true
         }
     }
 ]
