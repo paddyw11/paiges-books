@@ -57,6 +57,9 @@ def all_books(request):
             books = books.filter(offer=True)
             print("Offer filter applied")
 
+    for book in books:
+        print(f"Book: {book.title}, Offer: {book.offer}")
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
