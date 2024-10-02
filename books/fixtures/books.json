@@ -282,8 +282,9 @@
             "genres": [11],
             "release_date": "1818-01-01",
             "image_url": "",
-            "image": "frakenstein.webp",
-            "offer": false
+            "image": "frankenstein.webp",
+            "offer": false,
+            "blurb": "Mary Shelley’s 'Frankenstein' is a groundbreaking novel that explores the boundaries of science, nature, and human ambition. Victor Frankenstein, a passionate young scientist, becomes obsessed with unlocking the secrets of life, ultimately creating a monstrous creature from stolen body parts. As the creature comes to life, Frankenstein's life spirals into chaos, as he is forced to confront the consequences of his unorthodox experiments.\n\nThis Gothic masterpiece delves into themes of isolation, identity, and the moral limits of scientific exploration. 'Frankenstein' remains a cautionary tale about the dangers of unchecked ambition and the human yearning to play god, making it one of the earliest works of science fiction."
         }
     },
     {
@@ -294,13 +295,14 @@
             "title": "The Hitchhiker's Guide to the Galaxy",
             "author": "Douglas Adams",
             "price": 9.99,
-            "short_description": "A humorous science 1 series following the misadventures of Arthur Dent, an unwitting Earthling.",
+            "short_description": "A humorous science fiction series following the misadventures of Arthur Dent, an unwitting Earthling.",
             "number_of_pages": 216,
             "genres": [3],
             "release_date": "1979-10-12",
             "image_url": "",
             "image": "the_hitchhikers_guide_to_the_galaxy.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Douglas Adams' 'The Hitchhiker's Guide to the Galaxy' is a comedic adventure that begins when Arthur Dent discovers that Earth is about to be demolished to make way for an interstellar highway. Rescued by an alien friend, Arthur is whisked off on an absurd and hilarious journey across the cosmos, encountering quirky characters and strange civilizations along the way.\n\nThe novel blends satire, science fiction, and wit, poking fun at the absurdities of life and the universe itself. With its memorable catchphrases, iconic towel references, and endless humor, this book remains a beloved classic of the genre, entertaining readers with its unique blend of philosophy and silliness."
         }
     },
     {
@@ -317,7 +319,8 @@
             "release_date": "2006-09-26",
             "image_url": "",
             "image": "the_road.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "Cormac McCarthy's 'The Road' is a harrowing tale of survival and love in a bleak post-apocalyptic world. A father and his young son traverse a barren landscape, struggling to stay alive in a world devoid of civilization, where food is scarce, and danger lurks at every turn. Their bond becomes the emotional heart of the novel, as they hold onto hope in the face of despair.\n\nThe novel's stark, poetic prose reflects the desolation of the setting, making the narrative all the more haunting. McCarthy’s meditation on humanity, morality, and the enduring strength of love and family in the darkest of times resonates deeply, offering readers a powerful, unforgettable experience."
         }
     },
     {
@@ -334,7 +337,8 @@
             "release_date": "2003-05-29",
             "image_url": "",
             "image": "the_kite_runner.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Khaled Hosseini's 'The Kite Runner' is a poignant story of friendship, betrayal, and redemption set against the backdrop of a changing Afghanistan. The novel follows the intertwined lives of Amir, a privileged boy, and Hassan, his loyal friend and servant, whose bond is shattered by an act of betrayal. As the years pass, Amir’s guilt over this betrayal haunts him, leading him on a journey of redemption.\n\nHosseini vividly portrays the complexities of friendship, family, and loyalty while offering an intimate look at Afghan culture and history. 'The Kite Runner' is a powerful exploration of forgiveness, atonement, and the enduring scars of the past, capturing readers with its emotional depth and moral dilemmas."
         }
     },
     {
@@ -345,13 +349,14 @@
             "title": "One Hundred Years of Solitude",
             "author": "Gabriel García Márquez",
             "price": 14.99,
-            "short_description": "A landmark novel chronicling the Buendía family's generations in the 1al town of Macondo.",
+            "short_description": "A landmark novel chronicling the Buendía family's generations in the fictional town of Macondo.",
             "number_of_pages": 417,
             "genres": [8],
             "release_date": "1967-05-30",
             "image_url": "",
             "image": "one_hundred_years_of_solitude.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'One Hundred Years of Solitude' by Gabriel García Márquez is a magical realist masterpiece chronicling the rise and fall of the Buendía family in the mythical town of Macondo. The novel spans several generations, weaving together family drama, political strife, and supernatural occurrences, creating a richly layered narrative that reflects the human condition. Each member of the Buendía family faces the cyclical nature of history, love, and solitude.\n\nThrough the lens of magical realism, Márquez explores themes of memory, fate, and the inexorable passage of time. His prose is lush and imaginative, transforming ordinary moments into extraordinary events, and making this novel a seminal work of Latin American literature that continues to captivate readers worldwide."
         }
     },
     {
@@ -368,7 +373,8 @@
             "release_date": "2011-02-10",
             "image_url": "",
             "image": "sapiens.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "In 'Sapiens: A Brief History of Humankind,' Yuval Noah Harari takes readers on an expansive journey through the history of humanity, from the earliest days of Homo sapiens to the present. Harari examines how the Cognitive Revolution, the Agricultural Revolution, and the Scientific Revolution shaped our species and the world around us. His insights into the role of culture, technology, and politics highlight how Homo sapiens became the dominant species on Earth.\n\nWith a blend of history, anthropology, and philosophy, Harari's narrative raises thought-provoking questions about our past, present, and future. He challenges readers to consider the impact of modern human behavior on society, the environment, and the potential paths humanity may take moving forward."
         }
     },
     {
@@ -384,8 +390,9 @@
             "genres": [10],
             "release_date": "2005-08-01",
             "image_url": "",
-            "image": "the_girl_with_the_dragons_tattoo.webp",
-            "offer": false
+            "image": "the_girl_with_the_dragon_tattoo.webp",
+            "offer": false,
+            "blurb": "'The Girl with the Dragon Tattoo' by Stieg Larsson is a gripping psychological thriller that intertwines the worlds of investigative journalism and cyber-hacking. Journalist Mikael Blomkvist is hired to investigate a decades-old disappearance of a young woman from a wealthy Swedish family. He teams up with the enigmatic and brilliant hacker Lisbeth Salander, and together they uncover shocking secrets that put their lives at risk.\n\nLarsson crafts a dark and suspenseful narrative filled with complex characters, corporate corruption, and chilling crime. The novel is a masterful blend of mystery and social commentary, making it an intense and thought-provoking read for fans of thrillers and crime fiction."
         }
     },
     {
@@ -402,7 +409,8 @@
             "release_date": "1936-06-30",
             "image_url": "",
             "image": "gone_with_the_wind.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Margaret Mitchell’s 'Gone with the Wind' is an epic romance set against the tumultuous backdrop of the American Civil War and its aftermath. The novel follows Scarlett O'Hara, a Southern belle, as she navigates love, loss, and survival during one of the most turbulent times in American history. Scarlett's resilience, ambition, and flawed character make her a compelling protagonist in this sweeping saga. \n\nAs much a war story as it is a romance, 'Gone with the Wind' also provides a critical look at Southern society and its transformation in the Reconstruction era. Through richly detailed descriptions and unforgettable characters, Mitchell paints a portrait of a world forever changed by war."
         }
     },
     {
@@ -419,7 +427,8 @@
             "release_date": "2003-03-18",
             "image_url": "",
             "image": "the_da_vinci_code.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'The Da Vinci Code' by Dan Brown is a fast-paced thriller that weaves together history, art, and cryptic puzzles. When symbologist Robert Langdon is called to the Louvre Museum after a mysterious murder, he uncovers a web of secrets hidden within some of the world’s most famous works of art. The novel’s intricate plot challenges readers to solve the mystery alongside Langdon as he uncovers shocking revelations about religious history. \n\nBlending fact with fiction, Brown creates a suspenseful narrative that explores themes of faith, knowledge, and conspiracy. The novel became an international sensation, captivating readers with its engaging blend of intellectual puzzle-solving and relentless action."
         }
     },
     {
@@ -436,7 +445,8 @@
             "release_date": "1963-01-14",
             "image_url": "",
             "image": "the_bell_jar.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "'The Bell Jar' is Sylvia Plath’s harrowing exploration of mental illness and the pressures of societal expectations on young women. The novel follows Esther Greenwood, a promising young writer, as she struggles with depression and the suffocating feeling of being trapped in her own life. Plath’s vivid prose captures the raw emotions and dark thoughts that lead Esther deeper into despair. \n\nBased partly on Plath’s own experiences, 'The Bell Jar' remains a powerful and poignant portrayal of mental health and the often overwhelming weight of self-doubt. It continues to resonate with readers, offering insight into the personal and societal challenges faced by women."
         }
     },
     {
@@ -453,7 +463,8 @@
             "release_date": "1977-01-28",
             "image_url": "",
             "image": "the_shining.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "Stephen King’s 'The Shining' tells the terrifying story of Jack Torrance, an aspiring writer and recovering alcoholic, who becomes the winter caretaker of the remote Overlook Hotel. As Jack's mental state deteriorates under the influence of the hotel’s dark forces, his wife Wendy and son Danny are thrust into a nightmare. Danny, who possesses psychic abilities, begins to experience horrifying visions, sensing the malevolent presence within the hotel. \n\nWith its unsettling atmosphere and psychological tension, 'The Shining' explores themes of madness, isolation, and the destructive power of addiction. King's masterful storytelling and complex characters make it one of the most iconic horror novels of all time."
         }
     },
     {
@@ -470,7 +481,8 @@
             "release_date": "2008-09-14",
             "image_url": "",
             "image": "the_hunger_games.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "In Suzanne Collins’s 'The Hunger Games,' the dystopian world of Panem forces its young citizens to fight to the death in a brutal, televised competition. Katniss Everdeen volunteers in place of her sister for the annual Hunger Games, becoming a symbol of hope and rebellion against the oppressive regime. Katniss's journey is both a gripping survival story and a profound commentary on the impact of violence and power. \n\nThrough its fast-paced action, emotional depth, and exploration of complex social themes, 'The Hunger Games' became a global phenomenon. It delves into issues of morality, survival, and the cost of rebellion, making it a thought-provoking read for audiences of all ages."
         }
     },
     {
@@ -487,7 +499,8 @@
             "release_date": "1996-09-06",
             "image_url": "",
             "image": "a_game_of_thrones.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'A Game of Thrones' by George R.R. Martin is the opening novel of the 'A Song of Ice and Fire' series, a tale of political intrigue, war, and betrayal. Set in the Seven Kingdoms of Westeros, the novel introduces readers to a cast of complex characters, from noble families vying for power to the mysterious forces lurking beyond the Wall. Martin weaves an intricate plot filled with unexpected twists, brutal realism, and rich world-building. \n\nWith its mature themes and morally ambiguous characters, 'A Game of Thrones' redefined the modern fantasy genre. Readers are drawn into a world where honor and loyalty often clash with ambition and survival, setting the stage for an epic saga of conquest, treachery, and shifting alliances."
         }
     },
     {
@@ -504,7 +517,8 @@
             "release_date": "1985-09-01",
             "image_url": "",
             "image": "the_handmaids_tale.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Margaret Atwood’s 'The Handmaid’s Tale' imagines a dystopian future where women have been stripped of their rights in the Republic of Gilead. The story is narrated by Offred, a woman forced into servitude as a 'handmaid,' whose only purpose is to bear children for the ruling elite. The novel explores themes of power, control, and gender oppression, offering a chilling vision of what happens when freedom is lost. \n\nAtwood's haunting prose and vivid depiction of a world where women's bodies are controlled by the state make 'The Handmaid’s Tale' a timeless exploration of gender politics. Its themes remain disturbingly relevant, prompting readers to reflect on the fragility of rights and personal autonomy."
         }
     },
     {
@@ -521,7 +535,8 @@
             "release_date": "1978-10-03",
             "image_url": "",
             "image": "the_stand.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'The Stand' is Stephen King’s post-apocalyptic epic, a battle between good and evil set in the aftermath of a pandemic that wipes out most of humanity. The survivors are drawn to two camps: one led by the saintly Mother Abagail and the other by the dark figure of Randall Flagg. The novel explores humanity's enduring fight for survival and the moral choices people face when the world is reduced to chaos. \n\nWith its sprawling narrative and richly drawn characters, 'The Stand' captures the fear and hope that arise in a broken world. King combines elements of horror, fantasy, and suspense to create one of his most iconic and ambitious works."
         }
     },
     {
@@ -538,7 +553,8 @@
             "release_date": "2019-02-05",
             "image_url": "",
             "image": "the_silent_patient.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Alicia Berenson, a celebrated painter, is found standing over her husband’s body after shooting him five times in the face. Yet, from that moment, she refuses to speak another word. Her shocking silence becomes the focal point of media sensation and mystery. 'The Silent Patient' takes readers on a chilling psychological journey as Alicia's story unravels. \n\nEnter Theo Faber, a determined psychotherapist convinced he can get her to speak. As Theo becomes obsessed with unlocking Alicia’s silence, he delves deeper into her life, uncovering hidden truths about both her and himself. With twists and turns at every corner, Alex Michaelides’ thriller keeps readers guessing until the final, unforgettable revelation."
         }
     },
     {
@@ -555,7 +571,8 @@
             "release_date": "2005-03-14",
             "image_url": "",
             "image": "the_book_thief.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Set in Nazi Germany, 'The Book Thief' tells the poignant and heart-wrenching story of Liesel Meminger, a young girl whose life is forever changed by war and loss. Liesel's fascination with words leads her to steal books, even as she cannot yet read them. Her foster father teaches her to read, and she shares the stolen stories with her neighbors during bomb raids, offering them hope in a dark time. \n\nNarrated by Death itself, the novel is an exploration of humanity, tragedy, and resilience in the face of overwhelming horror. As Liesel and her family hide a Jewish man in their basement, the story weaves together themes of loss, survival, and the power of words to transcend pain and bring solace even in the darkest of times."
         }
     },
     {
@@ -572,24 +589,26 @@
             "release_date": "1961-10-10",
             "image_url": "",
             "image": "catch_22.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "In 'Catch-22,' Joseph Heller presents a darkly comedic take on the absurdity of war through the experiences of Captain John Yossarian, a World War II bomber pilot. Yossarian is caught in a nightmarish bureaucratic loop where survival becomes a matter of luck rather than skill. The novel’s namesake, the 'catch-22' rule, states that airmen deemed insane can be grounded, but anyone requesting to be grounded is considered sane and therefore ineligible to be relieved from duty. \n\nThe narrative’s non-linear structure and surreal humor highlight the absurdity of military logic and human existence. Through its vivid characters and satirical tone, 'Catch-22' offers a biting critique of the institutional incompetence and moral contradictions found in both war and life itself, making it one of the most influential anti-war novels of the 20th century."
         }
     },
     {
         "model": "books.book",
         "pk": 34,
         "fields": {
-            "sku": "B0034",
-            "title": "The Road",
-            "author": "Cormac McCarthy",
-            "price": 12.50,
-            "short_description": "A post-apocalyptic tale of survival and the bond between a father and son.",
-            "number_of_pages": 287,
-            "genres": [1, 13],
-            "release_date": "2006-09-26",
+            "sku": "B034",
+            "title": "Becoming",
+            "author": "Michelle Obama",
+            "price": 16.99,
+            "short_description": "A deeply personal memoir by the former First Lady of the United States, Michelle Obama.",
+            "number_of_pages": 448,
+            "genres": [12, 9],
+            "release_date": "2018-11-13",
             "image_url": "",
-            "image": "the_road.webp",
-            "offer": true
+            "image": "becoming.webp",
+            "offer": true,
+            "blurb": "In *Becoming*, Michelle Obama invites readers into her world, recounting her journey from the South Side of Chicago to becoming the First Lady of the United States. Through her candid and inspiring storytelling, she reflects on the challenges and triumphs she faced along the way, including her upbringing, education, and the role of family and community in shaping her identity. Obama emphasizes the importance of staying true to oneself and the power of resilience in the face of adversity.\n\nThis memoir is not only a look at her life but also an exploration of the broader themes of femininity, race, and social responsibility. Michelle Obama's journey from a young girl with big dreams to a powerful public figure offers a testament to the possibilities of hard work, perseverance, and the unwavering belief in one's worth. *Becoming* is an empowering narrative that inspires readers to embrace their own stories and strive for greatness."
         }
     },
     {
@@ -597,16 +616,17 @@
         "pk": 35,
         "fields": {
             "sku": "B035",
-            "title": "The Silent Patient",
-            "author": "Alex Michaelides",
-            "price": 14.99,
-            "short_description": "A psychological thriller about a woman's silence after she is accused of murder.",
-            "number_of_pages": 336,
-            "genres": [6, 10],
-            "release_date": "2019-02-05",
+            "title": "Casino Royale",
+            "author": "Ian Fleming",
+            "price": 12.99,
+            "short_description": "James Bond embarks on his first mission to defeat a Soviet agent in a high-stakes game of poker.",
+            "number_of_pages": 213,
+            "genres": [6, 11],
+            "release_date": "1953-04-13",
             "image_url": "",
-            "image": "the_silent_patient.webp",
-            "offer": false
+            "image": "casino_royale.webp",
+            "offer": false,
+            "blurb": "In *Casino Royale*, Ian Fleming introduces readers to James Bond, the suave and deadly British secret agent with a license to kill. Bond’s first mission takes him to a glamorous casino in the French Riviera, where he must outplay Le Chiffre, a financier for Soviet intelligence, in a high-stakes poker game. As Bond engages in a deadly game of wits, he also forms a complicated relationship with Vesper Lynd, a beautiful and mysterious woman assigned to assist him. \n\nThe novel combines tension, action, and intrigue as Bond navigates a world of espionage and betrayal. With its intense psychological depth and thrilling narrative, *Casino Royale* sets the stage for the legendary 007 series, blending ruthless danger with a sharp, sophisticated style."
         }
     },
     {
@@ -623,7 +643,8 @@
             "release_date": "2018-02-20",
             "image_url": "",
             "image": "educated.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "In her memoir 'Educated,' Tara Westover recounts her remarkable journey from a survivalist upbringing in rural Idaho to earning a PhD from Cambridge University. Raised in a strict, isolated household where formal education and medical care were shunned, Westover’s desire for knowledge became her path to freedom. Her story is a gripping tale of the power of education to transform and the resilience needed to break free from familial and cultural constraints. \n\nThroughout the memoir, Westover reflects on the complexities of identity, family loyalty, and the search for truth. 'Educated' is more than just a personal story; it offers a universal exploration of the human capacity for growth, the costs of change, and the power of self-determination."
         }
     },
     {
@@ -640,7 +661,8 @@
             "release_date": "1897-06-12",
             "image_url": "",
             "image": "the_invisible_man.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'The Invisible Man' by H.G. Wells is a groundbreaking science fiction novel that delves into the dark consequences of unchecked ambition. The story follows Griffin, a scientist who unlocks the secret to invisibility, but with it, loses his humanity. As Griffin’s actions become increasingly erratic and dangerous, the novel explores themes of isolation, power, and the inherent dangers of science without morality. \n\nWells crafts a chilling narrative about the destructive power of invisibility, both literally and figuratively. Through the character of Griffin, readers are presented with a cautionary tale about what happens when one’s pursuit of knowledge turns into obsession, raising questions about identity and the human condition."
         }
     },
     {
@@ -657,7 +679,8 @@
             "release_date": "2001-06-19",
             "image_url": "",
             "image": "american_gods.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "Neil Gaiman’s 'American Gods' weaves a rich tapestry of myth, modernity, and mystery. The novel follows Shadow, an ex-convict whose life is upended when he becomes entangled in a battle between the old gods of myth and legend and the new gods of modern technology, media, and commerce. Gaiman’s exploration of the immigrant experience and the changing face of belief in America is both epic in scope and deeply personal. \n\nWith its mix of dark humor, intricate mythology, and haunting landscapes, 'American Gods' is a story about the fading power of ancient deities and the human quest for meaning in a world dominated by new forms of worship. It is a thought-provoking meditation on identity, faith, and the nature of power in a society driven by change."
         }
     },
     {
@@ -674,7 +697,8 @@
             "release_date": "1938-08-01",
             "image_url": "",
             "image": "rebecca.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'Rebecca' is Daphne du Maurier’s timeless gothic masterpiece that explores love, jealousy, and the haunting presence of the past. The novel follows a young, unnamed narrator who marries the wealthy widower Maxim de Winter, only to find herself overshadowed by the lingering influence of his first wife, Rebecca. Set against the brooding backdrop of Manderley, the narrative blends romance and mystery, unraveling a twisted tale of deceit and hidden secrets. \n\nWith its atmospheric tension and complex characters, 'Rebecca' is a psychological study of obsession and control. The novel explores themes of identity, power, and the destructive force of memory, captivating readers with its eerie beauty and slow-building suspense."
         }
     },
     {
@@ -691,7 +715,8 @@
             "release_date": "2001-06-05",
             "image_url": "",
             "image": "the_shadow_of_the_wind.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "In 'The Shadow of the Wind,' Carlos Ruiz Zafón creates a mesmerizing story about a young boy, Daniel, who discovers a rare book in post-war Barcelona. As he becomes entranced by the novel and its mysterious author, Daniel is drawn into a shadowy web of intrigue, danger, and forgotten history. Zafón paints a vivid picture of a city haunted by its past, filled with complex characters and labyrinthine secrets. \n\nThis novel is both a literary thriller and a heartfelt coming-of-age tale. With themes of memory, love, and the power of books, 'The Shadow of the Wind' is a captivating homage to the art of storytelling and the enduring impact of literature on our lives."
         }
     },
     {
@@ -708,7 +733,8 @@
             "release_date": "2012-01-10",
             "image_url": "",
             "image": "the_fault_in_our_stars.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "John Green’s 'The Fault in Our Stars' is a deeply moving love story that follows Hazel Grace Lancaster and Augustus Waters, two teenagers who meet in a cancer support group. Despite their difficult circumstances, they form a bond that defies the limitations imposed by their illnesses, finding comfort, humor, and love in one another. Green’s novel is an exploration of life’s uncertainties, love’s triumphs, and the painful beauty of mortality. \n\nAt its heart, 'The Fault in Our Stars' is a tender and honest portrayal of young love in the face of terminal illness. It confronts profound themes of loss, hope, and what it means to live a meaningful life, resonating with readers of all ages. The novel is celebrated for its emotional depth and its ability to handle sensitive topics with grace and empathy."
         }
     },
     {
@@ -725,7 +751,8 @@
             "release_date": "2012-02-28",
             "image_url": "",
             "image": "the_power_of_habit.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'The Power of Habit' by Charles Duhigg dives into the science of why habits exist and how they can be transformed. Drawing from research in psychology, neuroscience, and behavioral economics, Duhigg explains how habits shape our lives, from the mundane routines we perform daily to the most significant decisions we make. He reveals how understanding the habit loop—cue, routine, and reward—can lead to personal and organizational transformation. \n\nThrough captivating stories of individuals and businesses that have harnessed the power of habits, Duhigg illustrates the immense potential for change when we become aware of the hidden forces guiding our actions. 'The Power of Habit' is an empowering guide for anyone seeking to make lasting improvements in their personal or professional life."
         }
     },
     {
@@ -742,7 +769,8 @@
             "release_date": "2016-08-02",
             "image_url": "",
             "image": "the_underground_railroad.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "Colson Whitehead’s 'The Underground Railroad' reimagines one of history’s most significant escape routes as a literal underground network of tracks and trains. The novel follows Cora, an enslaved young woman who seeks freedom by navigating this dangerous and mysterious system. As she journeys across different states, each presenting its own nightmarish version of oppression, Whitehead offers a haunting commentary on the enduring legacy of slavery in America. \n\nWith its powerful blend of history and fantasy, 'The Underground Railroad' is both a gripping adventure and a profound reflection on race, resilience, and the relentless pursuit of freedom. Whitehead’s novel won the Pulitzer Prize for its raw, poignant, and unforgettable portrayal of the horrors of slavery and the human spirit’s capacity for survival."
         }
     },
     {
@@ -759,7 +787,8 @@
             "release_date": "1897-05-26",
             "image_url": "",
             "image": "dracula.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "Bram Stoker’s 'Dracula' is the quintessential gothic horror novel that introduced the world to one of literature’s most iconic villains—Count Dracula. The story is told through a series of diary entries, letters, and newspaper articles, following Jonathan Harker, Dr. Van Helsing, and others as they battle the terrifying vampire who seeks to spread his curse beyond Transylvania. Stoker’s novel blends elements of romance, terror, and the supernatural, creating a chilling atmosphere that has captivated readers for over a century. \n\n' Dracula' explores themes of fear, desire, and the unknown, while also reflecting Victorian anxieties about modernity and the collapse of tradition. The novel’s legacy endures not only for its thrilling narrative but also for its rich symbolism and the eerie, seductive figure of Dracula himself, a character who continues to haunt popular culture."
         }
     },
     {
@@ -776,7 +805,8 @@
             "release_date": "2005-03-03",
             "image_url": "",
             "image": "never_let_me_go.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Kazuo Ishiguro’s 'Never Let Me Go' is a haunting dystopian novel that explores themes of humanity, ethics, and the meaning of life. Set in a seemingly idyllic boarding school called Hailsham, the story follows three students—Kathy, Tommy, and Ruth—as they grow up and slowly discover the unsettling truth about their existence. Their lives, seemingly normal, are in fact part of a larger, dystopian reality in which they are destined to serve a dark purpose. \n\nThrough subtle prose and deep emotional undercurrents, Ishiguro examines the fragility of human life and the ethical dilemmas surrounding technology, cloning, and organ donation. 'Never Let Me Go' is a deeply moving and thought-provoking story about love, loss, and the human condition."
         }
     },
     {
@@ -793,7 +823,8 @@
             "release_date": "2001-06-19",
             "image_url": "",
             "image": "american_gods.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "In 'American Gods,' Neil Gaiman crafts a sprawling tale that explores the clash between old gods of ancient mythology and the new deities of modern culture, such as technology and media. The story follows Shadow, an ex-convict, as he becomes entangled in this cosmic struggle after being hired by the enigmatic Mr. Wednesday. Gaiman masterfully blends American folklore, myth, and urban fantasy into a dark and captivating journey through the hidden forces shaping the world. \n\nWith its richly drawn characters and multilayered themes, 'American Gods' examines the nature of belief, identity, and the evolving spirit of America. It is a meditation on the shifting powers in society, offering both a thrilling adventure and a deep reflection on human culture and spirituality."
         }
     },
     {
@@ -810,7 +841,8 @@
             "release_date": "2011-02-11",
             "image_url": "",
             "image": "the_martian.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "'The Martian' by Andy Weir tells the gripping tale of astronaut Mark Watney, who finds himself stranded alone on Mars after a mission goes disastrously wrong. Faced with seemingly insurmountable odds, Mark uses his wit, engineering skills, and sheer determination to survive, all while keeping a dry sense of humor. His battle for survival is not just against the harsh Martian environment but also time, as Earth scrambles to find a way to rescue him. \n\nThrough a mix of scientific realism and human resilience, Weir captures the essence of space exploration and the indomitable spirit of survival. 'The Martian' is a fast-paced, immersive novel that delves into the dangers and thrills of outer space while celebrating the ingenuity and courage of one man against impossible odds."
         }
     },
     {
@@ -827,7 +859,8 @@
             "release_date": "2006-09-26",
             "image_url": "",
             "image": "sharp_objects.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "In 'Sharp Objects,' Gillian Flynn delves into the darkest corners of small-town America with a chilling psychological thriller. Camille Preaker, a troubled journalist fresh out of a psychiatric hospital, is sent back to her hometown to investigate the brutal murders of two young girls. As she unravels the sinister secrets of the town, Camille is forced to confront her own deeply buried traumas and the disturbing family dynamics that haunt her. \n\nWith Flynn’s trademark sharp prose and unrelenting tension, 'Sharp Objects' is both a mystery and a character study, exploring themes of mental illness, self-destruction, and the lasting scars of childhood trauma. This unsettling and engrossing novel leaves readers questioning the true nature of evil and the fragile line between sanity and madness."
         }
     },
     {
@@ -844,7 +877,8 @@
             "release_date": "1987-09-16",
             "image_url": "",
             "image": "beloved.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "'Beloved' by Toni Morrison is a harrowing and poetic exploration of the enduring horrors of slavery and its aftershocks in post-Civil War America. The novel follows Sethe, an escaped slave, who is haunted by the ghost of her deceased daughter, Beloved. As Sethe struggles to make a new life for herself, she is forced to confront the trauma of her past, the horrors she endured, and the choices she made in the name of love and survival. \n\nMorrison’s powerful narrative weaves together memory, pain, and a relentless quest for redemption. 'Beloved' is a profound meditation on motherhood, identity, and the human capacity for both unimaginable cruelty and enduring love. It remains a cornerstone of American literature, offering an unflinching look at the legacy of slavery and its lasting impact on individuals and society."
         }
     },
     {
@@ -861,7 +895,8 @@
             "release_date": "1953-10-19",
             "image_url": "",
             "image": "fahrenheit_451.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "Ray Bradbury’s 'Fahrenheit 451' presents a bleak future where books are banned, and 'firemen' are tasked with burning any that are found. The story follows Guy Montag, a fireman who becomes disillusioned with his society's suppression of knowledge and culture. As Montag begins to question the purpose of his work and the emptiness of his life, he is drawn into a dangerous rebellion against the authoritarian regime that seeks to control thought by destroying books. \n\nBradbury’s chilling vision of a world without literature and critical thinking serves as both a cautionary tale and a timeless commentary on the power of ideas. 'Fahrenheit 451' is a searing indictment of censorship and the perils of complacency in the face of authoritarianism, making it a classic of dystopian literature."
         }
     },
     {
@@ -878,7 +913,8 @@
             "release_date": "1982-10-18",
             "image_url": "",
             "image": "the_color_purple.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Alice Walker’s 'The Color Purple' is a groundbreaking novel that explores the struggles, resilience, and triumphs of African American women in the early 20th-century American South. Through the eyes of Celie, a young woman subjected to abuse and oppression, the novel chronicles her journey from voicelessness to empowerment, as she forges connections with other women who help her rediscover her sense of self-worth. Walker’s prose is both raw and lyrical, painting a vivid picture of the intersections of race, gender, and poverty. \n\nAt its heart, 'The Color Purple' is a story of survival, love, and redemption, examining the ways in which personal and spiritual growth are intertwined with the power of community. The novel remains a landmark of African American literature, celebrated for its emotional depth and its unflinching portrayal of the complexities of black womanhood in a world rife with injustice."
         }
     },
     {
@@ -895,7 +931,8 @@
             "release_date": "1945-08-17",
             "image_url": "",
             "image": "animal_farm.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "In 'Animal Farm', George Orwell presents a sharp and biting political allegory that explores the dynamics of power and corruption. The story unfolds on a farm where the animals, led by the pigs, revolt against their human owner, Mr. Jones. They establish a new government based on the principle of equality, but as time passes, the pigs begin to assume greater power and privileges, leading to a society that mirrors the very tyranny they sought to escape.\n\nThrough the rise and fall of the animal regime, Orwell critiques totalitarianism and the betrayal of revolutionary ideals. The familiar phrases 'All animals are equal, but some animals are more equal than others' resonate with readers as a cautionary tale about the fragility of freedom and the ease with which power can corrupt. 'Animal Farm' remains a timeless reflection on the nature of authority and the complex interplay between freedom and oppression."
         }
     },
     {
@@ -912,7 +949,8 @@
             "release_date": "1967-04-24",
             "image_url": "",
             "image": "the_outsiders.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "'The Outsiders' by S.E. Hinton is a poignant exploration of teenage life and the stark realities of class conflict in 1960s America. The story centers around two rival groups, the Greasers and the Socs, whose differences in socioeconomic status lead to deep-seated tensions and violence. The novel is narrated by Ponyboy Curtis, a young Greaser who struggles with his identity and the harsh realities of his world, all while seeking acceptance and understanding.\n\nAs Ponyboy navigates the challenges of adolescence, he forms deep bonds with his friends and learns about loyalty, love, and the impact of societal divides. Hinton's authentic voice and raw storytelling provide insight into the struggles faced by young people, making 'The Outsiders' a timeless classic that resonates with readers of all ages, emphasizing the importance of empathy and understanding across social boundaries."
         }
     },
     {
@@ -929,7 +967,8 @@
             "release_date": "1982-05-26",
             "image_url": "",
             "image": "the_house_of_the_spirits.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'The House of the Spirits' by Isabel Allende is a sweeping tale that interweaves the lives of the Trueba family over four generations against the backdrop of Chilean history. Blending magical realism with political and social themes, Allende crafts a rich narrative that explores love, power, and the impact of the past on the present. The story is narrated through the voices of powerful women, who possess extraordinary abilities and insights into their family's tumultuous history.\n\nAs the characters navigate personal and political upheavals, their intertwined destinies reflect the larger struggles of Chilean society. The novel examines themes of oppression, social justice, and the resilience of the human spirit. Allende's lyrical prose and profound character development create a tapestry of life that invites readers to reflect on their own histories and the legacies they inherit."
         }
     },
     {
@@ -946,7 +985,8 @@
             "release_date": "2010-09-13",
             "image_url": "",
             "image": "room.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "'Room' by Emma Donoghue tells the gripping story of Jack, a five-year-old boy who has lived his entire life in a small, locked room with his mother. They are captives of a man who has confined them for years, and the room is all Jack has ever known. Through his innocent and imaginative perspective, Donoghue presents a powerful exploration of childhood and the bond between mother and son amidst unimaginable circumstances.\n\nWhen Jack and his mother finally escape, they must confront the complexities of the outside world, which is both overwhelming and liberating. The novel delicately examines themes of trauma, resilience, and the struggle for identity, offering a poignant look at how love can endure even in the most challenging situations. 'Room' is a moving and thought-provoking narrative that leaves a lasting impact on its readers."
         }
     },
     {
@@ -963,7 +1003,8 @@
             "release_date": "1959-10-16",
             "image_url": "",
             "image": "the_haunting_of_hill_house.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "'The Haunting of Hill House' by Shirley Jackson is a masterful blend of psychological horror and gothic fiction. The story revolves around four individuals—Dr. John Montague, Eleanor Vance, Theodora, and Luke Sanderson—who come to Hill House to investigate its reputation for supernatural occurrences. As they stay in the eerie mansion, strange phenomena unfold, revealing the deep-seated fears and insecurities of each character.\n\nJackson skillfully explores themes of isolation, mental instability, and the complexity of human relationships against the haunting backdrop of Hill House. As the line between reality and illusion blurs, the characters must confront their own demons while grappling with the sinister history of the house. The novel's chilling atmosphere and psychological depth make it a seminal work in the horror genre, leaving readers questioning the very nature of fear."
         }
     },
     {
@@ -980,7 +1021,8 @@
             "release_date": "2001-09-11",
             "image_url": "",
             "image": "life_of_pi.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "'Life of Pi' by Yann Martel is a mesmerizing tale that explores themes of spirituality, survival, and the human spirit's resilience. The story follows Piscine Molitor Patel, known as Pi, who survives a shipwreck and finds himself stranded on a lifeboat in the Pacific Ocean with a Bengal tiger named Richard Parker. Their unlikely companionship challenges the boundaries of fear, faith, and survival as they navigate the vast and perilous sea together.\n\nThrough Pi's extraordinary journey, Martel delves into profound philosophical questions about faith, the nature of storytelling, and the intersection of reality and fiction. As Pi learns to coexist with the tiger and confronts the challenges of isolation, readers are taken on a transformative voyage that examines what it means to be alive. 'Life of Pi' is a rich and imaginative narrative that lingers in the minds of readers long after they turn the last page."
         }
     },
     {
@@ -997,7 +1039,8 @@
             "release_date": "2014-07-29",
             "image_url": "",
             "image": "big_little_lies.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "In 'Big Little Lies,' Liane Moriarty masterfully blends humor and suspense in a tale centered around three women—Madeline, Celeste, and Jane. Their seemingly perfect lives are upended as secrets unravel in the close-knit Australian seaside community. The story builds up to a school trivia night, where a shocking murder occurs, leaving the characters and readers questioning who is responsible. \n\nWith themes of friendship, domestic violence, and the facade of perfection, 'Big Little Lies' is both a sharp social commentary and a riveting mystery. Moriarty’s engaging narrative and dynamic characters keep the reader enthralled as the pieces of the puzzle come together, revealing the lies that bind—and divide—these women."
         }
     },
     {
@@ -1014,7 +1057,8 @@
             "release_date": "2012-06-05",
             "image_url": "",
             "image": "gone_girl.webp",
-            "offer": false
+            "offer": false,
+            "blurb": "In 'Gone Girl,' Gillian Flynn delves into the darkest corners of a modern marriage, crafting a gripping psychological thriller. The novel begins with the sudden disappearance of Amy Dunne on her fifth wedding anniversary, leaving her husband Nick as the prime suspect. As the investigation unfolds, the narrative alternates between Nick's perspective and Amy's diary entries, revealing startling contradictions and unsettling truths about their relationship. \n\nFlynn expertly weaves a tale of manipulation, betrayal, and revenge, keeping readers on edge with unexpected twists. 'Gone Girl' is not just a mystery about a missing wife, but a brilliant exploration of the lies couples tell one another and the masks they wear in the name of love."
         }
     },
     {
@@ -1031,7 +1075,8 @@
             "release_date": "2009-02-10",
             "image_url": "",
             "image": "the_help.webp",
-            "offer": true
+            "offer": true,
+            "blurb": "Set in 1960s Mississippi, 'The Help' by Kathryn Stockett tells the powerful story of three women who come together to challenge the deeply ingrained racial divisions of their society. Skeeter, a young white aspiring journalist, forms an unlikely bond with Aibileen and Minny, two African-American maids, as they secretly collaborate on a project that risks their safety and livelihoods: documenting the untold stories of the black women who serve in white households. \n\nWith richly drawn characters and a vivid portrayal of the era, 'The Help' shines a spotlight on the courage it takes to speak up in the face of injustice. Through moments of heartbreak and humor, Stockett explores themes of friendship, dignity, and the transformative power of storytelling in a society resistant to change."
         }
     }
 ]
