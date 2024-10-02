@@ -55,12 +55,29 @@
                                             <img class="cover" src="{{ book.image.url }}" alt="{{ book.title }}">
                                         </a>
                                         <div class="spine"></div>
+                                        {% if book.offer %}
+                                            <div class="image-flash">
+                                                <p class="offer">10% OFF</p>
+                                            </div>
+                                        {% else %}
+                                            <p> No OFFER</p>
+                                        {% endif %}
                                     {% else %}    
                                         <a href="{% url 'book_detail' book.id %}">
                                             <img class="cover" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.title }}">
                                         </a>
                                         <div class="spine"></div>
+                                        {% if book.offer %}
+                                            <div class="image-flash">
+                                                <p class="offer">10% OFF</p>
+                                            </div>
+                                        {% else %}
+                                            <p> No OFFER</p>
+                                        {% endif %}
+                                        
                                     {% endif %}
+
+                                    
                                 </div>
                             </div>              
                             <div class="card-body pb-0">
