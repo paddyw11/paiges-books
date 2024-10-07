@@ -1,0 +1,489 @@
+[
+    {
+        "model": "authors.author",
+        "pk": 1,
+        "fields": {
+            "name": "Harper Lee",
+            "nationality": "American",
+            "bio": "Harper Lee was an American novelist known for her Pulitzer Prize-winning book, 'To Kill a Mockingbird,' published in 1960. The novel addresses serious social issues, including racial injustice and moral growth, through the eyes of a young girl in the Deep South."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 2,
+        "fields": {
+            "name": "C.S. Lewis",
+            "nationality": "British",
+            "bio": "C.S. Lewis was a British writer and theologian, best known for his works of fiction, such as 'The Chronicles of Narnia' series. His writings often explore themes of morality, faith, and human nature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 3,
+        "fields": {
+            "name": "Herman Melville",
+            "nationality": "American",
+            "bio": "Herman Melville was an American novelist and poet, renowned for his novel 'Moby-Dick.' His works often delve into complex themes of humanity, nature, and existentialism."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 4,
+        "fields": {
+            "name": "Oscar Wilde",
+            "nationality": "Irish",
+            "bio": "Oscar Wilde was an Irish poet and playwright known for his wit and flamboyant style. His most famous works include 'The Picture of Dorian Gray' and 'The Importance of Being Earnest.'"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 5,
+        "fields": {
+            "name": "Mary Shelley",
+            "nationality": "British",
+            "bio": "Mary Shelley was a British novelist best known for her groundbreaking work 'Frankenstein.' She is considered one of the early figures of science fiction, exploring themes of creation and responsibility."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 6,
+        "fields": {
+            "name": "Douglas Adams",
+            "nationality": "British",
+            "bio": "Douglas Adams was a British author and humorist, famous for his science fiction series 'The Hitchhiker's Guide to the Galaxy.' His works are celebrated for their clever humor and satirical take on life and technology."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 7,
+        "fields": {
+            "name": "Cormac McCarthy",
+            "nationality": "American",
+            "bio": "Cormac McCarthy is an American novelist known for his sparse writing style and dark themes. His notable works include 'The Road' and 'No Country for Old Men,' which explore the human condition and morality."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 8,
+        "fields": {
+            "name": "Khaled Hosseini",
+            "nationality": "Afghan-American",
+            "bio": "Khaled Hosseini is an Afghan-American author known for his bestselling novels, including 'The Kite Runner' and 'A Thousand Splendid Suns.' His works often highlight themes of friendship, love, and the impact of war."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 9,
+        "fields": {
+            "name": "Gabriel García Márquez",
+            "nationality": "Colombian",
+            "bio": "Gabriel García Márquez was a Colombian novelist and Nobel Prize laureate, renowned for his use of magical realism in works such as 'One Hundred Years of Solitude.' His stories often explore the intersection of reality and fantasy."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 10,
+        "fields": {
+            "name": "Yuval Noah Harari",
+            "nationality": "Israeli",
+            "bio": "Yuval Noah Harari is an Israeli historian and author known for his popular books, including 'Sapiens: A Brief History of Humankind.' His works examine history, culture, and the future of humanity."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 11,
+        "fields": {
+            "name": "Stieg Larsson",
+            "nationality": "Swedish",
+            "bio": "Stieg Larsson was a Swedish journalist and author, best known for his 'Millennium' series, including 'The Girl with the Dragon Tattoo.' His works combine crime fiction with social and political commentary."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 12,
+        "fields": {
+            "name": "Margaret Mitchell",
+            "nationality": "American",
+            "bio": "Margaret Mitchell was an American author best known for her novel 'Gone with the Wind,' which won the Pulitzer Prize. The novel explores themes of love, loss, and the American South during the Civil War."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 13,
+        "fields": {
+            "name": "Dan Brown",
+            "nationality": "American",
+            "bio": "Dan Brown is an American author famous for his thriller novels, including 'The Da Vinci Code.' His books often combine historical elements with fast-paced plots and puzzles."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 14,
+        "fields": {
+            "name": "Sylvia Plath",
+            "nationality": "American",
+            "bio": "Sylvia Plath was an American poet and novelist, known for her confessional style of writing. Her most famous works include 'The Bell Jar' and her poetry collections that explore themes of identity and mental health."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 15,
+        "fields": {
+            "name": "Stephen King",
+            "nationality": "American",
+            "bio": "Stephen King is an American author known for his prolific output of horror, supernatural fiction, suspense, and fantasy novels. His works, such as 'The Shining' and 'IT,' have become cultural phenomena."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 16,
+        "fields": {
+            "name": "Suzanne Collins",
+            "nationality": "American",
+            "bio": "Suzanne Collins is an American author best known for her young adult series 'The Hunger Games.' Her writing often addresses themes of survival, government control, and social inequality."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 17,
+        "fields": {
+            "name": "George R.R. Martin",
+            "nationality": "American",
+            "bio": "George R.R. Martin is an American novelist and television producer, best known for his epic fantasy series 'A Song of Ice and Fire,' which inspired the hit TV series 'Game of Thrones.' His works are known for their complex characters and intricate plots."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 18,
+        "fields": {
+            "name": "Margaret Atwood",
+            "nationality": "Canadian",
+            "bio": "Margaret Atwood is a Canadian author known for her novels, essays, and poetry. Her work often explores themes of gender, identity, and dystopia, with notable works including 'The Handmaid's Tale.'"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 19,
+        "fields": {
+            "name": "Alex Michaelides",
+            "nationality": "Cypriot",
+            "bio": "Alex Michaelides is a Cypriot author known for his debut psychological thriller, 'The Silent Patient.' His gripping storytelling and intricate plots have earned him a significant following."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 20,
+        "fields": {
+            "name": "Markus Zusak",
+            "nationality": "Australian",
+            "bio": "Markus Zusak is an Australian author best known for his novel 'The Book Thief,' which tells the story of a young girl in Nazi Germany. His work is celebrated for its unique narrative style and emotional depth."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 21,
+        "fields": {
+            "name": "Joseph Heller",
+            "nationality": "American",
+            "bio": "Joseph Heller was an American author best known for his satirical novel 'Catch-22,' which critiques the absurdities of war and bureaucracy. His work has had a lasting impact on American literature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 22,
+        "fields": {
+            "name": "Michelle Obama",
+            "nationality": "American",
+            "bio": "Michelle Obama is an American attorney and author, known for her memoir 'Becoming,' which chronicles her life and experiences as the First Lady of the United States. She advocates for education and healthy living."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 23,
+        "fields": {
+            "name": "Ian Fleming",
+            "nationality": "British",
+            "bio": "Ian Fleming was a British author best known for creating the James Bond character in his spy novels, including 'Casino Royale.' His thrilling plots and intriguing characters have made a lasting impact on popular culture."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 24,
+        "fields": {
+            "name": "Tara Westover",
+            "nationality": "American",
+            "bio": "Tara Westover is an American author known for her memoir 'Educated,' which recounts her experiences growing up in a strict and abusive household in rural Idaho and her journey to education and self-discovery."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 25,
+        "fields": {
+            "name": "H.G. Wells",
+            "nationality": "British",
+            "bio": "H.G. Wells was a British author known for his pioneering works in science fiction, including 'The Time Machine' and 'The War of the Worlds.' His imaginative storytelling and social commentary have left a lasting legacy."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 26,
+        "fields": {
+            "name": "Neil Gaiman",
+            "nationality": "British",
+            "bio": "Neil Gaiman is a British author known for his works in fantasy, horror, and graphic novels, including 'American Gods' and 'Coraline.' His unique storytelling style blends myth, folklore, and the surreal."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 27,
+        "fields": {
+            "name": "Daphne du Maurier",
+            "nationality": "British",
+            "bio": "Daphne du Maurier was a British author known for her suspenseful novels, including 'Rebecca' and 'Jamaica Inn.' Her works often feature strong characters and intricate plots, exploring themes of obsession and identity."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 28,
+        "fields": {
+            "name": "Carlos Ruiz Zafón",
+            "nationality": "Spanish",
+            "bio": "Carlos Ruiz Zafón was a Spanish author known for his novels set in Barcelona, including 'The Shadow of the Wind.' His works often blend historical fiction with elements of mystery and romance."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 29,
+        "fields": {
+            "name": "John Green",
+            "nationality": "American",
+            "bio": "John Green is an American author and YouTube creator known for his young adult novels, such as 'The Fault in Our Stars' and 'Looking for Alaska.' His works often explore themes of love, loss, and identity."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 30,
+        "fields": {
+            "name": "Charles Duhigg",
+            "nationality": "American",
+            "bio": "Charles Duhigg is an American author and journalist known for his books on habit formation and productivity, including 'The Power of Habit.' His work combines research with practical insights for personal and professional growth."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 31,
+        "fields": {
+            "name": "Colson Whitehead",
+            "nationality": "American",
+            "bio": "Colson Whitehead is an American novelist and Pulitzer Prize winner known for his works, including 'The Underground Railroad' and 'The Nickel Boys.' His writing often addresses themes of race, history, and identity."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 32,
+        "fields": {
+            "name": "Bram Stoker",
+            "nationality": "Irish",
+            "bio": "Bram Stoker was an Irish author best known for his Gothic horror novel 'Dracula.' His influence on the horror genre is profound, and his work continues to inspire adaptations and interpretations."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 33,
+        "fields": {
+            "name": "Kazuo Ishiguro",
+            "nationality": "British",
+            "bio": "Kazuo Ishiguro is a British novelist and Nobel laureate known for his contemplative novels, including 'Never Let Me Go' and 'The Remains of the Day.' His work often explores memory, time, and the human condition."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 34,
+        "fields": {
+            "name": "Toni Morrison",
+            "nationality": "American",
+            "bio": "Toni Morrison was an American novelist and Nobel Prize winner, renowned for her works that explore African American identity and culture. Her novels, such as 'Beloved' and 'Song of Solomon,' have left a lasting impact on literature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 35,
+        "fields": {
+            "name": "Ray Bradbury",
+            "nationality": "American",
+            "bio": "Ray Bradbury was an American author known for his works in science fiction and fantasy, including 'Fahrenheit 451' and 'The Martian Chronicles.' His imaginative storytelling often reflects social concerns and the human experience."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 36,
+        "fields": {
+            "name": "Alice Walker",
+            "nationality": "American",
+            "bio": "Alice Walker is an American novelist, poet, and activist, best known for her Pulitzer Prize-winning novel 'The Color Purple.' Her work explores themes of race, gender, and empowerment."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 37,
+        "fields": {
+            "name": "George Orwell",
+            "nationality": "British",
+            "bio": "George Orwell was a British novelist and journalist, renowned for his works exploring totalitarianism and social injustice. His most famous books, '1984' and 'Animal Farm,' remain relevant in discussions of power and control."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 38,
+        "fields": {
+            "name": "S.E. Hinton",
+            "nationality": "American",
+            "bio": "S.E. Hinton is an American author known for her young adult novels, particularly 'The Outsiders.' Her writing addresses themes of youth, identity, and social class."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 39,
+        "fields": {
+            "name": "Isabel Allende",
+            "nationality": "Chilean-American",
+            "bio": "Isabel Allende is a Chilean-American author known for her novels that blend magical realism with historical fiction. Her notable works include 'The House of the Spirits' and 'Eva Luna.'"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 40,
+        "fields": {
+            "name": "Emma Donoghue",
+            "nationality": "Irish-Canadian",
+            "bio": "Emma Donoghue is an Irish-Canadian author known for her novel 'Room,' which was shortlisted for the Man Booker Prize. Her work often explores themes of identity and human experience."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 41,
+        "fields": {
+            "name": "Shirley Jackson",
+            "nationality": "American",
+            "bio": "Shirley Jackson was an American author known for her works of horror and psychological suspense, including 'The Haunting of Hill House' and 'We Have Always Lived in the Castle.' Her writing often explores themes of isolation and the uncanny."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 42,
+        "fields": {
+            "name": "Yann Martel",
+            "nationality": "Canadian",
+            "bio": "Yann Martel is a Canadian author best known for his novel 'Life of Pi,' which won the Man Booker Prize. His work often blends philosophy and storytelling, exploring themes of faith and survival."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 43,
+        "fields": {
+            "name": "Liane Moriarty",
+            "nationality": "Australian",
+            "bio": "Liane Moriarty is an Australian author known for her bestselling novels, including 'Big Little Lies' and 'The Husband's Secret.' Her work often explores themes of relationships, family, and secrets."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 44,
+        "fields": {
+            "name": "Gillian Flynn",
+            "nationality": "American",
+            "bio": "Gillian Flynn is an American author known for her psychological thrillers, including 'Gone Girl.' Her works often delve into the complexities of relationships and the darker sides of human nature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 45,
+        "fields": {
+            "name": "Kathryn Stockett",
+            "nationality": "American",
+            "bio": "Kathryn Stockett is an American author best known for her debut novel 'The Help,' which explores race relations in the American South during the 1960s. Her work has sparked important discussions on race and equality."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 46,
+        "fields": {
+            "name": "Jane Austen",
+            "nationality": "British",
+            "bio": "Jane Austen was a British novelist known for her keen observations of early 19th-century English society. Her works, including 'Pride and Prejudice' and 'Sense and Sensibility,' often explore themes of love, class, and social mobility, making her one of the most beloved authors in English literature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 47,
+        "fields": {
+            "name": "F. Scott Fitzgerald",
+            "nationality": "American",
+            "bio": "F. Scott Fitzgerald was an American novelist and short story writer, widely regarded as one of the greatest American authors of the 20th century. His most famous work, 'The Great Gatsby,' explores themes of wealth, decadence, and the American Dream during the Jazz Age, reflecting the societal changes of the 1920s."
+        }
+    },
+
+    {
+        "model": "authors.author",
+        "pk": 48,
+        "fields": {
+            "name": "J.K. Rowling",
+            "nationality": "British",
+            "bio": "J.K. Rowling is a British author best known for creating the 'Harry Potter' series, which has become a cultural phenomenon. Her work has inspired millions of readers around the world and has led to successful films, spin-offs, and a dedicated fanbase."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 49,
+        "fields": {
+            "name": "J.D. Salinger",
+            "nationality": "American",
+            "bio": "J.D. Salinger was an American author renowned for his novel 'The Catcher in the Rye,' which has become a classic of modern American literature. Salinger's works often explore themes of alienation and the challenges of adolescence, and he is known for his reclusive nature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 50,
+        "fields": {
+            "name": "William Golding",
+            "nationality": "British",
+            "bio": "William Golding was a British novelist and Nobel Prize winner, best known for his novel 'Lord of the Flies.' His works often explore the darker aspects of human nature and society, making significant contributions to 20th-century literature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 51,
+        "fields": {
+            "name": "Andy Weir",
+            "nationality": "American",
+            "bio": "Andy Weir is an American author best known for his debut novel 'The Martian,' which blends science fiction with humor and realism. His work has garnered critical acclaim and was adapted into a successful film, showcasing his ability to engage readers with compelling storytelling."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 52,
+        "fields": {
+            "name": "Aldous Huxley",
+            "nationality": "British",
+            "bio": "Aldous Huxley was a British writer and philosopher, best known for his dystopian novel 'Brave New World.' His works often explore themes of societal control, technology, and human behavior, making him a significant figure in 20th-century literature."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 53,
+        "fields": {
+            "name": "Paulo Coelho",
+            "nationality": "Brazilian",
+            "bio": "Paulo Coelho is a Brazilian author known for his bestselling novel 'The Alchemist,' which explores themes of destiny and personal legend. His works have been translated into numerous languages and have inspired millions of readers worldwide."
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 54,
+        "fields": {
+            "name": "J.R.R. Tolkien",
+            "nationality": "British",
+            "bio": "J.R.R. Tolkien was a British writer and philologist, best known for his epic fantasy works 'The Hobbit' and 'The Lord of the Rings.' His richly imagined worlds and intricate lore have influenced modern fantasy literature, earning him a lasting legacy."
+        }
+    }    
+]
