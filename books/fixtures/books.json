@@ -5,7 +5,7 @@
         "fields": {
             "sku": "B001",
             "title": "To Kill a Mockingbird",
-            "author": "Harper Lee",
+            "author": 1,
             "price": 10.99,
             "short_description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
             "number_of_pages": 336,
@@ -23,7 +23,7 @@
         "fields": {
             "sku": "B002",
             "title": "1984",
-            "author": "George Orwell",
+            "author": 37,
             "price": 9.99,
             "short_description": "A dystopian novel set in a totalitarian regime, where Big Brother is always watching.",
             "number_of_pages": 328,
@@ -41,7 +41,7 @@
         "fields": {
             "sku": "B003",
             "title": "Pride and Prejudice",
-            "author": "Jane Austen",
+            "author": 46,
             "price": 8.49,
             "short_description": "A timeless romance novel exploring themes of class, marriage, and love.",
             "number_of_pages": 279,
@@ -59,7 +59,7 @@
         "fields": {
             "sku": "B004",
             "title": "The Great Gatsby",
-            "author": "F. Scott Fitzgerald",
+            "author": 47,
             "price": 11.99,
             "short_description": "A tale of wealth, love, and the American Dream set in the prosperous Jazz Age.",
             "number_of_pages": 180,
@@ -77,7 +77,7 @@
         "fields": {
             "sku": "B005",
             "title": "Harry Potter and the Sorcerer's Stone",
-            "author": "J.K. Rowling",
+            "author": 48,
             "price": 12.49,
             "short_description": "The first installment in the beloved fantasy series chronicling the adventures of a young wizard.",
             "number_of_pages": 320,
@@ -95,7 +95,7 @@
         "fields": {
             "sku": "B006",
             "title": "The Catcher in the Rye",
-            "author": "J.D. Salinger",
+            "author": 49,
             "price": 9.99,
             "short_description": "A classic novel following the disillusioned teenager Holden Caulfield as he navigates life and adulthood.",
             "number_of_pages": 277,
@@ -113,7 +113,7 @@
         "fields": {
             "sku": "B007",
             "title": "Lord of the Flies",
-            "author": "William Golding",
+            "author": 50,
             "price": 8.99,
             "short_description": "A gripping tale of survival and human nature, following a group of boys stranded on an uninhabited island.",
             "number_of_pages": 224,
@@ -131,7 +131,7 @@
         "fields": {
             "sku": "B008",
             "title": "The Hobbit",
-            "author": "J.R.R. Tolkien",
+            "author": 54,
             "price": 10.99,
             "short_description": "A classic fantasy novel following the adventures of Bilbo Baggins as he embarks on a quest to reclaim a treasure guarded by a dragon.",
             "number_of_pages": 310,
@@ -149,7 +149,7 @@
         "fields": {
             "sku": "B009",
             "title": "To Kill a Mockingbird",
-            "author": "Harper Lee",
+            "author": 1,
             "price": 9.49,
             "short_description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
             "number_of_pages": 336,
@@ -167,7 +167,7 @@
         "fields": {
             "sku": "B010",
             "title": "The Lord of the Rings",
-            "author": "J.R.R. Tolkien",
+            "author": 54,
             "price": 18.99,
             "short_description": "An epic high-fantasy trilogy chronicling the quest to destroy the One Ring and defeat the Dark Lord Sauron.",
             "number_of_pages": 1178,
@@ -185,7 +185,7 @@
         "fields": {
             "sku": "B011",
             "title": "Brave New World",
-            "author": "Aldous Huxley",
+            "author": 52,
             "price": 7.99,
             "short_description": "A dystopian novel exploring a futuristic society controlled by technology and genetic engineering.",
             "number_of_pages": 288,
@@ -203,7 +203,7 @@
         "fields": {
             "sku": "B012",
             "title": "The Alchemist",
-            "author": "Paulo Coelho",
+            "author": 53,
             "price": 11.99,
             "short_description": "A philosophical novel following the journey of an Andalusian shepherd boy named Santiago as he travels to Egypt in search of treasure.",
             "number_of_pages": 197,
@@ -221,7 +221,7 @@
         "fields": {
             "sku": "B013",
             "title": "The Chronicles of Narnia",
-            "author": "C.S. Lewis",
+            "author": 2,
             "price": 22.99,
             "short_description": "A series of seven high-fantasy novels set in the magical realm of Narnia, exploring themes of good versus evil and Christian allegory.",
             "number_of_pages": 767,
@@ -239,7 +239,7 @@
         "fields": {
             "sku": "B014",
             "title": "Moby-Dick; or, The Whale",
-            "author": "Herman Melville",
+            "author": 3,
             "price": 15.49,
             "short_description": "A novel depicting the obsessive quest of Captain Ahab for revenge on a giant white sperm whale.",
             "number_of_pages": 720,
@@ -257,7 +257,7 @@
         "fields": {
             "sku": "B015",
             "title": "The Picture of Dorian Gray",
-            "author": "Oscar Wilde",
+            "author": 4,
             "price": 8.99,
             "short_description": "A Gothic novel exploring the themes of aestheticism, narcissism, and the consequences of vanity.",
             "number_of_pages": 254,
@@ -275,7 +275,7 @@
         "fields": {
             "sku": "B016",
             "title": "Frankenstein; or, The Modern Prometheus",
-            "author": "Mary Shelley",
+            "author": 5,
             "price": 10.49,
             "short_description": "A novel depicting the story of Victor Frankenstein, a young scientist who creates a grotesque creature in an unorthodox scientific experiment.",
             "number_of_pages": 280,
@@ -293,7 +293,7 @@
         "fields": {
             "sku": "B017",
             "title": "The Hitchhiker's Guide to the Galaxy",
-            "author": "Douglas Adams",
+            "author": 6,
             "price": 9.99,
             "short_description": "A humorous science fiction series following the misadventures of Arthur Dent, an unwitting Earthling.",
             "number_of_pages": 216,
@@ -311,7 +311,7 @@
         "fields": {
             "sku": "B018",
             "title": "The Road",
-            "author": "Cormac McCarthy",
+            "author": 7,
             "price": 13.99,
             "short_description": "A post-apocalyptic novel following a father and son's journey across a ravaged landscape.",
             "number_of_pages": 241,
@@ -329,7 +329,7 @@
         "fields": {
             "sku": "B019",
             "title": "The Kite Runner",
-            "author": "Khaled Hosseini",
+            "author": 8,
             "price": 11.49,
             "short_description": "A novel depicting the friendship between two young boys in Afghanistan and the consequences of betrayal.",
             "number_of_pages": 372,
@@ -347,7 +347,7 @@
         "fields": {
             "sku": "B020",
             "title": "One Hundred Years of Solitude",
-            "author": "Gabriel García Márquez",
+            "author": 9,
             "price": 14.99,
             "short_description": "A landmark novel chronicling the Buendía family's generations in the fictional town of Macondo.",
             "number_of_pages": 417,
@@ -365,7 +365,7 @@
         "fields": {
             "sku": "B021",
             "title": "Sapiens: A Brief History of Humankind",
-            "author": "Yuval Noah Harari",
+            "author": 10,
             "price": 16.99,
             "short_description": "An exploration of the history of Homo sapiens from the emergence of archaic human species to the present day.",
             "number_of_pages": 443,
@@ -383,7 +383,7 @@
         "fields": {
             "sku": "B022",
             "title": "The Girl with the Dragon Tattoo",
-            "author": "Stieg Larsson",
+            "author": 11,
             "price": 10.99,
             "short_description": "A psychological thriller following journalist Mikael Blomkvist and hacker Lisbeth Salander as they investigate a disappearance.",
             "number_of_pages": 590,
@@ -401,7 +401,7 @@
         "fields": {
             "sku": "B023",
             "title": "Gone with the Wind",
-            "author": "Margaret Mitchell",
+            "author": 12,
             "price": 13.49,
             "short_description": "A historical romance set during the American Civil War and Reconstruction era, following the life of Scarlett O'Hara.",
             "number_of_pages": 1037,
@@ -419,7 +419,7 @@
         "fields": {
             "sku": "B024",
             "title": "The Da Vinci Code",
-            "author": "Dan Brown",
+            "author": 13,
             "price": 9.99,
             "short_description": "A mystery thriller following symbologist Robert Langdon as he investigates a murder in the Louvre Museum.",
             "number_of_pages": 593,
@@ -437,7 +437,7 @@
         "fields": {
             "sku": "B025",
             "title": "The Bell Jar",
-            "author": "Sylvia Plath",
+            "author": 14,
             "price": 8.49,
             "short_description": "A semi-autobiographical novel detailing a young woman's descent into mental illness.",
             "number_of_pages": 244,
@@ -455,7 +455,7 @@
         "fields": {
             "sku": "B026",
             "title": "The Shining",
-            "author": "Stephen King",
+            "author": 15,
             "price": 11.49,
             "short_description": "A horror novel following the Torrance family as they become caretakers of the isolated Overlook Hotel during the winter season.",
             "number_of_pages": 447,
@@ -473,7 +473,7 @@
         "fields": {
             "sku": "B027",
             "title": "The Hunger Games",
-            "author": "Suzanne Collins",
+            "author": 16,
             "price": 10.99,
             "short_description": "The first installment in a dystopian trilogy, where teenagers are forced to fight to the death in a televised event.",
             "number_of_pages": 374,
@@ -491,7 +491,7 @@
         "fields": {
             "sku": "B028",
             "title": "A Game of Thrones",
-            "author": "George R.R. Martin",
+            "author": 17,
             "price": 14.99,
             "short_description": "The first book in the epic fantasy series 'A Song of Ice and Fire', following the power struggles among noble families vying for control of the Iron Throne.",
             "number_of_pages": 694,
@@ -509,7 +509,7 @@
         "fields": {
             "sku": "B029",
             "title": "The Handmaid's Tale",
-            "author": "Margaret Atwood",
+            "author": 18,
             "price": 12.49,
             "short_description": "A dystopian novel set in a future America where women's rights have been severely restricted.",
             "number_of_pages": 311,
@@ -527,7 +527,7 @@
         "fields": {
             "sku": "B030",
             "title": "The Stand",
-            "author": "Stephen King",
+            "author": 15,
             "price": 13.99,
             "short_description": "A post-apocalyptic horror novel following the survivors of a deadly pandemic.",
             "number_of_pages": 1439,
@@ -545,7 +545,7 @@
         "fields": {
             "sku": "B031",
             "title": "The Silent Patient",
-            "author": "Alex Michaelides",
+            "author": 19,
             "price": 13.99,
             "short_description": "A psychological thriller about a woman who stops speaking after being accused of murdering her husband, and the therapist determined to uncover the truth.",
             "number_of_pages": 336,
@@ -563,7 +563,7 @@
         "fields": {
             "sku": "B032",
             "title": "The Book Thief",
-            "author": "Markus Zusak",
+            "author": 20,
             "price": 14.99,
             "short_description": "The story of a young girl in Nazi Germany who steals books and shares them during the war.",
             "number_of_pages": 552,
@@ -581,7 +581,7 @@
         "fields": {
             "sku": "B033",
             "title": "Catch-22",
-            "author": "Joseph Heller",
+            "author": 21,
             "price": 10.99,
             "short_description": "A satirical novel that explores the absurdity of war and bureaucracy.",
             "number_of_pages": 453,
@@ -599,7 +599,7 @@
         "fields": {
             "sku": "B034",
             "title": "Becoming",
-            "author": "Michelle Obama",
+            "author": 22,
             "price": 16.99,
             "short_description": "A deeply personal memoir by the former First Lady of the United States, Michelle Obama.",
             "number_of_pages": 448,
@@ -617,7 +617,7 @@
         "fields": {
             "sku": "B035",
             "title": "Casino Royale",
-            "author": "Ian Fleming",
+            "author": 23,
             "price": 12.99,
             "short_description": "James Bond embarks on his first mission to defeat a Soviet agent in a high-stakes game of poker.",
             "number_of_pages": 213,
@@ -635,7 +635,7 @@
         "fields": {
             "sku": "B0036",
             "title": "Educated",
-            "author": "Tara Westover",
+            "author": 24,
             "price": 16.99,
             "short_description": "A memoir of a woman who grows up in a strict survivalist family and pursues education against all odds.",
             "number_of_pages": 334,
@@ -653,7 +653,7 @@
         "fields": {
             "sku": "B037",
             "title": "The Invisible Man",
-            "author": "H.G. Wells",
+            "author": 25,
             "price": 9.99,
             "short_description": "A science fiction novel about a scientist who becomes invisible and the consequences that follow.",
             "number_of_pages": 208,
@@ -671,7 +671,7 @@
         "fields": {
             "sku": "B038",
             "title": "American Gods",
-            "author": "Neil Gaiman",
+            "author": 26,
             "price": 13.99,
             "short_description": "A novel where gods of ancient mythology exist in modern America, waging a battle for survival.",
             "number_of_pages": 465,
@@ -689,7 +689,7 @@
         "fields": {
             "sku": "B0039",
             "title": "Rebecca",
-            "author": "Daphne du Maurier",
+            "author": 27,
             "price": 11.99,
             "short_description": "A gothic mystery about a woman haunted by the memory of her husband's first wife.",
             "number_of_pages": 448,
@@ -707,7 +707,7 @@
         "fields": {
             "sku": "B040",
             "title": "The Shadow of the Wind",
-            "author": "Carlos Ruiz Zafón",
+            "author": 28,
             "price": 13.99,
             "short_description": "A young boy discovers a mysterious book in post-war Barcelona, leading him into a web of intrigue.",
             "number_of_pages": 487,
@@ -725,7 +725,7 @@
         "fields": {
             "sku": "B041",
             "title": "The Fault in Our Stars",
-            "author": "John Green",
+            "author": 29,
             "price": 10.99,
             "short_description": "A heart-wrenching love story between two teenagers living with cancer.",
             "number_of_pages": 313,
@@ -743,7 +743,7 @@
         "fields": {
             "sku": "B042",
             "title": "The Power of Habit",
-            "author": "Charles Duhigg",
+            "author": 30,
             "price": 16.99,
             "short_description": "An exploration of the science behind habit formation and how we can change our lives by changing habits.",
             "number_of_pages": 400,
@@ -761,7 +761,7 @@
         "fields": {
             "sku": "B043",
             "title": "The Underground Railroad",
-            "author": "Colson Whitehead",
+            "author": 31,
             "price": 14.99,
             "short_description": "A gripping novel that reimagines the Underground Railroad as an actual underground railway system.",
             "number_of_pages": 320,
@@ -779,7 +779,7 @@
         "fields": {
             "sku": "B044",
             "title": "Dracula",
-            "author": "Bram Stoker",
+            "author": 32,
             "price": 9.99,
             "short_description": "The classic gothic horror novel that introduced the world to the infamous Count Dracula.",
             "number_of_pages": 418,
@@ -797,7 +797,7 @@
         "fields": {
             "sku": "B045",
             "title": "Never Let Me Go",
-            "author": "Kazuo Ishiguro",
+            "author": 33,
             "price": 12.99,
             "short_description": "A dystopian novel about a group of students who discover the dark purpose of their existence.",
             "number_of_pages": 288,
@@ -815,7 +815,7 @@
         "fields": {
             "sku": "B016",
             "title": "American Gods",
-            "author": "Neil Gaiman",
+            "author": 26,
             "price": 13.99,
             "short_description": "A novel where gods of ancient mythology exist in modern America, waging a battle for survival.",
             "number_of_pages": 465,
@@ -833,7 +833,7 @@
         "fields": {
             "sku": "B047",
             "title": "The Martian",
-            "author": "Andy Weir",
+            "author": 51,
             "price": 11.99,
             "short_description": "An astronaut stranded on Mars fights to survive and find a way to communicate with Earth.",
             "number_of_pages": 384,
@@ -842,7 +842,7 @@
             "image_url": "",
             "image": "the_martian.webp",
             "offer": true,
-            "blurb": "'The Martian' by Andy Weir tells the gripping tale of astronaut Mark Watney, who finds himself stranded alone on Mars after a mission goes disastrously wrong. Faced with seemingly insurmountable odds, Mark uses his wit, engineering skills, and sheer determination to survive, all while keeping a dry sense of humor. His battle for survival is not just against the harsh Martian environment but also time, as Earth scrambles to find a way to rescue him. \n\nThrough a mix of scientific realism and human resilience, Weir captures the essence of space exploration and the indomitable spirit of survival. 'The Martian' is a fast-paced, immersive novel that delves into the dangers and thrills of outer space while celebrating the ingenuity and courage of one man against impossible odds."
+            "blurb": "'The Martian' by Andy Weir tethe plls the gripping tale of astronaut Mark Watney, who finds himself stranded alone on Mars after a mission goes disastrously wrong. Faced with seemingly insurmountable odds, Mark uses his wit, engineering skills, and sheer determination to survive, all while keeping a dry sense of humor. His battle for survival is not just against the harsh Martian environment but also time, as Earth scrambles to find a way to rescue him. \n\nThrough a mix of scientific realism and human resilience, Weir captures the essence of space exploration and the indomitable spirit of survival. 'The Martian' is a fast-paced, immersive novel that delves into the dangers and thrills of outer space while celebrating the ingenuity and courage of one man against impossible odds."
         }
     },
     {
@@ -851,7 +851,7 @@
         "fields": {
             "sku": "B048",
             "title": "Sharp Objects",
-            "author": "Gillian Flynn",
+            "author": 44,
             "price": 12.99,
             "short_description": "A psychological thriller about a reporter who returns to her hometown to investigate a series of brutal murders.",
             "number_of_pages": 254,
@@ -869,7 +869,7 @@
         "fields": {
             "sku": "B049",
             "title": "Beloved",
-            "author": "Toni Morrison",
+            "author": 34,
             "price": 10.99,
             "short_description": "A haunting novel about slavery, freedom, and a mother's traumatic past, set after the American Civil War.",
             "number_of_pages": 324,
@@ -887,7 +887,7 @@
         "fields": {
             "sku": "B050",
             "title": "Fahrenheit 451",
-            "author": "Ray Bradbury",
+            "author": 35,
             "price": 9.99,
             "short_description": "A dystopian novel set in a future where books are banned and 'firemen' burn any they find.",
             "number_of_pages": 194,
@@ -905,7 +905,7 @@
         "fields": {
             "sku": "B051",
             "title": "The Color Purple",
-            "author": "Alice Walker",
+            "author": 36,
             "price": 11.99,
             "short_description": "A powerful novel about the lives of African American women in the early 20th century South.",
             "number_of_pages": 295,
@@ -923,7 +923,7 @@
         "fields": {
             "sku": "B052",
             "title": "Animal Farm",
-            "author": "George Orwell",
+            "author": 37,
             "price": 8.99,
             "short_description": "A political allegory in which a group of farm animals overthrow their human owner, only to be ruled by tyranny.",
             "number_of_pages": 112,
@@ -941,7 +941,7 @@
         "fields": {
             "sku": "B053",
             "title": "The Outsiders",
-            "author": "S.E. Hinton",
+            "author": 38,
             "price": 9.50,
             "short_description": "A young adult novel that explores class conflict, friendship, and coming of age in the 1960s.",
             "number_of_pages": 192,
@@ -959,7 +959,7 @@
         "fields": {
             "sku": "B054",
             "title": "The House of the Spirits",
-            "author": "Isabel Allende",
+            "author": 39,
             "price": 13.99,
             "short_description": "A novel about four generations of a family in Chile, blending magical realism with history and politics.",
             "number_of_pages": 448,
@@ -977,7 +977,7 @@
         "fields": {
             "sku": "B055",
             "title": "Room",
-            "author": "Emma Donoghue",
+            "author": 40,
             "price": 12.99,
             "short_description": "A thrilling and emotional story of a boy and his mother, held captive in a small room for years.",
             "number_of_pages": 321,
@@ -995,7 +995,7 @@
         "fields": {
             "sku": "B056",
             "title": "The Haunting of Hill House",
-            "author": "Shirley Jackson",
+            "author": 41,
             "price": 11.99,
             "short_description": "A gothic horror novel about four people investigating the mysterious and haunted Hill House.",
             "number_of_pages": 246,
@@ -1013,7 +1013,7 @@
         "fields": {
             "sku": "B057",
             "title": "Life of Pi",
-            "author": "Yann Martel",
+            "author": 42,
             "price": 10.99,
             "short_description": "A tale of survival where a young boy stranded at sea shares his boat with a Bengal tiger.",
             "number_of_pages": 319,
@@ -1031,7 +1031,7 @@
         "fields": {
             "sku": "B058",
             "title": "Big Little Lies",
-            "author": "Liane Moriarty",
+            "author": 43,
             "price": 13.99,
             "short_description": "A thriller about the lives of three women, leading up to a shocking murder in their community.",
             "number_of_pages": 460,
@@ -1049,7 +1049,7 @@
         "fields": {
             "sku": "B059",
             "title": "Gone Girl",
-            "author": "Gillian Flynn",
+            "author": 44,
             "price": 14.99,
             "short_description": "A psychological thriller about the disappearance of a woman and the unraveling of her marriage.",
             "number_of_pages": 432,
@@ -1067,7 +1067,7 @@
         "fields": {
             "sku": "B060",
             "title": "The Help",
-            "author": "Kathryn Stockett",
+            "author": 44,
             "price": 12.99,
             "short_description": "A story of three women in 1960s Mississippi who form an unlikely friendship while challenging societal norms.",
             "number_of_pages": 451,
@@ -1080,3 +1080,4 @@
         }
     }
 ]
+
