@@ -100,7 +100,7 @@ img {
     text-align: center;
 }
 .overlay {
-    height: 100%;
+    height: auto;
     width: 100%;
     top: 0;
     left: 0;
@@ -120,17 +120,16 @@ body {
 	width:230px;
 
 	position:relative;
-    overflow: hidden;
 
 	-webkit-perspective: 1200px;
-	   -moz-perspective: 1200px;
-	        perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
 }
 
 .image-flash {
     position: absolute;
-    top: 10px;  /* Adjust this value to control vertical placement */
-    right: 25px;  /* Adjust this value to control horizontal placement */
+    top: -5px;  /* Adjust this value to control vertical placement */
+    right: -5px;  /* Adjust this value to control horizontal placement */
     background-color: #ff7e5f;  /* Bright color to make it pop */
     color: #fff;
     font-size: 0.9rem;  /* Smaller font size for a sticker look */
@@ -530,11 +529,7 @@ input[name='q']::placeholder {
         text-align: center;
     }
 
-	body {
-		height: calc(100vh - 116px);
-	}
-
-    .display-3.logo-font.text-black {
+	.display-3.logo-font.text-black {
         font-size: 2rem;
     }
 
