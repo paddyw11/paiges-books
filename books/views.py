@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Book, Genre
 from .forms import BookForm
+from authors.models import Author
 
 
 def all_books(request):
@@ -23,7 +24,10 @@ def all_books(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'name':
+            if sortkey == 'author':
+                sortkey = 'author__name'
+            
+            elif sortkey == 'name':
                 sortkey = 'lower_name'
                 books = books.annotate(lower_name=Lower('name'))
             
@@ -50,7 +54,7 @@ def all_books(request):
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('books'))
             
-            queries = Q(title__icontains=query) | Q(short_description__icontains=query) | Q(author__icontains=query)
+            queries = Q(title__icontains=query) | Q(short_description__icontains=query) | Q(author__name__icontains=query) | Q(genre_nameicontains=query)
             books = books.filter(queries)
 
         if 'offer' in request.GET and request.GET['offer'] == 'true':
