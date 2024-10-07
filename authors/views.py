@@ -13,7 +13,7 @@ def author_bio(request, author_id):
         'author': author,
     }
     
-    return render(request, 'author/author_bio.html', context)
+    return render(request, 'authors/author_bio.html', context)
 
 
 @login_required
@@ -23,8 +23,8 @@ def add_author(request):
         messages.error(request, 'Sorry, only book shop owners can do that.')
         return redirect(reverse('home'))
 
-    if request.Method == 'POST':
-        form = AuthorForm(request.Post, request.FILES)
+    if request.method == 'POST':
+        form = AuthorForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully added Author.')
@@ -47,12 +47,12 @@ def edit_author(request, author_id):
         messages.error(request, 'Sorry, only book shop owners can do that.')
         return redirect(reverse('home'))
 
-    author = get_object_or_404(Author, pk=author_id, instane=author)
-    if request.Method == 'POST':
-        form = AuthorForm(request.Post, request.FILES)
+    author = get_object_or_404(Author, pk=author_id, instance=author)
+    if request.method == 'POST':
+        form = AuthorForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully added Author.')
+            messages.success(request, 'Successfully updated Author.')
             return redirect(reverse('author_bio', args=[author_id]))
         else:
             messages.error(request, 'Failed to update Author. Please ensure form is valid.')
@@ -70,9 +70,9 @@ def edit_author(request, author_id):
 
 @login_required
 def delete_author(request, author_id):
-    """ Delete an author fro0m the database """
+    """ Delete an author from the database """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, onluy book shop oweners can do that.')
+        messages.error(request, 'Sorry, only book shop oweners can do that.')
         return redirect(reverse('home'))
 
     author = get_object_or_404(Author, pk=author_id)
