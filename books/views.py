@@ -61,6 +61,10 @@ def all_books(request):
             books = books.filter(offer=True)
             print("Offer filter applied")
 
+
+        if 'bookmark' in request.GET:
+            books = books.filter(bookmark__id=request.user.id)
+
     
         
 
@@ -111,9 +115,14 @@ def book_detail(request, book_id):
     book = get_object_or_404(Book, pk=book_id)
     recommended_books = book.get_recommended_books()
 
+    bookmark = False
+    if book.bookmark.filter (id=request.user.id).exists():
+        bookmark = True
+
     context = {
     'book': book,
     'recommended_books': recommended_books,
+    'bookmark' : bookmark,
     }
 
     return render(request, 'books/book_detail.html', context)
@@ -182,3 +191,16 @@ def delete_book(request, book_id):
     book.delete()
     messages.success(request, 'Book successfully deleted!')
     return redirect(reverse('books'))
+
+@login_required
+def bookmark_add(request, book_id):
+    """ A view to add/remove a book to a reading list """
+
+    book = get_object_or_404(Book, pk=book_id)
+
+    if book.bookmark.filter(id=request.user.id).exists():
+        book.bookmark.remove(request.user)
+    else:
+        book.bookmark.add(request.user)
+
+    return redirect('book_detail', book.id)
