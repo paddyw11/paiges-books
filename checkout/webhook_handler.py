@@ -19,14 +19,14 @@ class StripeWH_Handler:
 
     def _send_confirmation_email(self, order):
         """ Send the user a confirmation email"""
-        cust_email = order_email
+        cust_email = order.email
         subject = render_to_string(
             '/checkout/templates/confirmation_emails/confirmation_email_subject.txt',
             {'order' : order})
         body = render_to_string(
             '/checkout/templates/confirmation_emails/confirmation_email_body.txt',
             {'order' : order, 'contact_email' : settings.DEFAULT_FROM_EMAIL })
-        send_email(
+        send_mail(
             subject,
             body, 
             settings.DEFAULT_FROM_EMAIL,
@@ -48,7 +48,7 @@ class StripeWH_Handler:
         """
         intent = event.data.object
         pid = intent.id
-        bag = intent.metadata.bag
+        basket = intent.metadata.basket
         save_info = intent.metadata.save_info
 
         # Get the Charge object
@@ -66,7 +66,8 @@ class StripeWH_Handler:
                 shipping_details.address[field] = None
 
         #Update profile information if save_info was checked
-        profile = Noneusername = intent.metadata.username
+        profile = None
+        username = intent.metadata.username
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user_username=username)
             if save_info:
