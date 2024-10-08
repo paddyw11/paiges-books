@@ -128,8 +128,8 @@ body {
 
 .image-flash {
     position: absolute;
-    top: -5px;  /* Adjust this value to control vertical placement */
-    right: -5px;  /* Adjust this value to control horizontal placement */
+    top: -10px;  /* Adjust this value to control vertical placement */
+    right: -10px;  
     background-color: #ff7e5f;  /* Bright color to make it pop */
     color: #fff;
     font-size: 0.9rem;  /* Smaller font size for a sticker look */
@@ -311,6 +311,14 @@ body {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+
+.bookmark-list-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 /* ------------------------------- bootstrap toasts */

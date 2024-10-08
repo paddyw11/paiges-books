@@ -41,5 +41,11 @@
                 Offers
             </a>
         </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?bookmark" id="bookmarks-link">
+                    My Reading Wishlist <i class="fas fa-bookmark"></i></a>
+        </li>
+        {% endif %} 
     </ul>
 </div>
