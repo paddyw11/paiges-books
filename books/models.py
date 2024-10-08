@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Genre(models.Model):
@@ -24,6 +25,7 @@ class Book(models.Model):
     image = models.ImageField(null=True, blank=True)
     offer = models.BooleanField(default=False)
     blurb = models.TextField(blank=True)
+    bookmark = models.ManyToManyField(User, related_name='bookmark', default=None, blank=True)
 
     def __str__(self):
         return self.title
