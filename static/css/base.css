@@ -44,6 +44,9 @@ img {
 .main-logo-link {
     width: fit-content;
 }
+#headline-text {
+    text-align: center;
+}
 
 .tagline-wrapper {
     text-align: center;
