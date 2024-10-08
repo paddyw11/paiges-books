@@ -54,7 +54,7 @@ def all_books(request):
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('books'))
             
-            queries = Q(title__icontains=query) | Q(short_description__icontains=query) | Q(author__name__icontains=query) | Q(genre_nameicontains=query)
+            queries = Q(title__icontains=query) | Q(short_description__icontains=query) | Q(author__name__icontains=query) | Q(genres__name__icontains=query)
             books = books.filter(queries)
 
         if 'offer' in request.GET and request.GET['offer'] == 'true':
