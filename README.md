@@ -15,13 +15,31 @@
 
 #### User Requirements and Expectations
 
-#### User Stories
+#### User Stories and Epics
+
+##### Epic: Viewing and Navigation
+
+- [1](https://github.com/paddyw11/paiges-books/issues/1) - As a user, I want to browse through different categories of books to find what interests me.
+- [1](https://github.com/paddyw11/paiges-books/issues/2) - As a user, I want to see a list of best offers on the homepage
+
+- [1](https://github.com/paddyw11/paiges-books/issues/3) -As a user, I want to be able to view detailed information about a specific book, including its description, author, price, category and rating.
+
+- [1](https://github.com/paddyw11/paiges-books/issues/4) -As a user, I want to be able to navigate easily between different pages of the website using a main navigation menu.
+
+
+
+- [1](https://github.com/paddyw11/paiges-books/issues/1) -
+
+- [1](https://github.com/paddyw11/paiges-books/issues/1) -
+ As a ... i want to be able to .... so that i can ...
 
 ### Structure Plane
 
 #### Website Structure
 
+#### Bugs
 
+search query 500 error - since changing database model to split out genre i hadmn't updated the search query to reflect that. I needed to change to correct syntax.
 
 
 
