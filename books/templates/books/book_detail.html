@@ -33,7 +33,28 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="book-details-container mb-5 mt-md-5">
-                    <h3 class="mb-0">{{ book.title }}</h3>
+                    
+                    <div class="d-flex align-items-center">
+                        <h3 class="mb-0">{{ book.title }}</h3>
+                        {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'bookmark' book.id %}" method="POST">
+                                {% csrf_token %}
+
+                                {% if bookmark %}
+                                <strong><button type="submit" class="bookmark-list-btn"><i class="fa-solid fa-bookmark fa-2x"></i>
+                                </button></strong>
+
+                                {% else %}
+                                <strong><button type="submit" class="bookmark-list-btn"><i class="fa-regular fa-bookmark fa-2x"></i>
+                                </button></strong>
+
+                                {% endif %}
+
+                            </form>
+                        {% else %}
+                        <strong><i class="fa-regular fa-bookmark fa-2x"></i></strong>
+                        {% endif %}
+                    </div>
                     {% if book.author_id %}
                         <a href="{% url 'author_bio' book.author_id %}" class="mb-0">Author: {{ book.author.name }}</a>
                     {% else %}
