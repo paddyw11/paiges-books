@@ -9,6 +9,7 @@ from books.models import Book
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from basket.contexts import basket_contents
+from decimal import Decimal
 
 import stripe
 import json
@@ -99,6 +100,13 @@ def checkout(request):
 
         current_basket = basket_contents(request)
         total = current_basket['grand_total']
+
+        try:
+            total = Decimal(total)  # or float(total) if you prefer
+        except (ValueError, InvalidOperation):
+            messages.error(request, 'Invalid total value.')
+            return redirect(reverse('view_basket'))
+
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
