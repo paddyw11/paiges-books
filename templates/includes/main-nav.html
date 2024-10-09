@@ -10,10 +10,10 @@
                 All Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
-                <a href="{% url 'books' %}?sort=genres&direction=asc"class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
                 <a href="{% url 'books' %}?sort=author&direction=asc" class="dropdown-item">By Author</a>
                 <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
+                
             </div>
         </li>
         <li class="nav-item dropdown">
