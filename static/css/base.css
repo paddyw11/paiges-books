@@ -323,7 +323,9 @@ input[name='q']::placeholder {
     padding: 0;
     cursor: pointer;
 }
-
+ .discount {
+    color: #dc3545;
+ }
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

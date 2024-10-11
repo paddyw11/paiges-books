@@ -50,14 +50,19 @@
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.book.title }}</strong></p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                            {% if item.book.offer %}
+                            <p class="my-0 small discount"><strong>10% Discount applies</strong></p>
+                            {% endif %}
                         </div>
                         <div class="col-3 text-right">
                             <p class="my-0 small text-muted">&pound{{ item.book.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
-                {% endfor %}
+               
                 <hr class="my-0">
+                        
                 <div class="row text-black text-right">
+                    
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery:</p>
@@ -69,6 +74,7 @@
                         <p class="my-0"><strong>&pound{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
+                {% endfor %}
             </div>
             <div class="col col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form below to complete your order</p>

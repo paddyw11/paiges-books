@@ -43,7 +43,13 @@
                             </div>
                             <div class="col-12 col-sm-6 mb-2">
                                 {% include "basket/book-info.html" %}
+                                {% if item.book.offer %}
+                            <p class="my-0 small discount"><strong>10% Discount applies</strong></p>
+                            {% endif %}
                             </div>
+                            {% if item.book.offer %}
+                            <p class="my-0 small discount"><strong>10% Discount applies</strong></p>
+                            {% endif %}
                             <div class="col-12 col-sm-6 order-sm-last">
                                 <p class="my-0">Price Each: &pound{{ item.book.price }}</p>
                                 <p><strong>Subtotal: </strong>&pound{{ item.book.price | calc_subtotal:item.quantity }}</p>
