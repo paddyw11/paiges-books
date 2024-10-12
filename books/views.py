@@ -1,15 +1,18 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
-from django.db.models.functions import Lower
+from django.db.models import Q, F, Func, Value
+from django.db.models.functions import Upper, Substr, Length, Lower
 from .models import Book, Genre
 from .forms import BookForm
 from authors.models import Author
+from nameparser import HumanName
 
+class Reverse(Func):
+    function = 'REVERSE'
 
 def all_books(request):
-    """A view to return all books, including searhcing and sorting the books"""
+    """A view to return all books, including searching and sorting the books"""
 
     books = Book.objects.all()
     query = None
@@ -25,18 +28,37 @@ def all_books(request):
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'author':
-                sortkey = 'author__name'
-            
+                # Annotate with the last name, assuming the last word is the last name
+                books = books.annotate(
+                    last_name=Substr(
+                        F('author__name'),
+                        Length(F('author__name')) - Func(Reverse(F('author__name')), Value(' '), function='STRPOS') + 1,
+                        Length(F('author__name'))
+                    )
+                )
+                
+
+                print("Extracted last name substring for sorting:")
+                for book in books:
+                    last_name_substr = book.last_name  # This is the part being used for sorting
+                    print(f"Book: {book.title}, Last name used for sorting: {last_name_substr}")
+                
+                sortkey = 'last_name'
+                    
+                          
             elif sortkey == 'name':
                 sortkey = 'lower_name'
-                books = books.annotate(lower_name=Lower('name'))
+                books = books.annotate(lower_name=Lower('title'))
             
+            print(f"Current sortkey: {sortkey}")
+
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             books = books.order_by(sortkey)
 
+            print(f"Final sortkey with direction: {sortkey}")
 
         if 'genre' in request.GET:
             genre_name = request.GET['genre'].replace('_', ' ')
