@@ -6,7 +6,7 @@ from django.db.models.functions import Upper, Substr, Length, Lower
 from .models import Book, Genre
 from .forms import BookForm
 from authors.models import Author
-from nameparser import HumanName
+
 
 class Reverse(Func):
     function = 'REVERSE'
