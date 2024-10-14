@@ -1,60 +1,59 @@
-<li class="list-inline-item">
-  <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<ul>
+  <li class="list-inline-item">
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="text-center">
+            <i class="fas fa-search fa-lg" aria-label="Search"></i>
+            <div><p class="my-0">Search</p></div>
+        </div>
+    </a>
+    <div class="dropdown-menu border-0 w-100 p-3 rounded-10 my-0" aria-labelledby="mobile-search">
+      <form class="form" method="GET" action="{% url 'books' %}">
+        <div class="input-group w-100">
+          <input class="form-control border border-black rounded-10" type="text" name="q" placeholder="Search our library">
+          <div class="input-group-append">
+            <button class="form-control form-control btn btn-black border-black rounded-10" type="submit">
+              <span class="icon">
+                <i class="fas fa-search" aria-label="Search"></i>
+              </span>
+            </button>
+          </div>  
+        </div>
+      </form>         
+    </div>
+  </li>
+  <li class="list-inline-item dropdown">
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <div class="text-center">
-          <div><i class="fas fa-search fa-lg"></i></div>
-          <p class="my-0">Search</p>
+          <i class="fas fa-user fa-lg" aria-label="My Account"></i>
+          <p class="my-0">My Account</p>
       </div>
-  </a>
-  <div class="dropdown-menu border-0 w-100 p-3 rounded-10 my-0" aria-labelledby="mobile-search">
-    <form class="form" method="GET" action="{% url 'books' %}">
-      <div class="input-group w-100">
-        <input class="form-control border border-black rounded-10" type="text" name="q" placeholder="Search our library">
-        <div class="input-group-append">
-          <button class="form-control form-control btn btn-black border-black rounded-10" type="submit">
-            <span class="icon">
-              <i class="fas fa-search"></i>
-            </span>
-          </button>
-        </div>  
-      </div>
-    </form>         
-  </div>
-</li>
-<li class="list-inline-item dropdown">
-  <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <div class="text-center">
-        <div><i class="fas fa-user fa-lg"></i></div>
-        <p class="my-0">My Account</p>
-    </div>
-  </a>
-  <div class="dropdown-menu border-0" aria-labelledby="user-options-mobile">
-    {% if request.user.is_authenticated %}
-      {% if request.user.is_superuser %}
-          <a href="{% url 'add_book' %}" class="dropdown-item">Book Management</a>
+    </a>
+    <div class="dropdown-menu border-0" aria-labelledby="user-options-mobile">
+      {% if request.user.is_authenticated %}
+        {% if request.user.is_superuser %}
+            <a href="{% url 'add_book' %}" class="dropdown-item">Book Management</a>
+        {% endif %}
+          <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+          <a href="{% url 'books' %}?bookmark" class="dropdown-item"> My Reading Wishlist <i class="fas fa-bookmark"></i></a>
+          <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+          
+        {% else %}
+          <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+          <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
       {% endif %}
-        <a href=" {% url 'profile' %}" class="dropdown-item">My Profile</a>
-        <a href=" {% url 'books' %}?bookmark"> My Reading Wishlist <i class="fas fa-bookmark"></i></a>
-        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-        
-      {% else %}
-        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-    {% endif %}
-  </div>
-</li>
-<li class="list-inline-item">
-  <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_basket' %}">
-    <div class="text-center">
-        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-        <p class="my-0">
-          {% if grand_total %}
-              &pound;{{ grand_total|floatformat:2 }}
-          {% else %}
-              &pound;0.00
-          {% endif %}
-        </p>
     </div>
-  </a>
-</li>
-
+  </li>
+  <li class="list-inline-item text-center">
+    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_basket' %}">
+      <div><i class="fas fa-shopping-bag fa-lg" aria-label="View Shopping Basket"></i></div>
+      <p class="my-0">
+        {% if grand_total %}
+            &pound;{{ grand_total|floatformat:2 }}
+        {% else %}
+            &pound;0.00
+        {% endif %}
+      </p>
+    </a>
+  </li>
+</ul>
 

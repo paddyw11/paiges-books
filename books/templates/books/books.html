@@ -59,8 +59,6 @@
                                             <div class="image-flash">
                                                 <p class="offer">10% OFF</p>
                                             </div>
-                                        {% else %}
-                                            <p> No OFFER</p>
                                         {% endif %}
                                     {% else %}    
                                         <a href="{% url 'book_detail' book.id %}">
@@ -71,8 +69,6 @@
                                             <div class="image-flash">
                                                 <p class="offer">10% OFF</p>
                                             </div>
-                                        {% else %}
-                                            <p> No OFFER</p>
                                         {% endif %}
                                         
                                     {% endif %}
@@ -89,12 +85,12 @@
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        <p class="lead mb-0 text-left font-weight-bold">&pound{{ book.price }}</p>
+                                        <p class="lead mb-0 text-left font-weight-bold">&pound;{{ book.price }}</p>
                                         <p class="mt-3">Number of Pages: {{ book.number_of_pages }} </p>
                                         {% for genre in book.genres.all %}
                                             <p class="lead mb-0 text-left font-weight-bold">
-                                                <a class="text-muted" href="{% url 'books' %}?genre={{ genre.name }}">
-                                                    <i class="fa-solid fa-tag"></i>
+                                                <a class="text-muted" href="{% url 'books' %}?genre={{ genre.name|urlencode }}">
+                                                    <i class="fa-solid fa-tag" aria-label="Book Genre: {{ genre.name }}"></i>
                                                     {{ genre.name }}{% if not forloop.last %}, {% endif %}
                                                 </a>
                                             </p>
@@ -140,7 +136,7 @@
     </div>
     <div class="btt-button shadow-sm rounded-10 border border-black">
         <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-black mx-auto my-auto" aria-label="Back to top"></i>
         </a>	
     </div>
 {% endblock %}
@@ -149,6 +145,7 @@
     {{ block.super }}
     <script type="text/javascript">
 		$('.btt-link').click(function(e) {
+            e.preventDefault();
 			window.scrollTo(0,0)
 		})
 	</script>

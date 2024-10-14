@@ -41,12 +41,16 @@
                                 {% csrf_token %}
 
                                 {% if bookmark %}
-                                <strong><button type="submit" class="bookmark-list-btn"><i class="fa-solid fa-bookmark fa-2x"></i>
-                                </button></strong>
+                                <strong>
+                                    <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to remove from bookmarks"><i class="fa-solid fa-bookmark fa-2x" aria-label="Bookmarked book"></i>
+                                    </button>
+                                </strong>
 
                                 {% else %}
-                                <strong><button type="submit" class="bookmark-list-btn"><i class="fa-regular fa-bookmark fa-2x"></i>
-                                </button></strong>
+                                <strong>
+                                    <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to save for later"><i class="fa-regular fa-bookmark fa-2x" aria-label="Click to bookmark"></i>
+                                    </button>
+                                </strong>
 
                                 {% endif %}
 
@@ -204,5 +208,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $(document).ready(function() {
+    // Initialize Bootstrap tooltips for Bootstrap 5
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+});
+</script>
 {% include 'books/includes/quantity_input_script.html' %}
 {%  endblock %}

@@ -9,32 +9,31 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Books
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
-                <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
-                <a href="{% url 'books' %}?sort=author&direction=asc" class="dropdown-item">By Author</a>
-                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                
-            </div>
+            <ul class="dropdown-menu border-0" aria-labelledby="all-books-link">
+                <li><a href="{% url 'books' %}" class="dropdown-item">All Books</a></li>
+                <li><a href="{% url 'books' %}?sort=author&direction=asc" class="dropdown-item">By Author</a></li>
+                <li><a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a></li>
+            </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="genre-books" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 By Genre
             </a>
             
-            <div class="dropdown-menu border-0" aria-labelledby="genre-books">
-                <a href="{% url 'books' %}?genre=Horror" class="dropdown-item">Horror</a>
-                <a href="{% url 'books' %}?genre=Dystopian" class="dropdown-item">Dystopian</a>
-                <a href="{% url 'books' %}?genre=Memoir" class="dropdown-item">Memoir</a>
-                <a href="{% url 'books' %}?genre=Nonfiction" class="dropdown-item">Non Fiction</a>
-                <a href="{% url 'books' %}?genre=Gothic" class="dropdown-item">Gothic</a>
-                <a href="{% url 'books' %}?genre=Young_Adult" class="dropdown-item">Young Adult</a>
-                <a href="{% url 'books' %}?genre=Mystery" class="dropdown-item">Mystery</a>
-                <a href="{% url 'books' %}?genre=Fiction" class="dropdown-item">Fiction</a>
-                <a href="{% url 'books' %}?genre=Thriller" class="dropdown-item">Thriller</a>
-                <a href="{% url 'books' %}?genre=Historical_Fiction" class="dropdown-item">Historical Fiction</a>
-                <a href="{% url 'books' %}?genre=Fantasy" class="dropdown-item">Fantasy</a>
-                <a href="{% url 'books' %}?genre=Nonfiction" class="dropdown-item">Nonfiction</a>
-            </div>
+            <ul class="dropdown-menu border-0" aria-labelledby="genre-books">
+                <li><a href="{% url 'books' %}?genre=Dystopian" class="dropdown-item">Dystopian</a></li>
+                <li><a href="{% url 'books' %}?genre=Memoir" class="dropdown-item">Memoir</a></li>
+                <li><a href="{% url 'books' %}?genre=Horror" class="dropdown-item">Horror</a></li>
+                <li><a href="{% url 'books' %}?genre=Nonfiction" class="dropdown-item">Non Fiction</a></li>
+                <li><a href="{% url 'books' %}?genre=Gothic" class="dropdown-item">Gothic</a></li>
+                <li><a href="{% url 'books' %}?genre=Young_Adult" class="dropdown-item">Young Adult</a></li>
+                <li><a href="{% url 'books' %}?genre=Mystery" class="dropdown-item">Mystery</a></li>
+                <li><a href="{% url 'books' %}?genre=Fiction" class="dropdown-item">Fiction</a></li>
+                <li><a href="{% url 'books' %}?genre=Thriller" class="dropdown-item">Thriller</a></li>
+                <li><a href="{% url 'books' %}?genre=Historical_Fiction" class="dropdown-item">Historical Fiction</a></li>
+                <li><a href="{% url 'books' %}?genre=Fantasy" class="dropdown-item">Fantasy</a></li>
+                <li><a href="{% url 'books' %}?genre=Nonfiction" class="dropdown-item">Nonfiction</a></li>
+            </ul>
         </li>
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books_on_offer' %}" id="special-offers-link">
@@ -44,7 +43,7 @@
         {% if user.is_authenticated %}
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'books' %}?bookmark" id="bookmarks-link">
-                    My Reading Wishlist <i class="fas fa-bookmark"></i></a>
+                    My Reading Wishlist <i class="fas fa-bookmark" aria-label="My bookmarked books"></i></a>
         </li>
         {% endif %} 
     </ul>

@@ -42,7 +42,7 @@
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-14 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <h2 class="logo-font text-black my-0"><strong>Paige's</strong> Books <i class="fa-solid fa-book"></i></h2> 
+            <h2 class="logo-font text-black my-0"><strong>Paige's</strong> Books <i class="fa-solid fa-book" aria-label="Book"></i></h2> 
           </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -52,7 +52,7 @@
                   <div class="input-group-append">
                       <button class="form-control btn btn-black border border-black rounded-10" type="submit">
                           <span class="icon">
-                              <i class="fas fa-search"></i>
+                              <i class="fas fa-search" aria-label="Search"></i>
                           </span>
                       </button>
                   </div>
@@ -64,7 +64,7 @@
             <li class="list-inline-item dropdown">
               <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="text-center">
-                      <div><i class="fas fa-user fa-lg"></i></div>
+                      <div><i class="fas fa-user fa-lg" aria-label="My Account"></i></div>
                       <p class="my-0">My Account</p>
                   </div>
               </a>
@@ -81,20 +81,20 @@
                 {% endif %}
               </div>
             </li>
-              <li class="list-inline-item">
-                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket' %}">
-                  <div class="text-center">
-                      <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                      <p class="my-0">
-                        {% if grand_total %}
-                            &pound;{{ grand_total|floatformat:2 }}
-                        {% else %}
-                            &pound;0.00
-                        {% endif %}
-                      </p>
-                  </div>
-                </a>
-              </li>
+            <li class="list-inline-item">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket' %}">
+                <div class="text-center">
+                    <div><i class="fas fa-shopping-bag fa-lg" aria-label="View shopping basket"></i></div>
+                    <p class="my-0">
+                      {% if grand_total %}
+                          &pound;{{ grand_total|floatformat:2 }}
+                      {% else %}
+                          &pound;0.00
+                      {% endif %}
+                    </p>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -109,7 +109,7 @@
       </div>
       <div id="delivery-banner" class="row text-center">
         <div class="col bg-black text-white">
-          <h4 class="logo-font my-1">Free delivery on orders over &pound{{ free_delivery_threshold }}!</h4>
+          <h4 class="logo-font my-1">Free delivery on orders over &pound;{{ free_delivery_threshold }}!</h4>
         </div>
       </div> 
     </header>
@@ -143,9 +143,15 @@
 
     
     {% block postloadjs %}
-      <script type="text/javascript">
+    <script>
+      $(document).ready(function() {
+        // Initialize Bootstrap tooltips
+        $('[data-toggle="tooltip"]').tooltip();
+        
+        // Show toasts if they exist
         $('.toast').toast('show');
-      </script>
+      });
+    </script>
     {% endblock %}
 
   </body>
