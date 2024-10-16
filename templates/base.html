@@ -148,7 +148,7 @@
           <div class="col">
             <a href="{% url 'about_us' %}" class="footer-link mx-3">About Us</a>
             <a href="{% url 'faqs' %}" class="footer-link mx-3">FAQs</a>
-            <a href="{% url 'contact_us' %}" class="footer-link mx-3">Contact</a>
+            <a href="{% url 'contact_submit' %}" class="footer-link mx-3">Contact</a>
           </div>
         </div>
     
@@ -156,10 +156,10 @@
         <div class="row text-center">
           <div class="col">
             <div class="social-icons">
-              <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x mx-2"></i></a>
-              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x mx-2"></i></a>
-              <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square fa-2x mx-2"></i></a>
-              <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+              <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square fa-x mx-2"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-x mx-2"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square fa-x mx-2"></i></a>
+              <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-x mx-2"></i></a>
             </div>
           </div>
         </div>
@@ -175,8 +175,16 @@
         
         // Show toasts if they exist
         $('.toast').toast('show');
-      });
-    </script>
+
+    // Auto-dismiss toasts after 5 seconds
+    $('.toast').each(function() {
+      var $this = $(this); // Store the reference to the current toast
+      setTimeout(function() {
+        $this.toast('hide'); // Hide the toast after the timeout
+      }, 5000); // 5000 milliseconds = 5 seconds
+    });
+  });
+</script>
 
     <script>
       document.querySelectorAll('.btn-link').forEach(function(button) {
@@ -190,6 +198,7 @@
         });
       });
     </script>
+    
     {% endblock %}
 
   </body>
