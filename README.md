@@ -11,8 +11,6 @@
 
 ### Strategy Design
 
-#### Target Audience
-
 #### User Requirements and Expectations
 
 #### User Stories and Epics
@@ -21,7 +19,7 @@
 
 - [1](https://github.com/paddyw11/paiges-books/issues/1) - As a user, I want to browse through different categories of books to find what interests me.
 
-- [2](https://github.com/paddyw11/paiges-books/issues/2) - As a user, I want to see a list of best offers on the homepage
+- [2](https://github.com/paddyw11/paiges-books/issues/2) - As a user, I want to see a list of offers on the homepage
 
 - [3](https://github.com/paddyw11/paiges-books/issues/3) - As a user, I want to be able to view detailed information about a specific book, including its description, author, price and category.
 
@@ -69,7 +67,12 @@
 
 ### Structure Plane
 
-#### Website Structure
+
+
+#### Website Structure - Wireframes
+
+#### Database Design
+
 
 #### Bugs
 
