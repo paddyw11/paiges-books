@@ -56,7 +56,7 @@
 
                             </form>
                         {% else %}
-                        <strong><i class="fa-regular fa-bookmark fa-2x"></i></strong>
+                        <strong><i class="fa-regular fa-bookmark fa-2x ml-3"></i></strong>
                         {% endif %}
                     </div>
                     {% if book.author_id %}
@@ -64,7 +64,7 @@
                     {% else %}
                         <p class="mb-0">Author: Unknown</p>
                     {% endif %}   
-                    <p class="lead mb-0 text-left font-weight-bold mt-3">&pound{{ book.price }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold mt-3">&pound;{{ book.price }}</p>
                     <p class="mt-3">{{ book.short_description }}</p>
                     <button type="button" class="btn btn-black btn-rounded-10 btn-info btn-outline-black btn-sm" data-toggle="modal" data-target="#bookModal_{{ item.book.id }}">
                         Read More
@@ -84,7 +84,7 @@
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="bookModalLabel_{{ item.book.id }}">{{ item.book.title }}</h5>
+                            <h5 class="modal-title" id="bookModalLabel_{{ item.book.id }}">Title:{{ item.book.title }}</h5>
                             <button type="button" class="close btn-black btn-sm" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -180,7 +180,7 @@
                                 <p class="mb-0">{{ recommended_book.author }}</p>
                             </div>
                             <div class="card-footer bg-white pt-0 border-0 text-left">
-                                <p class="lead mb-0 text-left font-weight-bold">&pound{{ recommended_book.price }}</p>
+                                <p class="lead mb-0 text-left font-weight-bold">&pound;{{ recommended_book.price }}</p>
                                 <p class="mt-3">Number of Pages: {{ recommended_book.number_of_pages }} </p>
                                 {% for genre in recommended_book.genres.all %}
                                     <p class="lead mb-0 text-left font-weight-bold">
@@ -208,7 +208,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $(document).ready(function() {
     // Initialize Bootstrap tooltips for Bootstrap 5
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))

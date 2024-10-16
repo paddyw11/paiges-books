@@ -90,7 +90,7 @@
                                         {% for genre in book.genres.all %}
                                             <p class="lead mb-0 text-left font-weight-bold">
                                                 <a class="text-muted" href="{% url 'books' %}?genre={{ genre.name|urlencode }}">
-                                                    <i class="fa-solid fa-tag" aria-label="Book Genre: {{ genre.name }}"></i>
+                                                    <i class="fa-solid fa-tag" ></i>
                                                     {{ genre.name }}{% if not forloop.last %}, {% endif %}
                                                 </a>
                                             </p>
@@ -136,21 +136,21 @@
     </div>
     <div class="btt-button shadow-sm rounded-10 border border-black">
         <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto" aria-label="Back to top"></i>
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
     </div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
 		$('.btt-link').click(function(e) {
             e.preventDefault();
 			window.scrollTo(0,0)
 		})
 	</script>
     
-    <script type="text/javascript">
+    <script>
     $(document).ready(function() {
         setTimeout(function() {
             var $book = $('.book');
@@ -163,7 +163,7 @@
     </script>
     
 
-    <script type="text/javascript">
+    <script>
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
