@@ -131,31 +131,31 @@ body {
 
 .image-flash {
     position: absolute;
-    top: -10px;  /* Adjust this value to control vertical placement */
-    right: -10px;  
-    background-color: #ff7e5f;  /* Bright color to make it pop */
-    color: #fff;
-    font-size: 0.9rem;  /* Smaller font size for a sticker look */
+    top: -15px;  
+    right: -15px;  
+    background-color: #0c5460;  
+    transform: rotate(27deg);
+    font-size: 0.9rem;  
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;  /* Rounded edges for the sticker */
-    z-index: 10;  /* Ensures the sticker is above other content */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);  /* A little shadow for depth */
+    padding: 10px 10px;
+    border-radius: 5px;  
+    z-index: 10;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
 .bookWrap .image-flash p {
-    margin: 0;  /* Ensure the text has no margin */
+    margin: 0;  
 }
 
 .offer {
-    margin: 0;  /* Remove default margin */
-    font-size: 1rem;  /* Adjust font size as needed */
-    font-weight: bold;  /* Make the text bold */
-    color: rgb(0, 0, 0);  /* White text for contrast */
-    text-align: center;  /* Center the text within the sticker */
-    padding: 5px;  /* Add some padding for better appearance */
+    margin: 0;  
+    font-size: 1rem;  
+    font-weight: bold;  
+    color: rgb(255, 255, 255);  
+    text-align: center;  
+    padding: 5px;  
 }
 
 .book {
@@ -422,6 +422,45 @@ input[name='q']::placeholder {
     border-color: red;
     border-radius: 0;
 }
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px 20px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #000;
+  }
+  .social-icons a {
+    font-size: 4rem;
+    margin: 0 10px;
+    color: #000;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #000000; /* Color change on hover */
+  }
+  .footer-link {
+    color: #000;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  .footer-link:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  .accordion .card-header {
+    background-color: black; /* Black background for the header */
+    border-bottom: 1px solid #444; /* Border below the header */
+}
+
+.accordion .card-header .btn-link {
+    color: white; /* White text color for the button link */
+    text-align: left; /* Align text to the left */
+}
+
 
 /* -------------------------------- Media Queries */
 

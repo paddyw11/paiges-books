@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+  <header class="container-fluid py-5 bg-light text-center">
+    <h1 class="logo-font">Frequently Asked Questions</h1>
+    <p class="lead">Find answers to some of the most common questions about Paige's Books.</p>
+  </header>
+{% endblock %}
+
+{% block content %}
+<section class="container py-5">
+  <h2 class="text-center mb-4">Your Questions Answered</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <span class="mr-2">&#x2b;</span> What is your return policy?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+        <div class="card-body">
+          We accept returns within 30 days of purchase. Books must be in their original condition.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <span class="mr-2">&#x2b;</span> How long does shipping take?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+        <div class="card-body">
+          Shipping typically takes between 5-7 business days for standard delivery.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <span class="mr-2">&#x2b;</span> Do you offer gift cards?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+        <div class="card-body">
+          Yes! We offer both physical and digital gift cards.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <span class="mr-2">&#x2b;</span> What payment methods do you accept?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+          <div class="card-body">
+            We accept major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <span class="mr-2">&#x2b;</span> Can I change my order after it has been placed?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+          <div class="card-body">
+            Unfortunately, once an order has been placed, we cannot make any changes. However, you can cancel your order within 1 hour of placing it by contacting customer service.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <span class="mr-2">&#x2b;</span> Do you offer international shipping?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+          <div class="card-body">
+            Yes, we offer international shipping to select countries. Shipping fees will vary based on the destination.
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSeven">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <span class="mr-2">&#x2b;</span> What should I do if I receive a damaged item?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+              <div class="card-body">
+                If you receive a damaged item, please contact our customer service team within 48 hours of delivery with your order number and a photo of the damage, and we will assist you in resolving the issue.
+              </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEight">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  <span class="mr-2">&#x2b;</span> How can I track my order?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
+              <div class="card-body">
+                After your order has shipped, you will receive a confirmation email with a tracking number. You can use this number to track your shipment on our website or the carrier’s site.
+              </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingNine">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  <span class="mr-2">&#x2b;</span> What if I forgot my password?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#faqAccordion">
+              <div class="card-body">
+                If you've forgotten your password, click on the "Forgot Password?" link on the login page. Follow the instructions to reset your password.
+              </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTen">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                  <span class="mr-2">&#x2b;</span> Can I order books in bulk?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#faqAccordion">
+              <div class="card-body">
+                Yes! For bulk orders, please contact our customer service for special pricing and availability.
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
