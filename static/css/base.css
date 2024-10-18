@@ -393,7 +393,7 @@ footer {
 }
 
 .social-icons a {
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 0 10px;
     color: #000;
     transition: color 0.3s;
@@ -404,7 +404,7 @@ footer {
 }
 
 .social-icon{
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
 
 .footer-link {

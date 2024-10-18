@@ -5,6 +5,22 @@ from .models import Author
 from .forms import AuthorForm
 
 
+def authors(request):
+    """ A view to display a list of authors sorted by surname """
+    
+    # Fetch all authors
+    authors = Author.objects.all()
+    
+    # Sort authors by surname (last word in full name)
+    sorted_authors = sorted(authors, key=lambda author: author.name.split()[-1].lower())  # Assuming the field is 'name'
+    
+    context = {
+        'authors': sorted_authors
+    }
+    
+    return render(request, 'authors/authors.html', context)
+
+
 def author_bio(request, author_id):
     """ A view to disply individual author details """
 
@@ -27,8 +43,8 @@ def add_author(request):
     if request.method == 'POST':
         form = AuthorForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
-            messages.success(request, 'Successfully added Author.')
+            author = form.save()
+            messages.success(request, f'Successfully added {author.name}.')
             return redirect(reverse('add_author'))
         else:
             messages.error
@@ -50,9 +66,9 @@ def edit_author(request, author_id):
         messages.error(request, 'Sorry, only book shop owners can do that.')
         return redirect(reverse('home'))
 
-    author = get_object_or_404(Author, pk=author_id, instance=author)
+    author = get_object_or_404(Author, pk=author_id,)
     if request.method == 'POST':
-        form = AuthorForm(request.POST, request.FILES)
+        form = AuthorForm(request.POST, request.FILES, instance=author)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated Author.')
@@ -82,6 +98,6 @@ def delete_author(request, author_id):
 
     author = get_object_or_404(Author, pk=author_id)
     author.delete()
-    messages.success(request, 'Author deleted!')
-    return redirect(reverse('books'))
+    messages.success(request, f'Author: {author.name} deleted!')
+    return redirect(reverse('authors'))
     
