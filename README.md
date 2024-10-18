@@ -67,17 +67,103 @@
 
 ### Structure Plane
 
-
-
 #### Website Structure - Wireframes
 
+<details>
+<summary>Home Page</summary>
+
+![Home Page](/documentation/media/images/home_page.png)
+</details>
+
+<details>
+<summary>Author Bio Page</summary>
+
+![Author](/documentation/media/images/author1.png)
+</details>
+
+<details>
+<summary>Book Management</summary>
+
+![Book Management](/documentation/media/images/book_management.png)
+</details>
+
+<details>
+<summary>Sign Up</summary>
+
+![Register](/documentation/media/images/register.png)
+</details>
+
+<details>
+<summary>Checkout</summary>
+
+![Checkout](/documentation/media/images/checkout.png)
+</details>
+
+<details>
+<summary>Offers</summary>
+
+![Offers](/documentation/media/images/offers.png)
+</details>
+
+<details>
+<summary>Basket</summary>
+
+![Basket](/documentation/media/images/basket.png)
+</details>
+
+<details>
+<summary>books</summary>
+
+![books](/documentation/media/images/books.png)
+</details>
+
+<details>
+<summary>Book Detail</summary>
+
+![Book Detail](/documentation/media/images/book_detail.png)
+</details>
+
+
 #### Database Design
+---
+
+I adopted a crows foot ER design to portray the relationship between each table and it's respective fields. 
+
+![Paige's Books ERD](/documentation/er-diagram/Paige's-Books-ERD.png)
 
 
-#### Bugs
+## Technologies Used
 
-search query 500 error - since changing database model to split out genre i hadmn't updated the search query to reflect that. I needed to change to correct syntax.
 
+## Testing
+
+For More information on testing [see here](https://github.com/paddyw11/paigesbooks/blob/main/TESTING.md)
+
+## Bugs
+
+### Search query field error
+
+---
+
+![Image](/documentation/media/images/bug1.PNG)
+
+Once I had creatd a new table for genre, in order to make it a manyToMany relationshipe i hadn't updated the search query to reflect that. I needed to update to correct syntax.
+
+### HTML Validation Error on allauth password validator form
+
+---
+
+![Image](/documentation/media/images/bug3.PNG)
+
+---
+
+![Image](/documentation/media/images/bug3-1.PNG)
+
+---
+
+I was receiving a W3C validation error on this due to the django password validator and crispy_forms displaying the password vlaidation hints as a list within a small element. 
+I attempted to create the form using crispy fields for the other fields and custom design the password1 field. 
+![Image](/documentation/media/images/bug3-2.PNG)I decided it was a better UX to leave the whole form as a crispy fomr in the end. 
 
 
 ## Credits: 

@@ -121,11 +121,7 @@ body {
 	margin:25px auto;
 	height:346px;
 	width:230px;
-
 	position:relative;
-
-	-webkit-perspective: 1200px;
-	-moz-perspective: 1200px;
 	perspective: 1200px;
 }
 
@@ -134,7 +130,7 @@ body {
     top: -15px;  
     right: -15px;  
     background-color: #0c5460;  
-    transform: rotate(27deg);
+    transform: rotate(15deg);
     font-size: 0.9rem;  
     font-weight: bold;
     padding: 10px 10px;
@@ -165,22 +161,10 @@ body {
 	position:absolute;
 	left:16px;
 	top:0;
-
-	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
-	
-	-webkit-transition: -webkit-transform .5s ease 0s;
-	   -moz-transition: -moz-transform .5s ease 0s;
-	        transition: transform .5s ease 0s;
-	
-	-webkit-border-radius: 0 7px 7px 0;
-	   -moz-border-radius: 0 7px 7px 0;
-	        border-radius: 0 7px 7px 0;
-	
-	-webkit-perspective: 1200px;
-	   -moz-perspective: 1200px;
-	        perspective: 1200px;
+    transform-style: preserve-3d;
+    transition: transform .5s ease 0s;
+    border-radius: 0 7px 7px 0;
+    perspective: 1200px;
 }
 
 
@@ -203,9 +187,7 @@ body {
 }
 
 .bookIntro {
-	-webkit-transform: rotateY(30deg);
-     -moz-transform: rotateY(30deg);
-	        transform: rotateY(30deg);
+	transform: rotateY(30deg);
 }
 
 .cover {
@@ -218,30 +200,15 @@ body {
 
 	max-width: 230px;
 	max-height: 346px;
-
-	-webkit-backface-visibility: hidden;
-	   -moz-backface-visibility: hidden;
-	        backface-visibility: hidden;
-
-	-webkit-border-radius: 0 4px 4px 0;
-	   -moz-border-radius: 0 4px 4px 0;
-	        border-radius: 0 4px 4px 0;
-
-	-webkit-transition: -webkit-transform .5s ease 0s, width .5s ease 0s;
-	   -moz-transition: -moz-transform .5s ease 0s, width .5s ease 0s;
-            transition: transform .5s ease 0s, width .5s ease 0s;
-
-	-webkit-transform-origin: 0;
-	   -moz-transform-origin: 0;
-	        transform-origin: 0;
+    backface-visibility: hidden;
+    border-radius: 0 4px 4px 0;
+    transition: transform .5s ease 0s, width .5s ease 0s;
+    transform-origin: 0;
 }
 
 .cover:hover {	
 	width:210px;
-	
-	-webkit-transform: rotateY(-20deg);
-	   -moz-transform: rotateY(-20deg);
-	        transform: rotateY(-20deg);
+    transform: rotateY(-20deg);
 }
 .cover:hover {
     width: 250px; /* Increase the width when hovered */
@@ -260,15 +227,8 @@ body {
 	position: absolute;
 	top: 0;
 	left:0;
-
-
-  -webkit-transform: rotateY(90deg);
-	   -moz-transform: rotateY(90deg);
-	        transform: rotateY(90deg);
-
-	-webkit-transform-origin: 0;
-	   -moz-transform-origin: 0;
-	        transform-origin: 0;
+    transform: rotateY(90deg);
+    transform-origin: 0;
 }
 
 
@@ -431,34 +391,37 @@ footer {
     padding: 20px 20px;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     color: #000;
-  }
-  .social-icons a {
+}
+
+.social-icons a {
     font-size: 4rem;
     margin: 0 10px;
     color: #000;
     transition: color 0.3s;
-  }
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #000000; /* Color change on hover */
-  }
+}
 
-  .social-icon{
+.social-icon{
     font-size: 0.8rem;
-  }
+}
 
-  .footer-link {
+.footer-link {
     font-size: 1.2em;
     padding: 10px;
     color: #000;
     margin-right: 20px;
     text-decoration: none;
-  }
-  .footer-link:hover {
+}
+
+.footer-link:hover {
     color: #000000;
     text-decoration: underline;
-  }
+}
   
-  .accordion .card-header {
+.accordion .card-header {
     background-color: black; /* Black background for the header */
     border-bottom: 1px solid #444; /* Border below the header */
 }
@@ -492,12 +455,21 @@ footer {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+    border-color: #ff0000;
+    border-radius: 4;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
+}
+
+#id_password1 {
+    width: 100%;
+    border: none;
+}
+.allauth-form-inner-content input:is([]) {
+    width: 100%;
+    
 }
 
 .allauth-form-inner-content input::placeholder {
@@ -512,9 +484,6 @@ footer {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     background-color: #000;
     border: 1px solid #000;
