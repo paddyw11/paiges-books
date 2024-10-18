@@ -11,6 +11,7 @@ from authors.models import Author
 class Reverse(Func):
     function = 'REVERSE'
 
+
 def all_books(request):
     """A view to return all books, including searching and sorting the books"""
 
@@ -19,7 +20,6 @@ def all_books(request):
     genres = None
     sort = None
     direction = None
-    
 
     print("GET parameters:", request.GET)
 
@@ -28,28 +28,29 @@ def all_books(request):
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'author':
-                # Annotate with the last name, assuming the last word is the last name
+
                 books = books.annotate(
                     last_name=Substr(
                         F('author__name'),
-                        Length(F('author__name')) - Func(Reverse(F('author__name')), Value(' '), function='STRPOS') + 1,
+                        Length(F('author__name')) - Func(Reverse(F(
+                            'author__name')), Value(' '),
+                            function='STRPOS') + 1,
                         Length(F('author__name'))
                     )
                 )
-                
 
                 print("Extracted last name substring for sorting:")
                 for book in books:
-                    last_name_substr = book.last_name  # This is the part being used for sorting
-                    print(f"Book: {book.title}, Last name used for sorting: {last_name_substr}")
-                
+                    last_name_substr = book.last_name
+                    print(f"Book: {book.title}, Last name used for sorting: \
+                         {last_name_substr}")
+
                 sortkey = 'last_name'
-                    
-                          
+
             elif sortkey == 'name':
                 sortkey = 'lower_name'
                 books = books.annotate(lower_name=Lower('title'))
-            
+
             print(f"Current sortkey: {sortkey}")
 
             if 'direction' in request.GET:
@@ -62,33 +63,31 @@ def all_books(request):
 
         if 'genre' in request.GET:
             genre_name = request.GET['genre'].replace('_', ' ')
-            # genre_name = request.GET['genre']
-            print("this  is genre name = ",genre_name)
+            print("this  is genre name = ", genre_name)
 
             genre = Genre.objects.get(name=genre_name)
-            print("this  is genre = ",genre)
+            print("this  is genre = ", genre)
             books = books.filter(genres__name__iexact=genre_name)
-            
-            
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect(reverse('books'))
-            
-            queries = Q(title__icontains=query) | Q(short_description__icontains=query) | Q(author__name__icontains=query) | Q(genres__name__icontains=query)
+
+            queries = Q(title__icontains=query) | \
+                Q(short_description__icontains=query) | \
+                Q(author__name__icontains=query) | \
+                Q(genres__name__icontains=query)
             books = books.filter(queries)
 
         if 'offer' in request.GET and request.GET['offer'] == 'true':
             books = books.filter(offer=True)
             print("Offer filter applied")
 
-
         if 'bookmark' in request.GET:
             books = books.filter(bookmark__id=request.user.id)
-
-    
-        
 
     current_sorting = f'{sort}_{direction}'
 
@@ -97,10 +96,11 @@ def all_books(request):
         'search_term': query,
         'current_genres': genres,
         'current_sorting': current_sorting,
-        
+
     }
-    
+
     return render(request, 'books/books.html', context)
+
 
 def books_on_offer(request):
     """ A view to display books that are on offer"""
@@ -128,26 +128,28 @@ def books_on_offer(request):
         'offer_books': offer_books,  # Only books with offers
         'current_sorting': current_sorting
     }
-    
+
     return render(request, 'books/offers.html', context)
 
+
 def book_detail(request, book_id):
-    """ A view to return individual book details """ 
+    """ A view to return individual book details """
 
     book = get_object_or_404(Book, pk=book_id)
     recommended_books = book.get_recommended_books()
 
     bookmark = False
-    if book.bookmark.filter (id=request.user.id).exists():
+    if book.bookmark.filter(id=request.user.id).exists():
         bookmark = True
 
     context = {
-    'book': book,
-    'recommended_books': recommended_books,
-    'bookmark' : bookmark,
+        'book': book,
+        'recommended_books': recommended_books,
+        'bookmark': bookmark,
     }
 
     return render(request, 'books/book_detail.html', context)
+
 
 @login_required
 def add_book(request):
@@ -163,16 +165,18 @@ def add_book(request):
             messages.success(request, 'Successfully added book!')
             return redirect(reverse('book_detail', args=[book.id]))
         else:
-            messages.error(request, 'Failed to add book. Please chck the form is valid.')
+            messages.error(request, 'Failed to add book. \
+            Please chck the form is valid.')
     else:
         form = BookForm()
-        
+
     template = 'books/add_book.html'
     context = {
-        'form' : form,
+        'form': form,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_book(request, book_id):
@@ -189,18 +193,20 @@ def edit_book(request, book_id):
             messages.success(request, 'Successfully updated book!')
             return redirect(reverse('book_detail', args=[book.id]))
         else:
-            messages.error(request, 'Failed to update book. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update book. \
+            Please ensure the form is valid.')
     else:
         form = BookForm(instance=book)
         messages.info(request, f'You are editing {book.title}')
-   
+
     template = 'books/edit_book.html'
     context = {
-        'form' : form,
+        'form': form,
         'book': book,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_book(request, book_id):
@@ -208,11 +214,12 @@ def delete_book(request, book_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only book shop owners can do that.')
         return redirect(reverse('home'))
-        
+
     book = get_object_or_404(Book, pk=book_id)
     book.delete()
     messages.success(request, 'Book successfully deleted!')
     return redirect(reverse('books'))
+
 
 @login_required
 def bookmark_add(request, book_id):

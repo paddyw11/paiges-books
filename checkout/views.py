@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -13,7 +14,7 @@ from decimal import Decimal
 
 import stripe
 import json
-# Create your views here.
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -31,7 +32,6 @@ def cache_checkout_data(request):
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
-    
 
 
 def checkout(request):
@@ -70,7 +70,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in \
+                                item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 book=book,
@@ -80,14 +81,16 @@ def checkout(request):
                             order_line_item.save()
                 except Book.DoesNotExist:
                     messages.error(request, (
-                        "One of the books in your basket wasn't found on our shelves. "
+                        "One of the books in your basket wasn't found on our \
+                        shelves. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                            args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -97,12 +100,11 @@ def checkout(request):
             messages.error(request, "There's nothing in your basket yet.")
             return redirect(reverse('books'))
 
-
         current_basket = basket_contents(request)
         total = current_basket['grand_total']
 
         try:
-            total = Decimal(total)  # or float(total) if you prefer
+            total = Decimal(total)
         except (ValueError, InvalidOperation):
             messages.error(request, 'Invalid total value.')
             return redirect(reverse('view_basket'))
@@ -115,7 +117,7 @@ def checkout(request):
         )
 
         if request.user.is_authenticated:
-            try: 
+            try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
@@ -136,7 +138,7 @@ def checkout(request):
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
              Did you forget to set it in your environment?')
-             
+
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
@@ -145,6 +147,7 @@ def checkout(request):
     }
 
     return render(request, template, context)
+
 
 def checkout_success(request, order_number):
     """
@@ -155,11 +158,11 @@ def checkout_success(request, order_number):
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        #Attach the user's profile to the order
+        # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
 
-        #save the user's info
+        # save the user's info
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
@@ -187,3 +190,4 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+    

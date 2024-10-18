@@ -10,7 +10,7 @@ class GenreAdmin(admin.ModelAdmin):
 
 class BooksAdmin(admin.ModelAdmin):
     list_display = (
-        'sku', 
+        'sku',
         'title',
         'author',
         'price',
@@ -18,7 +18,7 @@ class BooksAdmin(admin.ModelAdmin):
     )
 
     ordering = ('sku',)
-        
-# Register your models here.
+
+
 admin.site.register(Book, BooksAdmin)
 admin.site.register(Genre, GenreAdmin)

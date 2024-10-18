@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Author
 from .forms import AuthorForm
 
+
 def author_bio(request, author_id):
     """ A view to disply individual author details """
 
@@ -12,7 +13,7 @@ def author_bio(request, author_id):
     context = {
         'author': author,
     }
-    
+
     return render(request, 'authors/author_bio.html', context)
 
 
@@ -30,7 +31,8 @@ def add_author(request):
             messages.success(request, 'Successfully added Author.')
             return redirect(reverse('add_author'))
         else:
-            messages.error(request, 'Failed to add Author. Please ensure form is valid.')
+            messages.error
+            (request, 'Failed to add Author. Please ensure form is valid.')
     else:
         form = AuthorForm()
 
@@ -40,6 +42,7 @@ def add_author(request):
     }
 
     return render(request, template, context)
+
 
 def edit_author(request, author_id):
     """ Edit an author in the database"""
@@ -55,7 +58,8 @@ def edit_author(request, author_id):
             messages.success(request, 'Successfully updated Author.')
             return redirect(reverse('author_bio', args=[author_id]))
         else:
-            messages.error(request, 'Failed to update Author. Please ensure form is valid.')
+            messages.error
+            (request, 'Failed to update Author. Please ensure form is valid.')
     else:
         form = AuthorForm(instance=author)
         messages.info(request, f'You are editing {author.name}')
@@ -68,6 +72,7 @@ def edit_author(request, author_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_author(request, author_id):
     """ Delete an author from the database """
@@ -79,3 +84,4 @@ def delete_author(request, author_id):
     author.delete()
     messages.success(request, 'Author deleted!')
     return redirect(reverse('books'))
+    

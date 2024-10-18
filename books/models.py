@@ -1,16 +1,17 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
+
 class Genre(models.Model):
 
     class Meta:
         verbose_name_plural = 'Genres'
 
     name = models.CharField(max_length=254)
-    
+
     def __str__(self):
         return self.name
+
 
 class Book(models.Model):
     sku = models.CharField(max_length=100)
@@ -25,11 +26,13 @@ class Book(models.Model):
     image = models.ImageField(null=True, blank=True)
     offer = models.BooleanField(default=False)
     blurb = models.TextField(blank=True)
-    bookmark = models.ManyToManyField(User, related_name='bookmark', default=None, blank=True)
+    bookmark = models.ManyToManyField(User, related_name='bookmark',
+                                      default=None, blank=True)
 
     def __str__(self):
         return self.title
 
     def get_recommended_books(self):
         # Get all books that share the same genre(s)
-        return Book.objects.filter(genres__in=self.genres.all()).exclude(id=self.id).distinct()[:3]
+        return Book.objects.filter(genres__in=self.genres.all()).exclude(
+            id=self.id).distinct()[:3]

@@ -65,7 +65,7 @@ img {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid black;
 }
 
@@ -211,12 +211,11 @@ body {
     transform: rotateY(-20deg);
 }
 .cover:hover {
-    width: 250px; /* Increase the width when hovered */
-    -webkit-transform: rotateY(-20deg); /* Rotate slightly */
+    width: 250px; 
     transform: rotateY(-20deg);
     transition: width 0.5s ease, transform 0.5s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a subtle shadow when hovered */
-    transform: translateY(-5px); /* Slight lift */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transform: translateY(-5px); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -233,14 +232,14 @@ body {
 
 
 .card {
-    position: relative; /* Ensure positioning works with expanding child elements */
-    height: auto; /* Let the card height adapt based on content */
-    overflow: visible; /* Allow the cover to expand beyond the card boundaries */
-    transition: height 0.5s ease; /* Smoothly transition the height if needed */
+    position: relative;
+    height: auto; 
+    overflow: visible; 
+    transition: height 0.5s ease;
 }
 
 .card-body, .card-footer {
-    overflow: visible; /* Ensure footer and body don't clip the cover */
+    overflow: visible; 
 }
 
 
@@ -378,8 +377,8 @@ input[name='q']::placeholder {
 
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: red;
-    border-color: red;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
     border-radius: 0;
 }
 
@@ -387,9 +386,9 @@ footer {
     position: sticky;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa; 
     padding: 20px 20px;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
     color: #000;
 }
 
@@ -401,7 +400,7 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #000000; /* Color change on hover */
+    color: #000000; 
 }
 
 .social-icon{
@@ -422,19 +421,19 @@ footer {
 }
   
 .accordion .card-header {
-    background-color: black; /* Black background for the header */
-    border-bottom: 1px solid #444; /* Border below the header */
+    background-color: black; 
+    border-bottom: 1px solid #444; 
 }
 
 .accordion .card-header .btn-link {
-    color: white; /* White text color for the button link */
-    text-align: left; /* Align text to the left */
+    color: white; 
+    text-align: left; 
 }
 
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
@@ -450,13 +449,13 @@ footer {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem; 
+    color: #6c757d; 
 }
 
 .allauth-form-inner-content input {
     border-color: #ff0000;
-    border-radius: 4;
+    border-radius: 4px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -467,10 +466,6 @@ footer {
     width: 100%;
     border: none;
 }
-.allauth-form-inner-content input:is([]) {
-    width: 100%;
-    
-}
 
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
@@ -478,7 +473,7 @@ footer {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
+	
 	display: inline-block;
     font-weight: 400;
     color: #fff;
@@ -494,7 +489,7 @@ footer {
 
 }
 
-/* fixed top navbar only on medium and up */
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -527,12 +522,12 @@ footer {
     }
 
     .navbar #mobile-search i.fa-lg {
-        font-size: 1rem; /* Adjust icon size if needed */
+        font-size: 1rem; 
     }
 
     .navbar #mobile-search p {
-        margin: 0; /* Remove excessive margins */
-        font-size: 0.9rem; /* Reduce font size */
+        margin: 0; 
+        font-size: 0.9rem; 
     }
 }
 
