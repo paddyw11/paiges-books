@@ -134,6 +134,37 @@ I adopted a crows foot ER design to portray the relationship between each table 
 
 ## Technologies Used
 
+### Languages Used 
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Jquery](https://jquery.com/) 
+-   [Python](https://www.python.org/)
+
+### Frameworks, Libraries & Programs Used  
+
+-   [Google Fonts:](https://fonts.google.com/) used for the Lato and Old Standard TT fonts.
+-   [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+-   [Bootstrap](https://getbootstrap.com/) was used to build responsive web page
+-   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+-   [GitHub:](https://github.com/) has been utilied as the respository for the project code after being pushed from Git. In addition, for this project GitHub was used for the agile development aspect through the use of User Stories (GitHub Issues) and tracking their progress on a Kanban board.
+-   [Django v4.2](https://www.djangoproject.com/) was used as the framework to support rapid and secure development of the application.
+s
+-   [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) used for account registration and authentication.
+-   [Pillow](https://pillow.readthedocs.io/en/stable/index.html) - Python Imaging Library used for image handling
+-   [jquery library](https://code.jquery.com/jquery-3.4.1.min.js) - for various pieces of functionality including adding and removing items from the shopping cart and handling the increment and decrement of the quantity control.
+-   [Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to simplify form rendering.
+-   [Stripe](https://js.stripe.com/v3/) used for secure payments (referenced in base.html).
+-   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe.
+-   [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku.
+-   [psycopg2](https://pypi.org/project/psycopg2/) database adapter used to support the connection to the postgres db.
+-   [Amazon S3](https://aws.amazon.com/s3/) used to store static files and images.
+-   [Boto3](https://pypi.org/project/boto3/) the Amazon Web Services (AWS) Software Development Kit (SDK) for Python.
+-   [django_storages](https://django-storages.readthedocs.io/en/latest/) used to connect django to S3.
+-   [Heroku](https://www.heroku.com) - used to host the deployed application.
+-   [Balsamiq:](https://balsamiq.com/) was used to create the wireframes during the design process.
+-   [LucidChart](https://www.lucidchart.com/pages/?) was used to create the Entity Relationship diagrams for the application data model
+
 
 ## Testing
 
