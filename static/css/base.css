@@ -128,7 +128,7 @@ body {
 .image-flash {
     position: absolute;
     top: -15px;  
-    right: -15px;  
+    right: -5px;  
     background-color: #0c5460;  
     transform: rotate(15deg);
     font-size: 0.9rem;  
@@ -381,6 +381,19 @@ input[name='q']::placeholder {
     border-color: rgb(0, 0, 0);
     border-radius: 0;
 }
+
+/* Style for active pagination item */
+
+.page-link {
+    color: #000;
+}
+
+.page-item.active .page-link {
+    background-color: #000000; 
+    color: #fff; 
+    border-color: #000000; /
+}
+
 
 footer {
     position: sticky;

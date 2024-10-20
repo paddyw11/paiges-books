@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q, F, Func, Value
 from django.db.models.functions import Upper, Substr, Length, Lower
+from django.core.paginator import Paginator
 from .models import Book, Genre
 from .forms import BookForm
 from authors.models import Author
@@ -16,6 +17,7 @@ def all_books(request):
     """A view to return all books, including searching and sorting the books"""
 
     books = Book.objects.all()
+    total_books = books.count()
     query = None
     genres = None
     sort = None
@@ -89,6 +91,12 @@ def all_books(request):
         if 'bookmark' in request.GET:
             books = books.filter(bookmark__id=request.user.id)
 
+    filtered_books_count = books.count()
+
+    paginator = Paginator(books, 8) 
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -96,7 +104,10 @@ def all_books(request):
         'search_term': query,
         'current_genres': genres,
         'current_sorting': current_sorting,
-
+        'paginator': paginator,
+        'page_obj': page_obj,
+        'filtered_books_count': filtered_books_count,
+        'total_books': total_books
     }
 
     return render(request, 'books/books.html', context)
@@ -125,7 +136,7 @@ def books_on_offer(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'offer_books': offer_books,  # Only books with offers
+        'offer_books': offer_books,  
         'current_sorting': current_sorting
     }
 
