@@ -28,6 +28,10 @@ img {
     max-height: 50%;
 }
 
+
+.basket-price {
+    color:#3A0D02
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -199,6 +203,7 @@ body {
     border-right:3px solid #3A0D02;
     border-top:1px solid #3A0D02;
     border-bottom:3px solid #3A0D02;
+    border-left:5px double #3A0D02;
 	left:0;
 	top:0;
 	height: 100%;
@@ -212,9 +217,11 @@ body {
     z-index: 1;
 }
 
+
 .cover:hover {	
 	width:210px;
     transform: rotateY(-15deg);
+    transform-origin: 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 10;
