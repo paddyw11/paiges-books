@@ -123,14 +123,15 @@ body {
 	width:230px;
 	position:relative;
 	perspective: 1200px;
+    overflow: visible;
 }
 
 .image-flash {
     position: absolute;
     top: -15px;  
-    right: -5px;  
-    background-color: #0c5460;  
-    transform: rotate(15deg);
+    left: 3px;  
+    background-color: #e7c9a9;  
+    transform: rotate(-20deg);
     font-size: 0.9rem;  
     font-weight: bold;
     padding: 10px 10px;
@@ -139,6 +140,7 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
 
 .bookWrap .image-flash p {
@@ -149,13 +151,15 @@ body {
     margin: 0;  
     font-size: 1rem;  
     font-weight: bold;  
-    color: rgb(255, 255, 255);  
+    color: #3A0D02;  
     text-align: center;  
     padding: 5px;  
 }
 
 .book {
-	background:#000;
+	background:oldlace;
+    border-right: 3px solid #3A0D02;
+    border-top: 3px solid #3A0D02;
 	height:346px;
 	width:230px;
 	position:absolute;
@@ -192,32 +196,30 @@ body {
 
 .cover {
 	position:absolute;
+    border-right:3px solid #3A0D02;
+    border-top:1px solid #3A0D02;
+    border-bottom:3px solid #3A0D02;
 	left:0;
 	top:0;
-
 	height: 100%;
 	width: 230px;
-
 	max-width: 230px;
 	max-height: 346px;
     backface-visibility: hidden;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 8px 8px 0;
     transition: transform .5s ease 0s, width .5s ease 0s;
     transform-origin: 0;
+    z-index: 1;
 }
 
 .cover:hover {	
 	width:210px;
-    transform: rotateY(-20deg);
-}
-.cover:hover {
-    width: 250px; 
-    transform: rotateY(-20deg);
-    transition: width 0.5s ease, transform 0.5s ease;
+    transform: rotateY(-15deg);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    transform: translateY(-5px); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
 }
+
 
 .spine {
 	background:rgb(0, 0, 0);
