@@ -201,7 +201,12 @@ body {
 }
 
 .bookIntro {
-	transform: rotateY(-30deg);
+	width:210px;
+    transform: rotateY(-15deg);
+    transform-origin: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
 }
 
 .cover {
