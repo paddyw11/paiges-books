@@ -29,9 +29,6 @@ img {
 }
 
 
-.basket-price {
-    color:#3A0D02
-}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -48,13 +45,14 @@ img {
 .main-logo-link {
     width: fit-content;
 }
+
 #headline-text {
     text-align: center;
 }
 
 .tagline-wrapper {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 20px;
 
 }
 .shop-now-button {
@@ -94,6 +92,14 @@ img {
     color: #000 !important;
 }
 
+.navbar-collapse .nav-bar .nav-item a#special-offers-link {
+    color: #cb0505 !important;
+}
+
+.special-offers-link {
+    color: #cb0505 !important
+
+}
 .border-black {
     border: 1px solid black !important;
 }
@@ -195,7 +201,7 @@ body {
 }
 
 .bookIntro {
-	transform: rotateY(30deg);
+	transform: rotateY(-30deg);
 }
 
 .cover {
@@ -409,7 +415,6 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #f8f9fa; 
-    padding: 20px 20px;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
     color: #000;
 }
@@ -584,6 +589,9 @@ footer {
 
     .nav-link i.fa-lg {
         font-size: 1rem;
+    }
+    .nav-link-offers{
+        color: #cb0505;
     }
 
     .navbar-toggler {
