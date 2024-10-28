@@ -65,10 +65,10 @@ def all_books(request):
 
         if 'genre' in request.GET:
             genre_name = request.GET['genre'].replace('_', ' ')
-            print("this  is genre name = ", genre_name)
+            genres = genre_name
 
             genre = Genre.objects.get(name=genre_name)
-            print("this  is genre = ", genre)
+            
             books = books.filter(genres__name__iexact=genre_name)
 
         if 'q' in request.GET:

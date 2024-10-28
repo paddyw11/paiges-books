@@ -202,7 +202,7 @@ body {
 
 .bookIntro {
 	width:210px;
-    transform: rotateY(-15deg);
+    transform: rotateY(30deg);
     transform-origin: 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -590,6 +590,7 @@ footer {
 
     .nav-link {
         padding: 0.15rem;
+        color: #000;
     }
 
     .nav-link i.fa-lg {
