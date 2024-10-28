@@ -56,7 +56,7 @@
 
                             </form>
                         {% else %}
-                        <strong><i class="fa-regular fa-bookmark fa-2x ml-3"></i></strong>
+                        <strong><i id="bookmark-tooltip" class="fa-regular fa-bookmark fa-2x ml-3" data-bs-toggle="tooltip" title="Log in to save this book to your wishlist."></i></strong>
                         {% endif %}
                     </div>
                     {% if book.author_id %}
@@ -79,7 +79,6 @@
                     </p>
                     
 
-                    <!-- blurb modal -->
                     <div class="modal fade" id="bookModal_{{ item.book.id }}" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel_{{ item.book.id }}" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -210,12 +209,22 @@
 {{ block.super }}
 <script>
     $(document).ready(function() {
-    // Initialize Bootstrap tooltips for Bootstrap 5
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+        var bookmarkTooltip = bootstrap.Tooltip.getInstance(document.getElementById('bookmark-tooltip'));
+
+        if (!localStorage.getItem('bookmarkTooltipDismissed')) {
+            bookmarkTooltip.show();
+            $('#bookmark-tooltip').on('click', function() {
+                bookmarkTooltip.hide();
+                localStorage.setItem('bookmarkTooltipDismissed', 'true');
+            });
+        }
     });
-});
 </script>
+
 {% include 'books/includes/quantity_input_script.html' %}
 {%  endblock %}

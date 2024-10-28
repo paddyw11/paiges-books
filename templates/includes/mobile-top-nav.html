@@ -50,8 +50,8 @@
       {% endif %}
     </div>
   </li>
-  <li class="list-inline-item text-center">
-    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_basket' %}"  aria-label="View Shopping Basket">
+  <li class="list-inline-item text-center text-black">
+    <a class="{% if grand_total %}text-black font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_basket' %}"  aria-label="View Shopping Basket">
       <div><i class="fas fa-shopping-bag fa-lg"></i></div>
       <p class="my-0">
         {% if grand_total %}

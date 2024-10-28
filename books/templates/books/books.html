@@ -14,7 +14,13 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Books</h2>
+                <h2 class="logo-font">
+                    {% if current_genres %}
+                        {{ current_genres }} Books
+                    {% else %}
+                        Books
+                    {% endif %}
+                </h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -29,6 +35,8 @@
                             {{ filtered_books_count }} out of {{ total_books }} Books 
                             {% if search_term %}
                                 found for <strong>"{{ search_term }}"</strong>
+                            {% elif current_genres %}
+                                in genre <strong>{{ current_genres }}</strong>
                             {% endif %}
                         </p>
                     </div>
