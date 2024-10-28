@@ -65,6 +65,162 @@
 
  As a ... i want to be able to .... so that i can ...
 
+
+-   **Viewing and Navigation Features**
+
+    -   __Feature 1 - Consistent Look and Feel__
+
+        The site's navigation bar and footer appear on every page framing the page's content. The fonts and colours are consitent throughtout providing an intuitive experience for the user. The novagation bar is respoonsive with a burger style icon replacing the nav links on smaller screens. 
+
+        <br><strong>Fig 01-A.  Desktop example</strong><br><br>
+        ![F01 Large Screen](documentation/media/images/features/f1-nav-bar-lg.png)
+        
+        <br><strong>Fig 01-B.  Mobile example</strong><br><br>
+        ![F01 Small Screen](documentation/media/images/features/f1-nav-bar-sm.png)
+    
+    -   __Feature 2 - User Logged in Indicator__
+
+        The user can easily see if they are logged in at any given time. The user icon will be solid when a user is logged in and emplty if not. The text undernaeth the symbol will display 'My Account' is not logged in and the user's username when logged in. 
+
+        <br><strong>Fig 02-A.  Logged Out</strong><br><br>
+        ![F02 Logged Out](documentation/media/images/features/f2-user-indicator-out.png)
+
+        <br><strong>Fig 02-B.  Loggged In</strong><br><br>
+        ![F02 Logged In](documentation/media/images/features/f2-user-indicator-in.png)
+
+    -   __Feature 3 - Home Page__
+
+        The home page is dominated with an image and some header text infomrming the user of the site's main purpose with a prominent call to action button. The navigation section contains links for clear procedures.  
+
+        <br><strong>Fig 03-A.  Home Page</strong><br><br>
+        ![F03 Home Page](documentation/media/images/features/f3-home-page.png)
+
+    -   __Feature 4 - Books Views__
+
+        The books view allow the user to easily scroll through a number of books and allows sorting by several attriburtes including price, genre and author. Using a card feature, each card displays the front cover of each book and includes a few details about each title. A scroll to top button allows the user to return to the start of the list. A pagination feature is inluded to allow users to navigate through a longer list of titles. 
+
+        <br><strong>Fig-04-A.  All books view</strong><br><br>
+        ![F04 Books Views](documentation/media/images/features/f4-all-books-view.png)
+
+    -   __Feature 5 - Search, Filer and Sort__
+
+        There are options available to the user on the navigation bar to filter the list of books and allow them to restrict the results to items they are particularly interested in. For example, the user can choose to just see books for a particular genre or just discounted prints using the 'offers' link. The user can also restrict the list of results based on a search term which will attempt to find matches in the book titles, description, genres and authors name.
+
+        <br><strong>Fig-05-A.  Search by key term</strong><br><br>
+        ![F05 Search by key term](documentation/media/images/features/f5-search-key-term.png)
+
+        <br><strong>Fig-05-A.  Search by genre</strong><br><br>
+        ![F05 Search by genre](documentation/media/images/features/f5-search-genre.png)
+
+        <br><strong>Fig-05-A.  Search by offers </strong><br><br>
+        ![F05 Search by offers ](documentation/media/images/features/f5-search-offers.png)
+
+    -   __Feature 6 - Offers__
+
+        The dedicated page displays all books that have a discount offer applied. Each book will also be marked with a discount in the main list views.    
+
+        <br><strong>Fig-06-A.  Offers Page</strong><br><br>
+        ![F06 Offers](documentation/media/images/f6-offers-page.png)
+
+    -   __Feature 7 - Book Details__
+
+        When a user clicks on a book they are taken to a book detail page. This will display the full details of the book including short description, a full blurb (opened in a modal), the number of pages, the price, the author and the genre(s). The user can add the book to their basket from this view and can also browse 'Similar Books' which displays books in the same genre(s).  
+
+        <br><strong>Fig-07-A.  Book Detail View</strong><br><br>
+        ![F07 Book Detals](documentation/media/images/f7-book-detail-view.png)
+
+    -   __Feature 8 - Author Detials__
+
+        Whilst in a book detail view, the user can click one the authors name to     
+        reach the author bio page which includes the author's nationalisty and a short bio description. 
+
+        <br><strong>Fig-08-A.  Author Detail View</strong><br><br>
+        ![F08 Author Details](documentation/media/images/f8-author-details.png)
+
+    -   __Feature 9 - Wishlist__
+
+        When viewing a book user's can select a bookmark icon to add the respective book to their wishlist. For a logged in user they can see a wishlist option in the navigation links to take them to their wishlist view. The books added to the wishlist will be retained for a user when they return to their log in. Users can remove the book from the wishlist by clicking the bookmark icon. The icon changes style when books are in, or out of the wishlist.     
+
+        <br><strong>Fig-09-A.  Wishlist </strong><br><br>
+        ![F09 Wishlist](documentation/media/images/f9-wishlist.png)
+
+    -   __Feature 10 - Error Pages__
+
+        Text    
+
+        <br><strong>Fig-10-A.  Loggged In</strong><br><br>
+        ![F10 Error Pages](documentation/media/images/f2-user-indicator-in.png)
+
+    -   __Feature 11 - Onscreen Messages__
+
+        Text    
+
+        <br><strong>Fig-11-A.  Loggged In</strong><br><br>
+        ![F11 Onscreen Messages](documentation/media/images/f2-user-indicator-in.png)
+
+-   **Registration and Role-based Authorisation Related Features**
+
+    -   __Feature 12 - Sign Up, Login and Logout__
+
+        Text    
+
+        <br><strong>Fig-12-A.  Loggged In</strong><br><br>
+        ![F12 Sign Up, Login and Logout](documentation/media/images/f2-user-indicator-in.png)
+
+    -   __Feature 13 - Role Based Actions__
+
+        Text    
+
+        <br><strong>Fig-13-A.  Loggged In</strong><br><br>
+        ![F13 Role based actions](documentation/media/images/f2-user-indicator-in.png)
+
+    -   __Feature 14 - User Profile__
+
+        Text    
+
+        <br><strong>Fig-14-A.  Loggged In</strong><br><br>
+        ![F14 User Profile](documentation/media/images/f2-user-indicator-in.png)
+
+-   **E-commerce related features**
+
+    -   __Feature 15 - Shopping Basket__
+
+        Text    
+
+        <br><strong>Fig-15-A.  Loggged In</strong><br><br>
+        ![F15 Shopping Basket](documentation/media/images/f2-user-indicator-in.png)
+
+    -   __Feature 16 - Checkout__
+
+        Text    
+
+        <br><strong>Fig-16-A.  Loggged In</strong><br><br>
+        ![F16 Checkout](documentation/media/images/f2-user-indicator-in.png)
+
+    -   __Feature 17 - Order Confirmation and History__
+
+        Text    
+
+        <br><strong>Fig-17-A.  Loggged In</strong><br><br>
+        ![F17 Order confirmationa nd History](documentation/media/images/f2-user-indicator-in.png)
+
+
+-   **Data Admin Features**
+
+    -   __Feature 18 - Book Management__
+
+        Text    
+
+        <br><strong>Fig-18-A.  Loggged In</strong><br><br>
+        ![F18 Book management](documentation/media/images/f2-user-indicator-in.png)
+
+    -   __Feature 19 - Author Management__
+
+        Text    
+
+        <br><strong>Fig-19-A.  Loggged In</strong><br><br>
+        ![F19 Author Management](documentation/media/images/f2-user-indicator-in.png)
+
 ### Structure Plane
 
 #### Website Structure - Wireframes
@@ -176,7 +332,7 @@ For More information on testing [see here](https://github.com/paddyw11/paigesboo
 
 ---
 
-![Image](/documentation/media/images/bug1.PNG)
+![Image](/documentation/media/images/bug1.png)
 
 Once I had creatd a new table for genre, in order to make it a manyToMany relationshipe i hadn't updated the search query to reflect that. I needed to update to correct syntax.
 
@@ -184,17 +340,17 @@ Once I had creatd a new table for genre, in order to make it a manyToMany relati
 
 ---
 
-![Image](/documentation/media/images/bug3.PNG)
+![Image](/documentation/media/images/bug3.png)
 
 ---
 
-![Image](/documentation/media/images/bug3-1.PNG)
+![Image](/documentation/media/images/bug3-1.png)
 
 ---
 
 I was receiving a W3C validation error on this due to the django password validator and crispy_forms displaying the password vlaidation hints as a list within a small element. 
 I attempted to create the form using crispy fields for the other fields and custom design the password1 field. 
-![Image](/documentation/media/images/bug3-2.PNG)I decided it was a better UX to leave the whole form as a crispy fomr in the end. 
+![Image](/documentation/media/images/bug3-2.png)I decided it was a better UX to leave the whole form as a crispy fomr in the end. 
 
 
 ## Credits: 
