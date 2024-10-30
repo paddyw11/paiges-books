@@ -16,7 +16,6 @@
             <div class="col-12 col-md-8 col-lg-6 text-center">
                 <div class="image-container my-5">
                     {% if book.image %}
-                        
                         <a href="{{ book.image.url }}" target="_blank" >
                             <img class="card-img-top img-fluid book-image mx-auto d-block" 
                                 src="{{ book.image.url }}" 
@@ -33,30 +32,25 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="book-details-container mb-5 mt-md-5">
-                    
                     <div class="d-flex align-items-center">
-                        <h3 class="mb-0">{{ book.title }}</h3>
+                        <h3 class="mb-0 mr-3">{{ book.title }}</h3>
                         {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'bookmark' book.id %}" method="POST">
+                            <form class="d-inline ml-2" action="{% url 'bookmark' book.id %}" method="POST">
                                 {% csrf_token %}
-
                                 {% if bookmark %}
                                 <strong>
                                     <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to remove from bookmarks"><i class="fa-solid fa-bookmark fa-2x" aria-label="Bookmarked book"></i>
                                     </button>
                                 </strong>
-
                                 {% else %}
                                 <strong>
                                     <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to save for later"><i class="fa-regular fa-bookmark fa-2x" aria-label="Click to bookmark"></i>
                                     </button>
                                 </strong>
-
                                 {% endif %}
-
                             </form>
                         {% else %}
-                        <strong><i id="bookmark-tooltip" class="fa-regular fa-bookmark fa-2x ml-3" data-bs-toggle="tooltip" title="Log in to save this book to your wishlist."></i></strong>
+                        <strong><i id="bookmark-tooltip" class="fa-regular fa-bookmark fa-2x ml-2" data-bs-toggle="tooltip" title="Log in to save this book to your wishlist."></i></strong>
                         {% endif %}
                     </div>
                     {% if book.author_id %}
@@ -77,8 +71,6 @@
                             {{ genre.name }}{% if not forloop.last %}, {% endif %}
                         </a>
                     </p>
-                    
-
                     <div class="modal fade" id="bookModal_{{ item.book.id }}" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel_{{ item.book.id }}" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -129,12 +121,11 @@
                                 </div>
                                 {% if request.user.is_superuser %}
                                             <small class="ml-3">
-                                                <a href="{% url 'edit_book' book.id %}">Edit</a>
-                                                <a class="text-danger" href="{% url 'delete_book' book.id %}">Delete</a>
+                                                <a class="btn btn-outline-black" href="{% url 'edit_book' book.id %}">Edit</a>
+                                                <a class="btn btn-black" href="{% url 'delete_book' book.id %}">Delete</a>
                                             </small>
                                 {%  endif %}
                             </div>
-    
                             <div class="col-12">
                                 <a href="{% url 'books' %}" class="btn btn-outline-black rounded-10 mt-5">
                                     <span class="icon">
@@ -193,7 +184,6 @@
                             </div>
                         </div>
                     </div>
-
                     {% empty %}
                         <p>No recommendations available at this time.</p>
                     {% endfor %}
@@ -201,29 +191,24 @@
             </div>
         </div>
     </div>
-    
-
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
 <script>
     $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+    var bookmarkTooltip = $('#bookmark-tooltip').tooltip();
 
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
+    if (!localStorage.getItem('bookmarkTooltipDismissed')) {
+        bookmarkTooltip.tooltip('show');
+        $('#bookmark-tooltip').on('click', function() {
+            bookmarkTooltip.tooltip('hide');
+            localStorage.setItem('bookmarkTooltipDismissed', 'true');
         });
-        var bookmarkTooltip = bootstrap.Tooltip.getInstance(document.getElementById('bookmark-tooltip'));
+    }
+});
 
-        if (!localStorage.getItem('bookmarkTooltipDismissed')) {
-            bookmarkTooltip.show();
-            $('#bookmark-tooltip').on('click', function() {
-                bookmarkTooltip.hide();
-                localStorage.setItem('bookmarkTooltipDismissed', 'true');
-            });
-        }
-    });
 </script>
 
 {% include 'books/includes/quantity_input_script.html' %}

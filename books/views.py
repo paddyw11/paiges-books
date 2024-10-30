@@ -22,6 +22,7 @@ def all_books(request):
     genres = None
     sort = None
     direction = None
+    is_wishlist = False
 
     print("GET parameters:", request.GET)
 
@@ -90,6 +91,7 @@ def all_books(request):
 
         if 'bookmark' in request.GET:
             books = books.filter(bookmark__id=request.user.id)
+            is_wishlist = True
 
     filtered_books_count = books.count()
 
@@ -107,7 +109,8 @@ def all_books(request):
         'paginator': paginator,
         'page_obj': page_obj,
         'filtered_books_count': filtered_books_count,
-        'total_books': total_books
+        'total_books': total_books,
+        'is_wishlist': is_wishlist
     }
 
     return render(request, 'books/books.html', context)

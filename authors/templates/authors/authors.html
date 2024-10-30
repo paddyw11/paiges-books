@@ -35,13 +35,10 @@
                             <tr>
                                 <td>{{ author.name }}</td>
                                 <td>
-                                    <a href="{% url 'edit_author' author.id %}" class="btn btn-warning">Edit</a>
-                                    <!-- Trigger for Delete Confirmation Modal -->
-                                    <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal{{ author.id }}">Delete</button>
+                                    <a href="{% url 'edit_author' author.id %}" class="btn btn-outline-black">Edit</a>
+                                    <button class="btn btn-black" data-toggle="modal" data-target="#deleteModal{{ author.id }}">Delete</button>
                                 </td>
                             </tr>
-
-                            <!-- Delete Confirmation Modal -->
                             <div class="modal fade" id="deleteModal{{ author.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel{{ author.id }}" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">

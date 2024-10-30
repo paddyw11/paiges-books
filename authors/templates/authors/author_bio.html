@@ -20,8 +20,8 @@
 
                 {% if request.user.is_superuser %}
                     <small class="ml-3">
-                        <a href="{% url 'edit_author' author.id %}">Edit</a>
-                        <a class="text-danger" href="{% url 'delete_author' author.id %}">Delete</a>
+                        <a class="btn btn-outline-black " href="{% url 'edit_author' author.id %}">Edit</a>
+                        <a class="btn btn-black" href="{% url 'delete_author' author.id %}">Delete</a>
                     </small>
                 {%  endif %}
             </div>
