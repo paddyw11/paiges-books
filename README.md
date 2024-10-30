@@ -85,7 +85,7 @@
         <br><strong>Fig 02-A.  Logged Out</strong><br><br>
         ![F02 Logged Out](documentation/media/images/features/f2-user-indicator-out.png)
 
-        <br><strong>Fig 02-B.  Loggged In</strong><br><br>
+        <br><strong>Fig 02-B.  Logged In</strong><br><br>
         ![F02 Logged In](documentation/media/images/features/f2-user-indicator-in.png)
 
     -   __Feature 3 - Home Page__
@@ -120,14 +120,14 @@
         The dedicated page displays all books that have a discount offer applied. Each book will also be marked with a discount in the main list views.    
 
         <br><strong>Fig-06-A.  Offers Page</strong><br><br>
-        ![F06 Offers](documentation/media/images/f6-offers-page.png)
+        ![F06 Offers](documentation/media/images/features/f6-offers-page.png)
 
     -   __Feature 7 - Book Details__
 
         When a user clicks on a book they are taken to a book detail page. This will display the full details of the book including short description, a full blurb (opened in a modal), the number of pages, the price, the author and the genre(s). The user can add the book to their basket from this view and can also browse 'Similar Books' which displays books in the same genre(s).  
 
         <br><strong>Fig-07-A.  Book Detail View</strong><br><br>
-        ![F07 Book Detals](documentation/media/images/f7-book-detail-view.png)
+        ![F07 Book Detals](documentation/media/images/features/f7-book-detail-view.png)
 
     -   __Feature 8 - Author Detials__
 
@@ -141,68 +141,97 @@
 
         When viewing a book user's can select a bookmark icon to add the respective book to their wishlist. For a logged in user they can see a wishlist option in the navigation links to take them to their wishlist view. The books added to the wishlist will be retained for a user when they return to their log in. Users can remove the book from the wishlist by clicking the bookmark icon. The icon changes style when books are in, or out of the wishlist.     
 
-        <br><strong>Fig-09-A.  Wishlist </strong><br><br>
-        ![F09 Wishlist](documentation/media/images/f9-wishlist.png)
+        <br><strong>Fig-09-A.  Book can be added to the wishlist from the book detail page.</strong><br><br>
+        ![F09 Wishlist](documentation/media/images/features/f9-wishlish-out.png)
+
+        <br><strong>Fig-09-B. Books added to the wishlist can be viewd on the wishlist page.</strong><br><br>
+        ![F09 Wishlist View](documentation/media/images/features/f9-wishlist-view.png)
 
     -   __Feature 10 - Error Pages__
 
-        Text    
+        The site has custom error pages to give a better user experience.     
 
-        <br><strong>Fig-10-A.  Loggged In</strong><br><br>
-        ![F10 Error Pages](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-10-A.  404 Error Page</strong><br><br>
+        ![F10 Error Pages](documentation/media/images/features/f10-error-page-404.png)
 
     -   __Feature 11 - Onscreen Messages__
 
-        Text    
+        Users can be notified of certain actions with on-screen messages. They can receive messages for actions such as successful logging in, logging out, adding a book to the basket and a successful checkout. 
 
-        <br><strong>Fig-11-A.  Loggged In</strong><br><br>
-        ![F11 Onscreen Messages](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-11-A.  Logged In</strong><br><br>
+        ![F11 Onscreen Messages - Logged In](documentation/media/images/features/f11-a-logged-in.png)
+
+        <br><strong>Fig-11-B.  Logged Out</strong><br><br>
+        ![F11 Onscreen Messages - Logged Out](documentation/media/images/features/f11-b-logged-out.png)
+
+        <br><strong>Fig-11-C.  Added to Basket</strong><br><br>
+        ![F11 Onscreen Messages - Added to Basket](documentation/media/images/features/f11-c-added-to-basket.png)
+
+        <br><strong>Fig-11-D.  Order Success</strong><br><br>
+        ![F11 Onscreen Messages - Order SUccess](documentation/media/images/features/f11-d-order-success.png)
 
 -   **Registration and Role-based Authorisation Related Features**
 
     -   __Feature 12 - Sign Up, Login and Logout__
 
-        Text    
+        Users can register for the site by following the register link and completing the sign up form. Once they have registred they can log in to their profile, and save reading lsits and order history as necessary. 
 
-        <br><strong>Fig-12-A.  Loggged In</strong><br><br>
-        ![F12 Sign Up, Login and Logout](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-12-A. Sign Up Form</strong><br><br>
+        ![F12 Sign Up Form](documentation/media/images/features/f12-a-sign-up-form.png)
+
+        <br><strong>Fig-12-B. Log In</strong><br><br>
+        ![F12 Log in Page](documentation/media/images/features/f12-b-log-in-page.png)
+
+        <br><strong>Fig-12-C. Log Out</strong><br><br>
+        ![F12 Log out Page](documentation/media/images/features/f12-c-log-out-page.png)
 
     -   __Feature 13 - Role Based Actions__
 
-        Text    
+        Role based actions allow users access to certain features or action based on their role type. Any logged in user has access to the wishlist page. Logged in admin users have several features to create new books or authors, edit existing ones or delete information. The addtional features are available to users under the profile icon. 
+        
+        <br><strong>Fig-13-A.  Loggged In User</strong><br><br>
+        ![F13 Loggged In User](documentation/media/images/features/f13-a-logged-in-user-options.png)
 
-        <br><strong>Fig-13-A.  Loggged In</strong><br><br>
-        ![F13 Role based actions](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-13-B.  Loggged In Admin</strong><br><br>
+        ![F13 Loggged In Admin](documentation/media/images/features/f13-b-admin-options.png)
+
 
     -   __Feature 14 - User Profile__
 
-        Text    
+        Logged in users can click to save delivery details to their profile when completing an order. These details will be retained in the user's profile page and will pre-populate data-fields in subsequent checkout pages. 
 
-        <br><strong>Fig-14-A.  Loggged In</strong><br><br>
-        ![F14 User Profile](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-14-A.  Profile Page</strong><br><br>
+        ![F14 Profile Page](documentation/media/images/features/f14-a-profile.png)
+
+        <br><strong>Fig-14-B.  Pre-filled Checkout Page</strong><br><br>
+        ![F14 Pre-filled Checkout Page](documentation/media/images/features/f14-b-pre-filled-checkout.png)
 
 -   **E-commerce related features**
 
     -   __Feature 15 - Shopping Basket__
 
-        Text    
+        Users can add books they intend to puchase in the shopping basket page. Users can continue shopping and their books will be retained in the basket until they are ready to complete the checkout.     
 
-        <br><strong>Fig-15-A.  Loggged In</strong><br><br>
-        ![F15 Shopping Basket](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-15-A.  Shopping Basket</strong><br><br>
+        ![F15 Shopping Basket](documentation/media/images/features/f15-shopping-basket.png)
 
     -   __Feature 16 - Checkout__
 
-        Text    
+        When the user is ready to complete their purchase they can navigate to the checkout page and enter the delivery details and billing details. If they have saved their personal detials the form will be pre-populated (see Feature 14).
+        Payments are securely handled by Stripe's widgets in the site. Webhooks are used to ensure that transactions are handled correctly in the case of any problems encountered during payment processing.
 
-        <br><strong>Fig-16-A.  Loggged In</strong><br><br>
-        ![F16 Checkout](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-16-A.  Checkout</strong><br><br>
+        ![F16 Checkout](documentation/media/images/features/f16-checkout.png)
 
     -   __Feature 17 - Order Confirmation and History__
 
-        Text    
+        Once an order is sucessfully complete users are taken to tne order confimtiaon page which details the items ordered and the delivery address. Logged in users can see their order history. 
 
-        <br><strong>Fig-17-A.  Loggged In</strong><br><br>
-        ![F17 Order confirmationa nd History](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-17-A.  Order Confirmation Page</strong><br><br>
+        ![F17 Order confirmation page](documentation/media/images/features/f17-a-order-confirmation-page.png)
+
+        <br><strong>Fig-17-B.  Order History</strong><br><br>
+        ![F17 Order History](documentation/media/images/features/f17-b-order-history.png)
 
 
 -   **Data Admin Features**
