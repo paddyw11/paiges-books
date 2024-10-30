@@ -15,7 +15,9 @@
         <div class="row justify-content-center">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">
-                    {% if current_genres %}
+                    {% if is_wishlist %}
+                        My Wishlist
+                    {% elif current_genres %}
                         {{ current_genres }} Books
                     {% else %}
                         Books
@@ -29,14 +31,21 @@
                 <div class="row mt-1 mb-2 d-flex align-items-center">
                     <div class="col-12 col-md-6 text-center text-md-left">
                         <p class="text-muted mt-3">
-                            {% if search_term or current_genres or current_sorting != 'None_None' %}
+                            {% if search_term or current_genres or current_sorting != 'None_None' or is_wishlist %}
                                 <span class="small"><a href="{% url 'books' %}">Books Home</a> | </span>
                             {% endif %}
-                            {{ filtered_books_count }} out of {{ total_books }} Books 
-                            {% if search_term %}
-                                found for <strong>"{{ search_term }}"</strong>
-                            {% elif current_genres %}
-                                in genre <strong>{{ current_genres }}</strong>
+                            
+                            {% if is_wishlist %}
+                                {{ filtered_books_count }} 
+                                {% if filtered_books_count == 1 %}Book{% else %}Books{% endif %} in your Wishlist
+                            {% else %}
+                                {{ filtered_books_count }} out of {{ total_books }} 
+                                {% if filtered_books_count == 1 %}Book{% else %}Books{% endif %}
+                                {% if search_term %}
+                                    found for <strong>"{{ search_term }}"</strong>
+                                {% elif current_genres %}
+                                    in genre <strong>{{ current_genres }}</strong>
+                                {% endif %}
                             {% endif %}
                         </p>
                     </div>
@@ -109,8 +118,8 @@
                                         <a href="{% url 'book_detail' book.id %}" class="btn btn-black border border-black rounded-10 mt-2">View Details</a>
                                         {% if request.user.is_superuser %}
                                             <small class="ml-3">
-                                                <a href="{% url 'edit_book' book.id %}">Edit</a>
-                                                <a class="text-danger" href="{% url 'delete_book' book.id %}">Delete</a>
+                                                <a class="btn btn-outline-black" href="{% url 'edit_book' book.id %}">Edit</a>
+                                                <a class="btn btn-black" href="{% url 'delete_book' book.id %}">Delete</a>
                                             </small>
                                         {%  endif %}
                                     </div>
@@ -210,19 +219,6 @@
 		})
 	</script>
     
-    <script>
-    $(document).ready(function() {
-        setTimeout(function() {
-            var $book = $('.book');
-            $book.addClass('bookIntro');
-            setTimeout(function() {
-                $book.removeClass('bookIntro');
-            }, 2000);
-        }, 1000);
-    });
-    </script>
-    
-
     <script>
         $('#sort-selector').change(function() {
             var selector = $(this);

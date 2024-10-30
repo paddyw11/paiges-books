@@ -411,7 +411,7 @@ input[name='q']::placeholder {
 .page-item.active .page-link {
     background-color: #000000; 
     color: #fff; 
-    border-color: #000000; /
+    border-color: #595959;
 }
 
 
@@ -496,7 +496,6 @@ footer {
 
 #id_password1 {
     width: 100%;
-    border: none;
 }
 
 .allauth-form-inner-content input::placeholder {

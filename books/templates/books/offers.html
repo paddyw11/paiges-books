@@ -23,9 +23,7 @@
                 <div class="row mt-1 mb-2 d-flex align-items-center">
                     <div class="col-12 col-md-6 text-center text-md-left">
                         <p class="text-muted mt-3">
-                            {% if search_term or current_genres or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'books' %}">Books Home</a> | </span>
-                            {% endif %}
+                            <span class="small"><a href="{% url 'books' %}">Books Home</a> | </span>
                             {{ offer_books|length }} Books on offer
                         </p>
                     </div>
@@ -149,19 +147,6 @@
 			window.scrollTo(0,0)
 		})
 	</script>
-    
-    <script>
-    $(document).ready(function() {
-        setTimeout(function() {
-            var $book = $('.book');
-            $book.addClass('bookIntro');
-            setTimeout(function() {
-                $book.removeClass('bookIntro');
-            }, 2000);
-        }, 1000);
-    });
-    </script>
-    
 
     <script>
         $('#sort-selector').change(function() {
