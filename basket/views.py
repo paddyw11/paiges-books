@@ -3,6 +3,9 @@ from django.shortcuts import HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from books.models import Book
+"""
+views.py for basket app
+"""
 
 
 def view_basket(request):

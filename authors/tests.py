@@ -5,10 +5,8 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 
 
-
-
 class AuthorModelTests(TestCase):
-    
+
     def setUp(self):
         """Create a sample author"""
         self.author = Author.objects.create(
@@ -16,13 +14,13 @@ class AuthorModelTests(TestCase):
             nationality="British",
             bio="John Doe is a famous British author."
         )
-    
+
     def test_author_creation(self):
         """Test that an author can be created and retrieved correctly"""
         author = Author.objects.get(name="John Doe")
         self.assertEqual(author.nationality, "British")
         self.assertEqual(str(author), "John Doe")
-    
+
     def test_unique_author_name(self):
         """Test that the author's name must be unique"""
         with self.assertRaises(Exception):
@@ -48,7 +46,7 @@ class AuthorFormTests(TestCase):
     def test_invalid_form_missing_fields(self):
         """Test that the form is invalid when required fields are missing"""
         form_data = {
-            'name': 'Jane Smith',  # Missing nationality and bio
+            'name': 'Jane Smith',  
         }
         form = AuthorForm(data=form_data)
         self.assertFalse(form.is_valid())
@@ -65,7 +63,7 @@ class AuthorFormTests(TestCase):
             author = form.save()
             self.assertEqual(author.name, 'Alice Walker')
 
-#class AuthorViewTests(TestCase):
+class AuthorViewTests(TestCase):
 
     def setUp(self):
         """Set up a sample author and a superuser for testing"""

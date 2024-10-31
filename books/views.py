@@ -8,6 +8,10 @@ from .models import Book, Genre
 from .forms import BookForm
 from authors.models import Author
 
+"""
+views.py for books.py
+"""
+
 
 class Reverse(Func):
     function = 'REVERSE'
@@ -42,11 +46,8 @@ def all_books(request):
                     )
                 )
 
-                print("Extracted last name substring for sorting:")
                 for book in books:
                     last_name_substr = book.last_name
-                    print(f"Book: {book.title}, Last name used for sorting: \
-                         {last_name_substr}")
 
                 sortkey = 'last_name'
 
@@ -54,22 +55,16 @@ def all_books(request):
                 sortkey = 'lower_name'
                 books = books.annotate(lower_name=Lower('title'))
 
-            print(f"Current sortkey: {sortkey}")
-
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             books = books.order_by(sortkey)
 
-            print(f"Final sortkey with direction: {sortkey}")
-
         if 'genre' in request.GET:
             genre_name = request.GET['genre'].replace('_', ' ')
             genres = genre_name
-
             genre = Genre.objects.get(name=genre_name)
-            
             books = books.filter(genres__name__iexact=genre_name)
 
         if 'q' in request.GET:
@@ -87,7 +82,6 @@ def all_books(request):
 
         if 'offer' in request.GET and request.GET['offer'] == 'true':
             books = books.filter(offer=True)
-            print("Offer filter applied")
 
         if 'bookmark' in request.GET:
             books = books.filter(bookmark__id=request.user.id)
@@ -95,7 +89,7 @@ def all_books(request):
 
     filtered_books_count = books.count()
 
-    paginator = Paginator(books, 8) 
+    paginator = Paginator(books, 8)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
@@ -139,7 +133,7 @@ def books_on_offer(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'offer_books': offer_books,  
+        'offer_books': offer_books,
         'current_sorting': current_sorting
     }
 

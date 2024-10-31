@@ -1,6 +1,9 @@
 from django import forms
 from .widgets import CustomClearableFileInput
 from .models import Book, Genre
+"""
+forms.py for books app
+"""
 
 
 class BookForm(forms.ModelForm):

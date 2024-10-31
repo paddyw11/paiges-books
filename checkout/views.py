@@ -14,6 +14,9 @@ from decimal import Decimal
 
 import stripe
 import json
+"""
+views.py for checkout app
+"""
 
 
 @require_POST
@@ -190,4 +193,3 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
-    

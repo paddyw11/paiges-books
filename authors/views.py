@@ -4,15 +4,18 @@ from django.contrib.auth.decorators import login_required
 from .models import Author
 from .forms import AuthorForm
 
+"""
+views.py for authors app
+"""
+
 
 def authors(request):
     """ A view to display a list of authors sorted by surname """
     
-    # Fetch all authors
+
     authors = Author.objects.all()
     
-    # Sort authors by surname (last word in full name)
-    sorted_authors = sorted(authors, key=lambda author: author.name.split()[-1].lower())  # Assuming the field is 'name'
+    sorted_authors = sorted(authors, key=lambda author: author.name.split()[-1].lower())
     
     context = {
         'authors': sorted_authors
@@ -57,9 +60,10 @@ def add_author(request):
         'form': form,
     }
 
-    return render(request, template, context)
+    return redirect(reverse('authors'))
 
 
+@login_required
 def edit_author(request, author_id):
     """ Edit an author in the database"""
     if not request.user.is_superuser:
@@ -93,11 +97,12 @@ def edit_author(request, author_id):
 def delete_author(request, author_id):
     """ Delete an author from the database """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only book shop oweners can do that.')
+        messages.error(request, 'Sorry, only book shop owners can do that.')
         return redirect(reverse('home'))
 
     author = get_object_or_404(Author, pk=author_id)
     author.delete()
     messages.success(request, f'Author: {author.name} deleted!')
+    
     return redirect(reverse('authors'))
     

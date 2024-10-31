@@ -2,7 +2,9 @@ from decimal import Decimal, ROUND_HALF_UP
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from books.models import Book
-import logging
+"""
+contexts.py for basket app
+"""
 
 
 def basket_contents(request):

@@ -3,6 +3,10 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
 from .forms import ContactForm
+"""
+views.py for contact app
+
+"""
 
 
 def contact_submit(request):
