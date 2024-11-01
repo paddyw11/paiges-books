@@ -3,7 +3,7 @@ from .models import Author
 from .forms import AuthorForm
 from django.urls import reverse
 from django.contrib.auth.models import User
-
+from django.contrib.messages import get_messages
 
 class AuthorModelTests(TestCase):
 
@@ -127,3 +127,60 @@ class AuthorViewTests(TestCase):
         response = self.client.post(reverse('delete_author', args=[self.author.id]))
         self.assertEqual(response.status_code, 302)  # Should redirect after successful deletion
         self.assertFalse(Author.objects.filter(id=self.author.id).exists())
+    
+    def test_add_author_valid_form(self):
+        """Test that the add_author view successfully adds a valid author"""
+        self.client.login(username='admin', password='admin')
+        response = self.client.post(reverse('add_author'), {
+            'name': 'Test Author',  # Valid data
+        })
+        self.assertEqual(response.status_code, 302)  # Should redirect after successful add
+        self.assertRedirects(response, reverse('authors'))  # Check if redirected correctly
+
+    def test_edit_author_valid_form(self):
+        """Test that edit_author successfully updates an author with valid data"""
+        self.client.login(username='admin', password='admin')
+        response = self.client.post(reverse('edit_author', args=[self.author.id]), {
+            'name': 'Updated Author',  # Valid data
+        })
+        self.assertEqual(response.status_code, 302)  # Should redirect after successful edit
+        self.assertRedirects(response, reverse('author_bio', args=[self.author.id]))  # Check redirection
+
+    
+    def test_add_author_invalid_form(self):
+        """Test that the add_author view shows an error for invalid form data"""
+        self.client.login(username='admin', password='admin')
+        response = self.client.post(reverse('add_author'), {
+            'name': '',  # Invalid data (name is required)
+        }, follow=True)
+        self.assertEqual(response.status_code, 200)  # Should stay on the same page due to error
+        messages = list(get_messages(response.wsgi_request))
+        self.assertTrue(
+            any("Failed to add Author. Please ensure form is valid." in message.message for message in messages)
+        )
+    
+    def test_edit_author_invalid_form(self):
+        """Test that edit_author shows an error message for invalid form data"""
+        self.client.login(username='admin', password='admin')
+        response = self.client.post(reverse('edit_author', args=[self.author.id]), {
+            'name': '',  # Invalid data (name is required)
+        }, follow=True)
+        self.assertEqual(response.status_code, 200)  # Should stay on the same page due to error
+        messages = list(get_messages(response.wsgi_request))
+        self.assertTrue(
+            any("Failed to update Author. Please ensure form is valid." in message.message for message in messages)
+        )
+
+    def test_edit_author_view_no_superuser(self):
+        """Test that a non-superuser cannot edit an author"""
+        response = self.client.get(reverse('edit_author', args=[self.author.id]))
+        login_url = reverse('account_login')
+        expected_redirect = f'{login_url}?next={reverse("edit_author", args=[self.author.id])}'
+        self.assertRedirects(response, expected_redirect)
+
+    def test_delete_author_view_no_superuser(self):
+        """Test that a non-superuser cannot delete an author"""
+        response = self.client.post(reverse('delete_author', args=[self.author.id]))
+        login_url = reverse('account_login')
+        expected_redirect = f'{login_url}?next={reverse("delete_author", args=[self.author.id])}'
+        self.assertRedirects(response, expected_redirect)

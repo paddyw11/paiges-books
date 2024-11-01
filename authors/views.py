@@ -11,16 +11,16 @@ views.py for authors app
 
 def authors(request):
     """ A view to display a list of authors sorted by surname """
-    
 
     authors = Author.objects.all()
-    
-    sorted_authors = sorted(authors, key=lambda author: author.name.split()[-1].lower())
-    
+
+    sorted_authors = sorted(authors, key=lambda
+                            author: author.name.split()[-1].lower())
+
     context = {
         'authors': sorted_authors
     }
-    
+
     return render(request, 'authors/authors.html', context)
 
 
@@ -48,10 +48,12 @@ def add_author(request):
         if form.is_valid():
             author = form.save()
             messages.success(request, f'Successfully added {author.name}.')
-            return redirect(reverse('add_author'))
+            return redirect(reverse('authors'))
         else:
-            messages.error
-            (request, 'Failed to add Author. Please ensure form is valid.')
+            messages.error(
+                request,
+                'Failed to add Author. Please ensure form is valid.'
+                )
     else:
         form = AuthorForm()
 
@@ -60,7 +62,7 @@ def add_author(request):
         'form': form,
     }
 
-    return redirect(reverse('authors'))
+    return render(request, template, context)
 
 
 @login_required
@@ -78,8 +80,10 @@ def edit_author(request, author_id):
             messages.success(request, 'Successfully updated Author.')
             return redirect(reverse('author_bio', args=[author_id]))
         else:
-            messages.error
-            (request, 'Failed to update Author. Please ensure form is valid.')
+            messages.error(
+                request,
+                'Failed to update Author. Please ensure form is valid.'
+                )
     else:
         form = AuthorForm(instance=author)
         messages.info(request, f'You are editing {author.name}')
@@ -103,6 +107,5 @@ def delete_author(request, author_id):
     author = get_object_or_404(Author, pk=author_id)
     author.delete()
     messages.success(request, f'Author: {author.name} deleted!')
-    
+
     return redirect(reverse('authors'))
-    
