@@ -26,7 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+development = os.environ.get('DEVELOPMENT', False)
+
+DEBUG = development
 
 ALLOWED_HOSTS = [
     '8000-paddyw11-paigesbooks-aukm5vnvjqr.ws-eu111.gitpod.io',

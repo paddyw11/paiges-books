@@ -28,8 +28,6 @@
 |  T22  |   	|   	        |      Pass        	|
 
 
-
-
 ## Code Validation
 
 ### HTML

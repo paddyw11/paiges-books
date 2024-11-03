@@ -28,7 +28,6 @@ img {
     max-height: 50%;
 }
 
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -112,6 +111,7 @@ img {
     padding-top: 48px;
     text-align: center;
 }
+
 .overlay {
     height: auto;
     width: 100%;
@@ -122,7 +122,6 @@ img {
 }
 
 /* book hover animation  */
-
 body {
 	background:#fff;
 }
@@ -181,7 +180,6 @@ body {
     perspective: 1200px;
 }
 
-
 .image-container {
     max-width: 400px;
     width: 100%; 
@@ -189,15 +187,14 @@ body {
 }
 .book-details-container {
     text-align: left;
-
 }
 
 .book-image {
-        max-width: 100%;
-        height: auto;
-        max-height: 100%;
-        width: auto;
-        object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
 }
 
 .bookIntro {
@@ -228,7 +225,6 @@ body {
     z-index: 1;
 }
 
-
 .cover:hover {	
 	width:210px;
     transform: rotateY(-15deg);
@@ -237,7 +233,6 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 10;
 }
-
 
 .spine {
 	background:rgb(0, 0, 0);
@@ -250,7 +245,6 @@ body {
     transform-origin: 0;
 }
 
-
 .card {
     position: relative;
     height: auto; 
@@ -261,7 +255,6 @@ body {
 .card-body, .card-footer {
     overflow: visible; 
 }
-
 
 .btt-button {
     position: fixed;
@@ -290,11 +283,9 @@ body {
 	cursor: pointer;
 }
 
-
 input[name='q']::placeholder {
     color: #aab7c4;
 }
-
 
 .bookmark-list-btn {
     border: none;
@@ -302,9 +293,11 @@ input[name='q']::placeholder {
     padding: 0;
     cursor: pointer;
 }
- .discount {
+
+.discount {
     color: #dc3545;
- }
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -395,7 +388,6 @@ input[name='q']::placeholder {
     border-color: red;
 }
 
-
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: rgb(255, 255, 255);
     border-color: rgb(0, 0, 0);
@@ -413,7 +405,6 @@ input[name='q']::placeholder {
     color: #fff; 
     border-color: #595959;
 }
-
 
 footer {
     position: sticky;
@@ -462,9 +453,7 @@ footer {
     text-align: left; 
 }
 
-
 /* -------------------------------- Media Queries */
-
 
 @media (min-width: 1200px) {
   .container {
@@ -520,7 +509,6 @@ footer {
 
 }
 
-
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -539,7 +527,6 @@ footer {
         padding-top: 180px;
     }
 }
-
 
 @media (max-width:375px) {
 
@@ -564,15 +551,15 @@ footer {
 
 @media (max-width: 767px) {
     .container {
-      width: 100%;
+        width: 100%;
     }
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
     .container {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
+}
 
 @media (max-width: 991px) {
 	.header-container {
@@ -624,7 +611,6 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
-
     
 }
 

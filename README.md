@@ -1,17 +1,59 @@
 
 # Paige Turner's Books Shop
 
+![Am I Responsive Image](/documentation/media/images/am-i-responsive-paiges-books.png)
+
+The live site can be accessed [here](https://paiges-books-9655906010a2.herokuapp.com/).
+
 ## Project Goals
 
-### Overview
+### MosCoW Prioritisation
 
-### Goals
+Must Haves:
+1. User account
+    - Registration/login (email username and password)
+    - User Profile with order history and personal details
+2. Book Catalogue
+    - Book listing with genres
+    - Filters and sorting (e.g price, genre, author)
+    - Book details (title, author, price, cover image, blurb)
+3. Shopping Basket
+    - Add to basket, view basket contents
+    - Adjust quantities, remove books from basket
+    - Display total price with shipping
+4. Checkput Process
+    - Secure payment vehicle
+    - BIlling and delivery information
+    - Order summary with confirmation
+5. Search Functionality
+    - Keyword Search
+    - Advanced search (including genre, author, title)
+6. Responsive Design
+    - Optimised for mobile, tablet and desktop
+
+Should Haves:
+1. Wishlist / Save for Later
+    - Allows users to save books for later purchase
+2. Reccommendations and Related Books
+    - Displays related books based on a genre or by same author.
+3. Discounts and Promotions
+    - Display banner for special offers or discounts
+    - Show which books are included in offer or discount
+
+Could Haves
+1. Book Sample View
+    - Display a sample of the book to users.
+2. User Customisation
+    - Allows users to set preferences for genres or authors.
+3. Mailing List
+    - Users can sign up for new release/offers emails.
+4. Reader reviews
+    - Users are able to leave reviews on books they've read. 
+
 
 ## User Experience Design
 
 ### Strategy Design
-
-#### User Requirements and Expectations
 
 #### User Stories and Epics
 
@@ -243,17 +285,26 @@
 
     -   __Feature 18 - Book Management__
 
-        Text    
+        Logged in admin users can add new books to the book shop. They are also able to edit and delte existing books in the shop.     
 
-        <br><strong>Fig-18-A.  Loggged In</strong><br><br>
-        ![F18 Book management](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-18-A.  Add a book</strong><br><br>
+        ![F18 Add a book](documentation/media/images/features/f18-add-a-book.png)
+
+
+        <br><strong>Fig-18-A.  Edit a book</strong><br><br>
+        ![F18 Edit a book](documentation/media/images/features/f18-edit-a-book.png)
+
 
     -   __Feature 19 - Author Management__
 
-        Text    
+        Logged in admin users can manage authors by accessing the author admin area through their menu options link. They are able to add a new author and add their bio information. Admins can also edit or delete an existing author from the shop.     
 
-        <br><strong>Fig-19-A.  Loggged In</strong><br><br>
-        ![F19 Author Management](documentation/media/images/f2-user-indicator-in.png)
+        <br><strong>Fig-19-A.  Add an author</strong><br><br>
+        ![F19 Add an author](documentation/media/images/features/f19-a-add-an-author.png)
+
+        <br><strong>Fig-19-A.  Edit an author</strong><br><br>
+        ![F19 Edit an author](documentation/media/images/features/f19-b-edit-an-author.png)
+
 
 ### Structure Plane
 
@@ -319,7 +370,7 @@
 
 I adopted a crows foot ER design to portray the relationship between each table and it's respective fields. 
 
-![Paige's Books ERD](/documentation/er-diagram/Paige's-Books-ERD.png)
+![Paige's Books ERD](/documentation/er-diagram/paige's-books-erd.png)
 
 
 ## Technologies Used
@@ -366,7 +417,7 @@ For More information on testing [see here](https://github.com/paddyw11/paigesboo
 
 ---
 
-![Image](/documentation/media/images/bug1.png)
+![Image](/documentation/media/images/bug1.PNG)
 
 Once I had creatd a new table for genre, in order to make it a manyToMany relationshipe i hadn't updated the search query to reflect that. I needed to update to correct syntax.
 
@@ -374,20 +425,247 @@ Once I had creatd a new table for genre, in order to make it a manyToMany relati
 
 ---
 
-![Image](/documentation/media/images/bug3.png)
+![Image](/documentation/media/images/bug3-1.PNG)
 
 ---
 
-![Image](/documentation/media/images/bug3-1.png)
+![Image](/documentation/media/images/bug3-2.PNG)
 
 ---
 
 I was receiving a W3C validation error on this due to the django password validator and crispy_forms displaying the password vlaidation hints as a list within a small element. 
 I attempted to create the form using crispy fields for the other fields and custom design the password1 field. 
-![Image](/documentation/media/images/bug3-2.png)I decided it was a better UX to leave the whole form as a crispy fomr in the end. 
+![Image](/documentation/media/images/bug3.PNG)I decided it was a better UX to leave the whole form as a crispy form in the end. 
+
+## Deployment
+### Cloning and Forking
+#### Fork
+
+1. On Github.com, navigate to the Paige's Books repositry [here](https://github.com/paddyw11/paiges-books)
+2. In the top right hand corner click on 'Fork'.
+3. By defualt, forksare named the same as their parent repository. You can change the name of the fork to distinguish it. 
+4. Add a description of your fork.
+5. Click 'Create Fork'.
+
+#### How to clone this site
+
+1. Log into GitHub or set up a new account.
+2. Navigate to the repository [here](https://github.com/paddyw11/paiges-books)
+3. Click on the code button, select whether to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open a terminal in a new IDE workspace where you wish to clone the repository to.
+5. Type 'git clone' into the terminal and paste the link copied from the original source repository and press the Enter key to begin the clone process.
+
+#### How to create a PostgreSQL database
+
+1. Go to this [page](https://bds.ci-dbs.net/)
+2. Type in your email address.
+3. Follow the link in the email.
+4. Make a note of your database URL
+
+
+### Local Deployment 
+
+
+### Deploying to Heroku
+
+1. Create an account on Heroku and log in. 
+2. Create a new app and navigate to 'settings'.
+3. Click 'Reveal config variables'.
+4. Add a new variable with the key: `DATABASE_URL` with the value being the noted url from PostgreSQL.
+5. In the IDE go to your main app's settings file and add the heroku app name to the allowed hosts. Be sure to append `.herokuapp.com` to your app's name. 
+6. Add EMAIL_HOST_PASSWORD and the value as the password for the email service.
+In the Gitpod terminal, install  `pip3 install dj_database_url==2.2.0 psycopg2`
+7. In the Gitpod terminal, run `pip freeze > requirements.txt`
+8. In the settings.py file, type in `import dj_database_url` under `import os`
+9. In the DATABASES section of the settings.py file, insert the following code: 
+```python
+DATABASES = {
+     'default': dj_database_url.parse('your-database-url-here')
+ }
+ ```
+ 10. Do not commit with the database string in the code
+ 11. In the terminal, run `python3 manage.py showmigrations` to confirm DB is connected
+ 12. Add the following if statement to the settings.py:
+ ```python
+    if "DATABASE_URL" in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            "default": {
+                "ENGINE": "django.db.backends.sqlite3",
+                "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+            }
+        }
+```
+13. In the terminal, type in `pip3 install gunicorn==23.0.0`
+14. In the terminal, run `pip freeze > requirements.txt`
+15. Create a Procfile
+16. In the Procfile, type in `web gunicorn paiges_books.wsgi:application`
+17. In the terminal, type in `heroku config:set DISABLE_COLLECTSTATIC=1`
+18. Add the Heroku app URL to 'allowed hosts' in settings.py
+19. Commit and push
+20. In the terminal, type in `git push heroku main`
+21. Create a secret key and add to CONFIG VARS in heroku
+
+### Creating a AWS bucket
+
+1. Create an AWS account [here](https://aws.amazon.com/)
+2. Go to S3
+3. Ceate a bucket with the name matching the Heroku app and uncheck 'block all public access'
+4. Go to the properties tab and turn on static website hosting
+5. In the permissions tab, go to Policies
+6. Go to Policy Generator
+7. Select Policy Type as 'S3 bucket policy' and generate
+8. Copy the ARN and paste into the box
+9. Copy the generated policy and paste into Bucket Policy section
+10. In the Cors configuration, type
+```python
+[
+{
+"AllowedHeaders": [
+"Authorization"
+],
+"AllowedMethods": [
+"GET"
+],
+"AllowedOrigins": [
+"*"
+],
+"ExposeHeaders": []
+}
+]
+```
+11. Open IAM
+12. Click Groups and create a new group for managing your app
+13. Click Policies and then Create Policy
+14. Go to JSON tab and click Import policy
+15. Import the S3 Full Access Policy
+16. Get the Bucket ARN from S3 and paste into the 'Resource' section
+17. Skip Tabs and click Review Policy, give it a name and descripcion, click Create Policy
+18. Attach the Policy to the group you created
+19. Go to the Users page and click Create User
+20. Create a new user for the static files
+21. Add the user to your group
+22. Download the CSV file to get your secret keys
+
+### Creating a AWS bucket
+
+1. Create an AWS account [here](https://aws.amazon.com/)
+2. Go to S3
+3. Ceate a bucket with the name matching the Heroku app and uncheck 'block all public access'
+4. Go to the properties tab and turn on static website hosting
+5. In the permissions tab, go to Policies
+6. Go to Policy Generator
+7. Select Policy Type as 's3 bucket policy' and generate
+8. Copy the ARN and paste into the box
+9. Copy the generated policy and paste into Bucket Policy section
+10. In the Cors configuration, type
+```python
+[
+{
+"AllowedHeaders": [
+"Authorization"
+],
+"AllowedMethods": [
+"GET"
+],
+"AllowedOrigins": [
+"*"
+],
+"ExposeHeaders": []
+}
+]
+```
+11. Open IAM
+12. Click Groups and create a new group for managing your app
+13. Click Policies and then Create Policy
+14. Go to JSON tab and clixk Import policy
+15. Import the S3 Full Access Policy
+16. Get the Bucket ARN from S3 and paste into the 'Resource' section
+17. Skip Tabs and click Review Policy, give it a name and descripcion, click Create Policy
+18. Attach the Policy to the group you created
+19. Go to the Users page and click Create Uer
+20. Create a new user for the static files
+21. Add the user to your group
+22. Download the CSV file to get your secret keys
+
+### Connecting AWS and Django
+
+1. In your terminal, type in `pip3 install boto3`
+2. In the terminal, type in `pip3 install django-storages`
+3. In the terminal, run `pip freeze > requirements.txt`
+4. Add 'storages' in Installed Apps in settings.py
+5. In settings. py, add the following if statement:
+```python
+if "USE_AWS" in os.environ:
+
+    AWS_STORAGE_BUCKET_NAME = "paiges-books"
+    AWS_S3_REGION_NAME = "eu-north-1"
+    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+    AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.S3.amazonaws.com"
+```
+6. Add your AWS keys to Config Vars in Heroku
+7. Create a file called custom_storages.py
+8. In the file, type in:
+```python
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+```
+9. In the settings.py, add:
+```python
+
+    STATICFILES_STORAGE = "custom_storages.StaticStorage"
+    STATICFILES_LOCATION = "static"
+    DEFAULT_FILE_STORAGE = "custom_storages.MediaStorage"
+    MEDIAFILES_LOCATION = "media"
+
+
+    STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/"
+    MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/"
+```
+10. Commit and push your changes
+11. In your if statement, add the following code:
+```python
+if "USE_AWS" in os.environ:
+    # Cache Control
+    AWS_S3_OBJECT_PARAMETERS = {
+        "Expires": "Thu, 31 Dec 2099 20:00:00 GMT",
+        "CacheControl": "max-age=94608000",
+    }
+```
+12. Commit and push
+13. Create MEDIA folder and S3 and add your media files
+14. Grant public access to your files and upload
+15. Add STRIPE keys to Heroku Config Vars
+16. Create a new Webhook on Stripe linked to your Heroku App
+17. Add Webhook signing secret to Heroku Config Vars
+
 
 
 ## Credits: 
 
+I have used the Code Iinstitute community [Slack](https://slack.com/intl/en-gb) channel for useful hints and tips.
 
-[Image](https://pixabay.com/photos/people-woman-coffee-cafe-couch-1421097/) by [Yerson Retamal](https://pixabay.com/users/voltamax-60363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1421097) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1421097)
+Index Page Image [source](https://pixabay.com/photos/book-pages-open-book-read-reading-1868068/) by [Pexels](https://pixabay.com/users/pexels-2286921/) 
+
+About Us Page Image [source](https://www.pexels.com/photo/woman-in-brown-suede-peacoat-reading-a-book-762080/) by [Andrea Piacquadio](https://www.pexels.com/@olly/)
+
+Book Cover Images [Amazon](https://www.amazon.co.uk/)
+
+Book Blurb and Author Bio Text written by ChatGPT-4o from [OpenAi](https://openai.com/)
+
+## Acknowledgements
+
+I would like to thank the following:
+
+- My Mentor Daniel Hamilton for gis helpful insights. 
+- Friends and relative for their testing. 
