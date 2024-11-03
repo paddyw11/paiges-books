@@ -39,12 +39,12 @@
                                 {% csrf_token %}
                                 {% if bookmark %}
                                 <strong>
-                                    <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to remove from bookmarks"><i class="fa-solid fa-bookmark fa-2x" aria-label="Bookmarked book"></i>
+                                    <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to remove from bookmarks"><i class="fa-solid fa-bookmark fa-2x" aria-label="Bookmarked book" name="bookmark-remove"></i>
                                     </button>
                                 </strong>
                                 {% else %}
                                 <strong>
-                                    <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to save for later"><i class="fa-regular fa-bookmark fa-2x" aria-label="Click to bookmark"></i>
+                                    <button type="submit" class="bookmark-list-btn" data-toggle="tooltip" title="Click to save for later"><i class="fa-regular fa-bookmark fa-2x" aria-label="Click to bookmark" name="bookmark-add"></i>
                                     </button>
                                 </strong>
                                 {% endif %}
@@ -108,7 +108,7 @@
                                         <input class="form-control qty_input" type="number" 
                                             name="quantity" value="1" min="1" max="99" 
                                             data-item_id="{{ book.id }}" 
-                                            id="id_qty_{{ book.id }}">
+                                            id="id_qty_{{ book.id }}" aria-label="quantity-of-book-to-add-to-basket">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-black rounded-10"
                                                 data-item_id="{{ book.id }}" id="increment-qty_{{ book.id }}" aria-label="increment-qty">
