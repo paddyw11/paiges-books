@@ -636,6 +636,8 @@ if "USE_AWS" in os.environ:
 
 ## Credits: 
 
+Book hover animation from [Jon Suh](https://codepen.io/jonsuh) on [Codepen](https://codepen.io/jonsuh/pen/jwLQGZ) adapted for use on this site.
+
 I have used the Code Institute community [Slack](https://slack.com/intl/en-gb) channel for useful hints and tips.
 
 Index Page Image [source](https://pixabay.com/photos/book-pages-open-book-read-reading-1868068/) by [Pexels](https://pixabay.com/users/pexels-2286921/) 
