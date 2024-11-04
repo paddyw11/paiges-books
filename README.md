@@ -1,5 +1,5 @@
 
-# Paige Turner's Books Shop
+# Paige Turner's Book Shop
 
 ![Am I Responsive Image](/documentation/media/images/am-i-responsive-paiges-books.png)
 
@@ -13,7 +13,7 @@ The live site can be accessed [here](https://paiges-books-9655906010a2.herokuapp
         *[User Stories and Epics](#user-stories-and-epics)
     * [Features](#features)
     * [Structure Plane](#structure-plane)
-        * [Website Structure](#website-structure---wireframes)
+        * [Website Structure Wireframes](#website-structure---wireframes)
         * [Database Design](#database-design)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
@@ -22,7 +22,10 @@ The live site can be accessed [here](https://paiges-books-9655906010a2.herokuapp
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
 
-## MosCoW Prioritisation
+## MosCoW Prioritisation and Kanban Project
+
+
+I have used a kanban board timeline method [accessed here](https://github.com/users/paddyw11/projects/2) to keep a track of all the user stories progress and prioritised features based on the MoSCoW method.
 
 Must Haves:
 1. User account
@@ -80,57 +83,57 @@ Will not have now:
 
 ##### Epic: Viewing and Navigation
 
-- 1.1 - As a user, I want to browse through different categories of books to find what interests me.
+- [1.1](https://github.com/paddyw11/paiges-books/issues/1) - As a user, I want to browse through different categories of books to find what interests me.
 
-- 1.2 - As a user, I want to see a list of offers on the homepage.
+- [1.2](https://github.com/paddyw11/paiges-books/issues/2) - As a user, I want to see a list of offers on the homepage.
 
-- 1.3 - As a user, I want to be able to view detailed information about a specific book, including its description, author, price and category.
+- [1.3](https://github.com/paddyw11/paiges-books/issues/3) - As a user, I want to be able to view detailed information about a specific book, including its description, author, price and category.
 
-- 1.4 - As a user, I want to be able to navigate easily between different pages of the website using a main navigation menu.
+- [1.4](https://github.com/paddyw11/paiges-books/issues/4) - As a user, I want to be able to navigate easily between different pages of the website using a main navigation menu.
 
 ##### Epic: Registration and User Accounts
 
-- 2.1- As a user, I want to register for an account so that I can save my favourite books and manage my orders.
+- [2.1](https://github.com/paddyw11/paiges-books/issues/5)- As a user, I want to register for an account so that I can save my favourite books and manage my orders.
 
-- 2.2- As a registered user, I want to be able to log in to my account using my email address/username and password.
+- [2.2](https://github.com/paddyw11/paiges-books/issues/6)- As a registered user, I want to be able to log in to my account using my email address/username and password.
 
-- 2.3- As a registered user, I want the option to reset my password if I forget it.
+- [2.3](https://github.com/paddyw11/paiges-books/issues/7)- As a registered user, I want the option to reset my password if I forget it.
 
-- 2.4- As a registered user, I want to update my account information such as my shipping address or payment details.
+- [2.4](https://github.com/paddyw11/paiges-books/issues/8)- As a registered user, I want to update my account information such as my shipping address or payment details.
 
 ##### Epic: Sorting and Searching
 
-- 3.1- As a user, I want to be able to sort books by with filters such as price, author, or genre/category.
+- [3.1](https://github.com/paddyw11/paiges-books/issues/9)- As a user, I want to be able to sort books by with filters such as price, author, or genre/category.
 
-- 3.2 - As a user, I want to see search results displayed in a clear and organised manner, with relevant book information.
+- [3.2](https://github.com/paddyw11/paiges-books/issues/10) - As a user, I want to see search results displayed in a clear and organised manner, with relevant book information.
 
-- 3.3 - As a user, I want to be able to save a list of books that i wish to purchase/read. 
+- [3.3](https://github.com/paddyw11/paiges-books/issues/28) - As a user, I want to be able to save a list of books that i wish to purchase/read. 
 
 ##### Epic: Purchasing and Checkout
 
-- 4.1 - As a user, I want to add books to my shopping cart and view the contents before proceeding to checkout.
+- [4.1](https://github.com/paddyw11/paiges-books/issues/11) - As a user, I want to add books to my shopping cart and view the contents before proceeding to checkout.
 
-- 4.2 - As a user, I want to be able to easily edit the quantity of books in my cart or remove items altogether.
+- [4.2](https://github.com/paddyw11/paiges-books/issues/12) - As a user, I want to be able to easily edit the quantity of books in my cart or remove items altogether.
 
-- 4.3 - As a user, I want to enter my payment information securely and complete the checkout process.
+- [4.3](https://github.com/paddyw11/paiges-books/issues/13) - As a user, I want to enter my payment information securely and complete the checkout process.
 
-- 4.4 - As a user, I want to receive confirmation of my order via email, including details such as order number and payment.
+- [4.4](https://github.com/paddyw11/paiges-books/issues/14) - As a user, I want to receive confirmation of my order via email, including details such as order number and payment.
 
-- 4.5 -  As a user, I want to be able to view my order history.
+- [4.5](https://github.com/paddyw11/paiges-books/issues/29) -  As a user, I want to be able to view my order history.
 
 ##### Epic: Administration
 
-- 5.1 - As an admin, I want to be able to add new books to the website, including details such as title, author, category and price.
+- [5.1](https://github.com/paddyw11/paiges-books/issues/15) - As an admin, I want to be able to add new books to the website, including details such as title, author, category and price.
 
-- 5.2 - As an admin, I want to be able to edit existing book listings to update information such as title, author, category and price.
+- [5.2](https://github.com/paddyw11/paiges-books/issues/16) - As an admin, I want to be able to edit existing book listings to update information such as title, author, category and price.
 
-- 5.3 - As an admin, I want to be able to delete books from the website if they are no longer available or in stock.
+- [5.3](https://github.com/paddyw11/paiges-books/issues/17) - As an admin, I want to be able to delete books from the website if they are no longer available or in stock.
 
-- 5.4 - As an admin, I want to be able to add new authors to the website, including details such as name, nationality and a short bio.
+- [5.4](https://github.com/paddyw11/paiges-books/issues/18) - As an admin, I want to be able to add new authors to the website, including details such as name, nationality and a short bio.
 
-- 5.5 - As an admin, I want to be able to edit existing author listings to update information.
+- [5.5](https://github.com/paddyw11/paiges-books/issues/19) - As an admin, I want to be able to edit existing author listings to update information.
 
-- 5.6 - As an admin, I want to be able to delete authors from the website.
+- [5.6](https://github.com/paddyw11/paiges-books/issues/30) - As an admin, I want to be able to delete authors from the website.
 
 ### Features
 
@@ -203,7 +206,7 @@ Will not have now:
         reach the author bio page which includes the author's nationality and a short bio description. 
 
         <br><strong>Fig-08-A.  Author Detail View</strong><br><br>
-        ![F08 Author Details](documentation/media/images/f8-author-details.png)
+        ![F08 Author Details](documentation/media/images/features/f8-author-detail.png)
 
     -   __Feature 9 - Wishlist__
 
@@ -455,8 +458,8 @@ Once I had created a new table for genre, in order to make it a manyToMany relat
 ---
 
 I was receiving a W3C validation error on this due to the django password validator and crispy_forms displaying the password validation hints as a list within a small element. 
-I attempted to create the form using crispy fields for the other fields and custom design the password1 field. 
-![Image](/documentation/media/images/bug3.PNG)I decided it was a better UX to leave the whole form as a crispy form in the end. 
+I attempted to create the form using crispy fields for the other fields and custom design the password1 field. I decided it was a better UX to leave the whole form as a crispy form in the end. 
+![Image](/documentation/media/images/bug3.PNG)
 
 ## Deployment
 ### Cloning and Forking
