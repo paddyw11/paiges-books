@@ -5,9 +5,24 @@
 
 The live site can be accessed [here](https://paiges-books-9655906010a2.herokuapp.com/).
 
-## Project Goals
+## Contents
 
-### MosCoW Prioritisation
+* [MoSCoW Prioritisation](#moscow-prioritisation)
+* [User Experience Design](#user-experience-design)
+    * [Strategy Design](#strategy-design)
+        *[User Stories and Epics](#user-stories-and-epics)
+    * [Features](#features)
+    * [Structure Plane](#structure-plane)
+        * [Website Structure](#website-structure---wireframes)
+        * [Database Design](#database-design)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Bugs](#bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
+
+## MosCoW Prioritisation
 
 Must Haves:
 1. User account
@@ -21,9 +36,9 @@ Must Haves:
     - Add to basket, view basket contents
     - Adjust quantities, remove books from basket
     - Display total price with shipping
-4. Checkput Process
+4. Checkout Process
     - Secure payment vehicle
-    - BIlling and delivery information
+    - Billing and delivery information
     - Order summary with confirmation
 5. Search Functionality
     - Keyword Search
@@ -34,13 +49,13 @@ Must Haves:
 Should Haves:
 1. Wishlist / Save for Later
     - Allows users to save books for later purchase
-2. Reccommendations and Related Books
+2. Recommendations and Related Books
     - Displays related books based on a genre or by same author.
 3. Discounts and Promotions
     - Display banner for special offers or discounts
     - Show which books are included in offer or discount
 
-Could Haves
+Could Haves:
 1. Book Sample View
     - Display a sample of the book to users.
 2. User Customisation
@@ -49,6 +64,12 @@ Could Haves
     - Users can sign up for new release/offers emails.
 4. Reader reviews
     - Users are able to leave reviews on books they've read. 
+
+Will not have now:
+1. Bestsellers
+    - A list of books that have sold well in the past time period
+2. Reader's books clubs
+    - Monthly webinars to discuss the latest read
 
 
 ## User Experience Design
@@ -61,7 +82,7 @@ Could Haves
 
 - 1.1 - As a user, I want to browse through different categories of books to find what interests me.
 
-- 1.2 - As a user, I want to see a list of offers on the homepage
+- 1.2 - As a user, I want to see a list of offers on the homepage.
 
 - 1.3 - As a user, I want to be able to view detailed information about a specific book, including its description, author, price and category.
 
@@ -85,7 +106,7 @@ Could Haves
 
 - 3.3 - As a user, I want to be able to save a list of books that i wish to purchase/read. 
 
-##### Epic: Puchasing and Checkout
+##### Epic: Purchasing and Checkout
 
 - 4.1 - As a user, I want to add books to my shopping cart and view the contents before proceeding to checkout.
 
@@ -95,7 +116,7 @@ Could Haves
 
 - 4.4 - As a user, I want to receive confirmation of my order via email, including details such as order number and payment.
 
-- 4.5 -  As a user, i want to be able to view my order history.
+- 4.5 -  As a user, I want to be able to view my order history.
 
 ##### Epic: Administration
 
@@ -105,7 +126,7 @@ Could Haves
 
 - 5.3 - As an admin, I want to be able to delete books from the website if they are no longer available or in stock.
 
-- 5.4 - As an admin, I want to be able to add new authors to the website, including details such as name, nationailty and a short bio.
+- 5.4 - As an admin, I want to be able to add new authors to the website, including details such as name, nationality and a short bio.
 
 - 5.5 - As an admin, I want to be able to edit existing author listings to update information.
 
@@ -117,7 +138,7 @@ Could Haves
 
     -   __Feature 1 - Consistent Look and Feel__
 
-        The site's navigation bar and footer appear on every page framing the page's content. The fonts and colours are consitent throughtout providing an intuitive experience for the user. The novagation bar is respoonsive with a burger style icon replacing the nav links on smaller screens. 
+        The site's navigation bar and footer appear on every page framing the page's content. The fonts and colours are consistent throughout providing an intuitive experience for the user. The navigation bar is responsive with a burger style icon replacing the nav links on smaller screens. 
 
         <br><strong>Fig 01-A.  Desktop example</strong><br><br>
         ![F01 Large Screen](documentation/media/images/features/f1-nav-bar-lg.png)
@@ -127,7 +148,7 @@ Could Haves
     
     -   __Feature 2 - User Logged in Indicator__
 
-        The user can easily see if they are logged in at any given time. The user icon will be solid when a user is logged in and emplty if not. The text undernaeth the symbol will display 'My Account' is not logged in and the user's username when logged in. 
+        The user can easily see if they are logged in at any given time. The user icon will be solid when a user is logged in and empty if not. The text underneath the symbol will display 'My Account' is not logged in and the user's username when logged in. 
 
         <br><strong>Fig 02-A.  Logged Out</strong><br><br>
         ![F02 Logged Out](documentation/media/images/features/f2-user-indicator-out.png)
@@ -137,21 +158,21 @@ Could Haves
 
     -   __Feature 3 - Home Page__
 
-        The home page is dominated with an image and some header text infomrming the user of the site's main purpose with a prominent call to action button. The navigation section contains links for clear procedures.  
+        The home page is dominated with an image and some header text informing the user of the site's main purpose with a prominent call to action button. The navigation section contains links for clear procedures.  
 
         <br><strong>Fig 03-A.  Home Page</strong><br><br>
         ![F03 Home Page](documentation/media/images/features/f3-home-page.png)
 
     -   __Feature 4 - Books Views__
 
-        The books view allow the user to easily scroll through a number of books and allows sorting by several attriburtes including price, genre and author. Using a card feature, each card displays the front cover of each book and includes a few details about each title. A scroll to top button allows the user to return to the start of the list. A pagination feature is inluded to allow users to navigate through a longer list of titles. 
+        The books view allow the user to easily scroll through a number of books and allows sorting by several attributes including price, genre and author. Using a card feature, each card displays the front cover of each book and includes a few details about each title. A scroll to top button allows the user to return to the start of the list. A pagination feature is included to allow users to navigate through a longer list of titles. 
 
         <br><strong>Fig-04-A.  All books view</strong><br><br>
         ![F04 Books Views](documentation/media/images/features/f4-all-books-view.png)
 
     -   __Feature 5 - Search, Filer and Sort__
 
-        There are options available to the user on the navigation bar to filter the list of books and allow them to restrict the results to items they are particularly interested in. For example, the user can choose to just see books for a particular genre or just discounted prints using the 'offers' link. The user can also restrict the list of results based on a search term which will attempt to find matches in the book titles, description, genres and authors name.
+        There are options available to the user on the navigation bar to filter the list of books and allow them to restrict the results to items they are particularly interested in. For example, the user can choose to just see books for a particular genre or just discounted prints using the 'offers' link. The user can also restrict the list of results based on a search term which will attempt to find matches in the book titles, description, genres and author's name.
 
         <br><strong>Fig-05-A.  Search by key term</strong><br><br>
         ![F05 Search by key term](documentation/media/images/features/f5-search-key-term.png)
@@ -176,17 +197,17 @@ Could Haves
         <br><strong>Fig-07-A.  Book Detail View</strong><br><br>
         ![F07 Book Detals](documentation/media/images/features/f7-book-detail-view.png)
 
-    -   __Feature 8 - Author Detials__
+    -   __Feature 8 - Author Details__
 
         Whilst in a book detail view, the user can click one the authors name to     
-        reach the author bio page which includes the author's nationalisty and a short bio description. 
+        reach the author bio page which includes the author's nationality and a short bio description. 
 
         <br><strong>Fig-08-A.  Author Detail View</strong><br><br>
         ![F08 Author Details](documentation/media/images/f8-author-details.png)
 
     -   __Feature 9 - Wishlist__
 
-        When viewing a book user's can select a bookmark icon to add the respective book to their wishlist. For a logged in user they can see a wishlist option in the navigation links to take them to their wishlist view. The books added to the wishlist will be retained for a user when they return to their log in. Users can remove the book from the wishlist by clicking the bookmark icon. The icon changes style when books are in, or out of the wishlist.     
+        When viewing a book user's can select a bookmark icon to add the respective book to their wishlist. For a logged in user, they can see a wishlist option in the navigation links to take them to their wishlist view. The books added to the wishlist will be retained for a user when they return to their log in. Users can remove the book from the wishlist by clicking the bookmark icon. The icon changes style when books are in, or out of the wishlist.     
 
         <br><strong>Fig-09-A.  Book can be added to the wishlist from the book detail page.</strong><br><br>
         ![F09 Wishlist](documentation/media/images/features/f9-wishlish-out.png)
@@ -221,7 +242,7 @@ Could Haves
 
     -   __Feature 12 - Sign Up, Login and Logout__
 
-        Users can register for the site by following the register link and completing the sign up form. Once they have registred they can log in to their profile, and save reading lsits and order history as necessary. 
+        Users can register for the site by following the register link and completing the sign up form. Once they have registered they can log in to their profile, and save reading lists and order history as necessary. 
 
         <br><strong>Fig-12-A. Sign Up Form</strong><br><br>
         ![F12 Sign Up Form](documentation/media/images/features/f12-a-sign-up-form.png)
@@ -234,13 +255,13 @@ Could Haves
 
     -   __Feature 13 - Role Based Actions__
 
-        Role based actions allow users access to certain features or action based on their role type. Any logged in user has access to the wishlist page. Logged in admin users have several features to create new books or authors, edit existing ones or delete information. The addtional features are available to users under the profile icon. 
+        Role based actions allow users access to certain features or action based on their role type. Any logged in user has access to the wishlist page. Logged in admin users have several features to create new books or authors, edit existing ones or delete information. The additional features are available to users under the profile icon. 
         
-        <br><strong>Fig-13-A.  Loggged In User</strong><br><br>
-        ![F13 Loggged In User](documentation/media/images/features/f13-a-logged-in-user-options.png)
+        <br><strong>Fig-13-A.  Logged In User</strong><br><br>
+        ![F13 Logged In User](documentation/media/images/features/f13-a-logged-in-user-options.png)
 
-        <br><strong>Fig-13-B.  Loggged In Admin</strong><br><br>
-        ![F13 Loggged In Admin](documentation/media/images/features/f13-b-admin-options.png)
+        <br><strong>Fig-13-B.  Logged In Admin</strong><br><br>
+        ![F13 Logged In Admin](documentation/media/images/features/f13-b-admin-options.png)
 
 
     -   __Feature 14 - User Profile__
@@ -257,14 +278,14 @@ Could Haves
 
     -   __Feature 15 - Shopping Basket__
 
-        Users can add books they intend to puchase in the shopping basket page. Users can continue shopping and their books will be retained in the basket until they are ready to complete the checkout.     
+        Users can add books they intend to purchase in the shopping basket page. Users can continue shopping, and their books will be retained in the basket until they are ready to complete the checkout.     
 
         <br><strong>Fig-15-A.  Shopping Basket</strong><br><br>
         ![F15 Shopping Basket](documentation/media/images/features/f15-shopping-basket.png)
 
     -   __Feature 16 - Checkout__
 
-        When the user is ready to complete their purchase they can navigate to the checkout page and enter the delivery details and billing details. If they have saved their personal detials the form will be pre-populated (see Feature 14).
+        When the user is ready to complete their purchase they can navigate to the checkout page and enter the delivery details and billing details. If they have saved their personal details the form will be pre-populated (see Feature 14).
         Payments are securely handled by Stripe's widgets in the site. Webhooks are used to ensure that transactions are handled correctly in the case of any problems encountered during payment processing.
 
         <br><strong>Fig-16-A.  Checkout</strong><br><br>
@@ -272,7 +293,7 @@ Could Haves
 
     -   __Feature 17 - Order Confirmation and History__
 
-        Once an order is sucessfully complete users are taken to tne order confimtiaon page which details the items ordered and the delivery address. Logged in users can see their order history. 
+        Once an order is successfully complete users are taken to the order confirmation page which details the items ordered and the delivery address. Logged in users can see their order history. 
 
         <br><strong>Fig-17-A.  Order Confirmation Page</strong><br><br>
         ![F17 Order confirmation page](documentation/media/images/features/f17-a-order-confirmation-page.png)
@@ -285,7 +306,7 @@ Could Haves
 
     -   __Feature 18 - Book Management__
 
-        Logged in admin users can add new books to the book shop. They are also able to edit and delte existing books in the shop.     
+        Logged in admin users can add new books to the book shop. They are also able to edit and delete existing books in the shop.     
 
         <br><strong>Fig-18-A.  Add a book</strong><br><br>
         ![F18 Add a book](documentation/media/images/features/f18-add-a-book.png)
@@ -379,7 +400,7 @@ I adopted a crows foot ER design to portray the relationship between each table 
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [Jquery](https://jquery.com/) 
+-   [jQuery](https://jquery.com/) 
 -   [Python](https://www.python.org/)
 
 ### Frameworks, Libraries & Programs Used  
@@ -388,12 +409,12 @@ I adopted a crows foot ER design to portray the relationship between each table 
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 -   [Bootstrap](https://getbootstrap.com/) was used to build responsive web page
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
--   [GitHub:](https://github.com/) has been utilied as the respository for the project code after being pushed from Git. In addition, for this project GitHub was used for the agile development aspect through the use of User Stories (GitHub Issues) and tracking their progress on a Kanban board.
+-   [GitHub:](https://github.com/) has been utilised as the repository for the project code after being pushed from Git. In addition, for this project GitHub was used for the agile development aspect through the use of User Stories (GitHub Issues) and tracking their progress on a Kanban board.
 -   [Django v4.2](https://www.djangoproject.com/) was used as the framework to support rapid and secure development of the application.
 s
 -   [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) used for account registration and authentication.
 -   [Pillow](https://pillow.readthedocs.io/en/stable/index.html) - Python Imaging Library used for image handling
--   [jquery library](https://code.jquery.com/jquery-3.4.1.min.js) - for various pieces of functionality including adding and removing items from the shopping cart and handling the increment and decrement of the quantity control.
+-   [jQuery library](https://code.jquery.com/jquery-3.4.1.min.js) - for various pieces of functionality including adding and removing items from the shopping cart and handling the increment and decrement of the quantity control.
 -   [Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to simplify form rendering.
 -   [Stripe](https://js.stripe.com/v3/) used for secure payments (referenced in base.html).
 -   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe.
@@ -409,7 +430,7 @@ s
 
 ## Testing
 
-For More information on testing [see here](https://github.com/paddyw11/paigesbooks/blob/main/TESTING.md)
+For More information on testing [see here](TESTING.md)
 
 ## Bugs
 
@@ -419,7 +440,7 @@ For More information on testing [see here](https://github.com/paddyw11/paigesboo
 
 ![Image](/documentation/media/images/bug1.PNG)
 
-Once I had creatd a new table for genre, in order to make it a manyToMany relationshipe i hadn't updated the search query to reflect that. I needed to update to correct syntax.
+Once I had created a new table for genre, in order to make it a manyToMany relationship I hadn't updated the search query to reflect that. I needed to update to correct syntax.
 
 ### HTML Validation Error on allauth password validator form
 
@@ -433,7 +454,7 @@ Once I had creatd a new table for genre, in order to make it a manyToMany relati
 
 ---
 
-I was receiving a W3C validation error on this due to the django password validator and crispy_forms displaying the password vlaidation hints as a list within a small element. 
+I was receiving a W3C validation error on this due to the django password validator and crispy_forms displaying the password validation hints as a list within a small element. 
 I attempted to create the form using crispy fields for the other fields and custom design the password1 field. 
 ![Image](/documentation/media/images/bug3.PNG)I decided it was a better UX to leave the whole form as a crispy form in the end. 
 
@@ -441,9 +462,9 @@ I attempted to create the form using crispy fields for the other fields and cust
 ### Cloning and Forking
 #### Fork
 
-1. On Github.com, navigate to the Paige's Books repositry [here](https://github.com/paddyw11/paiges-books)
+1. On Github.com, navigate to the Paige's Books repository [here](https://github.com/paddyw11/paiges-books)
 2. In the top right hand corner click on 'Fork'.
-3. By defualt, forksare named the same as their parent repository. You can change the name of the fork to distinguish it. 
+3. By default, forks are named the same as their parent repository. You can change the name of the fork to distinguish it. 
 4. Add a description of your fork.
 5. Click 'Create Fork'.
 
@@ -513,7 +534,7 @@ DATABASES = {
 
 1. Create an AWS account [here](https://aws.amazon.com/)
 2. Go to S3
-3. Ceate a bucket with the name matching the Heroku app and uncheck 'block all public access'
+3. Create a bucket with the name matching the Heroku app and uncheck 'block all public access'
 4. Go to the properties tab and turn on static website hosting
 5. In the permissions tab, go to Policies
 6. Go to Policy Generator
@@ -546,47 +567,6 @@ DATABASES = {
 17. Skip Tabs and click Review Policy, give it a name and descripcion, click Create Policy
 18. Attach the Policy to the group you created
 19. Go to the Users page and click Create User
-20. Create a new user for the static files
-21. Add the user to your group
-22. Download the CSV file to get your secret keys
-
-### Creating a AWS bucket
-
-1. Create an AWS account [here](https://aws.amazon.com/)
-2. Go to S3
-3. Ceate a bucket with the name matching the Heroku app and uncheck 'block all public access'
-4. Go to the properties tab and turn on static website hosting
-5. In the permissions tab, go to Policies
-6. Go to Policy Generator
-7. Select Policy Type as 's3 bucket policy' and generate
-8. Copy the ARN and paste into the box
-9. Copy the generated policy and paste into Bucket Policy section
-10. In the Cors configuration, type
-```python
-[
-{
-"AllowedHeaders": [
-"Authorization"
-],
-"AllowedMethods": [
-"GET"
-],
-"AllowedOrigins": [
-"*"
-],
-"ExposeHeaders": []
-}
-]
-```
-11. Open IAM
-12. Click Groups and create a new group for managing your app
-13. Click Policies and then Create Policy
-14. Go to JSON tab and clixk Import policy
-15. Import the S3 Full Access Policy
-16. Get the Bucket ARN from S3 and paste into the 'Resource' section
-17. Skip Tabs and click Review Policy, give it a name and descripcion, click Create Policy
-18. Attach the Policy to the group you created
-19. Go to the Users page and click Create Uer
 20. Create a new user for the static files
 21. Add the user to your group
 22. Download the CSV file to get your secret keys
@@ -653,7 +633,7 @@ if "USE_AWS" in os.environ:
 
 ## Credits: 
 
-I have used the Code Iinstitute community [Slack](https://slack.com/intl/en-gb) channel for useful hints and tips.
+I have used the Code Institute community [Slack](https://slack.com/intl/en-gb) channel for useful hints and tips.
 
 Index Page Image [source](https://pixabay.com/photos/book-pages-open-book-read-reading-1868068/) by [Pexels](https://pixabay.com/users/pexels-2286921/) 
 
@@ -667,5 +647,5 @@ Book Blurb and Author Bio Text written by ChatGPT-4o from [OpenAi](https://opena
 
 I would like to thank the following:
 
-- My Mentor Daniel Hamilton for gis helpful insights. 
+- My Mentor Daniel Hamilton for his helpful insights. 
 - Friends and relative for their testing. 
