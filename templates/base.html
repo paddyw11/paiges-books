@@ -173,34 +173,30 @@
     <script src="https://kit.fontawesome.com/b45e489d19.js" crossorigin="anonymous"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script>
-      $(document).ready(function() {
-        
-        $('[data-toggle="tooltip"]').tooltip();
-        
-        
-        $('.toast').toast('show');
-      });
+    $(document).ready(function() {
+      
+      $('[data-toggle="tooltip"]').tooltip();
+      
+      $('.toast').toast('show');
+    });
 
-      $('.toast').each(function() {
-        var $this = $(this); 
-        setTimeout(function() {
-          $this.toast('hide'); 
-        }, 5000); 
-      });
+    $('.toast').each(function() {
+      var $this = $(this); 
+      setTimeout(function() {
+        $this.toast('hide'); 
+      }, 5000); 
+    });
   
-    </script>
-
-    <script>
-      document.querySelectorAll('.btn-link').forEach(function(button) {
-        button.addEventListener('click', function() {
-          const icon = this.querySelector('span');
-          if (this.classList.contains('collapsed')) {
-            icon.innerHTML = '&#x2b;'; 
-          } else {
-            icon.innerHTML = '&#x2212;'; 
-          }
-        });
+    document.querySelectorAll('.btn-link').forEach(function(button) {
+      button.addEventListener('click', function() {
+        const icon = this.querySelector('span');
+        if (this.classList.contains('collapsed')) {
+          icon.innerHTML = '&#x2b;'; 
+        } else {
+          icon.innerHTML = '&#x2212;'; 
+        }
       });
+    });
     </script>
     
     {% endblock %}
